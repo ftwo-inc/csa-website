@@ -1,0 +1,35 @@
+{% load static from staticfiles %}
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129703226-1"></script>
+
+        <!-- bootstrap 4 -->
+        <link href="https://bootswatch.com/4/pulse/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="{% static 'theme/css/base.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'theme/css/property_shortcuts.css' %}" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <!-- favicon links -->
+        <link rel="shortcut icon" type="image/png" href="{% static 'website-theme/images/header/favicon.png' %}" />
+        {%  block scoped_css %}
+        {% endblock %}
+    </head>
+    <body>
+
+
+
+    {% block content %}{% endblock %}
+    </body>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="{% static 'theme/js/dash-base.js' %}"></script>
+        <script src="{% static 'theme/js/shortcuts.js' %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js" async></script>
+    </footer>
+
+    {% block page_level_scripts %}{% endblock %}
+</html>
