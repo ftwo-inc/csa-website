@@ -15,11 +15,24 @@
 .text-white{
 	color: white;
 }
+.pb-4{
+	padding-bottom: 4px;
+}
+.text-light-gray{
+	color: #bebdbd;
+}
 .h-3{
 	height: 3rem;
 }
 .h-full {
 	height: 100%;
+}
+.py-16{
+	padding: 16px 0px;
+}
+.mx-20{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .border-radius-14{
 	border-radius: 14px;
@@ -28,10 +41,13 @@
 	outline: -webkit-focus-ring-color auto 0px;
 }
 .csa-progress-line{
-	background-image:url("/static/website-theme/images/img/home-bg.png");
+	background-image:url("/static/website-theme/images/img/2019.png");
 	background-size: cover;
 }
-
+.CSA-5-bg:after{
+	background-image:url("/static/website-theme/images/img/CSA-logo_5.png");
+	background-size: cover;
+}
 .flex{
 	display: flex;
 }
@@ -2115,12 +2131,36 @@ label {
 		background-color: #056ff0;
 		color: #fff
 	}
+	.nav-items-dropdown{
+		background: transparent;
+		border: 0;
+		color: white;
+		font-weight: bolder;
+		font-size: 28px;
+	}
+	.nav-items-dropdown option{
+		opacity: 0.5;
+		border: 0;
+		color: black;
+	}
 }
 @media only screen and (min-width:64rem) {
 	.nav-primary-items {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center
+	}
+	.nav-items-dropdown{
+		background: transparent;
+		border: 0;
+		color: white;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+	.nav-items-dropdown option{
+		opacity: 0.5;
+		border: 0;
+		color: black;
 	}
 	.nav-primary-items, .nav-primary-items .nav-items {
 		display: -webkit-box;
@@ -2680,6 +2720,9 @@ label {
 	.site-header--no-nav {
 		padding-bottom: 2rem
 	}
+	.space-top-bottom{
+		padding: 80px 0px;
+	}
 }
 .site-header--graphic+.block {
 	padding-top: 5rem
@@ -2693,20 +2736,32 @@ label {
 	.site-header--graphic+.block {
 		padding-top: 11rem
 	}
+	.space-top-bottom{
+		padding: 70px 0px;
+	}
 }
 @media only screen and (min-width:65em) {
 	.site-header--graphic+.block {
 		padding-top: 13rem
+	}
+	.space-top-bottom{
+		padding: 80px 0px;
 	}
 }
 @media only screen and (max-width:57.49rem) {
 	.site-header--pricing {
 		background-image: none
 	}
+	.space-top-bottom{
+		padding: 30px 0px;
+	}
 }
 @media only screen and (min-width:57.5rem) {
 	.site-header--pricing {
 		padding-bottom: 20rem
+	}
+	.space-top-bottom{
+		padding: 80px 0px;
 	}
 }
 @media only screen and (min-width:65em) {
@@ -2790,6 +2845,9 @@ label {
 @media only screen and (min-width:64rem) {
 	.sticky-nav .nav-link {
 		color: #282d39
+	}
+	.sticky-nav .nav-items-dropdown {
+		color: #282d39;
 	}
 }
 @media only screen and (min-width:64rem) {
