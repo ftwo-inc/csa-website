@@ -41,7 +41,12 @@
 .justify-center{
 	justify-content: center;
 }
-
+.justify-between{
+    justify-content: space-between !important;
+}
+.self-center{
+    align-self: center;
+}
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
 	margin: 0;
 	padding: 0;
@@ -405,10 +410,10 @@ body.env--dev:before {
 	background-color: red
 }
 .bg-yellow {
-	background-color: #fcf500
+	background-color: #fce46f;
 }
-.bg-indigo {
-	background-color: #609
+.bg-pinker {
+	background-color: #fa426f;
 }
 .bg-green {
 	background-color: #00cc05

@@ -8,7 +8,7 @@
 {% block content %}
     <div class="global-container">
 		<div class="global-container__main bg-blue">
-			<div class="csa-progress-line site-header site-header--graphic bg-blue bg-dark" data-nav-parent="" id="header-bg">
+			<div class="site-header site-header--graphic bg-dark csa-progress-line bg-blue" data-nav-parent="" id="header-bg">
 				<div class="container">
 					<div class="site-header__hero">
 						<div class="hero hero--graphic hero--graphic-landscape">
@@ -139,34 +139,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="block bg-indigo block--features text-white">
+			<div class="block bg-pinker block--features text-white">
 				<div class="container">
-                    <div class="features-list">
-						<div class="feature-list-div" data-in-view="">
+                    <div class="flex justify-between">
+						<div>
 							<div class="feature">
-								<div class="feature__icon"><img src="{% static '/website-theme/images/cms-assets/icons/phone.svg' %}"></div>
-								<h3 class="feature__title">Google</h3>
-								<div class="feature__text">
-									<p>We care about your business so we say no to recruitment agencies. No middlemen, no sneaky direct messages.</p>
-								</div>
+								<h3 class="feature__title">3 Month</h3>
 							</div>
 						</div>
-						<div class="feature-list-div" data-in-view="">
+						<div class="self-center">
 							<div class="feature">
-								<div class="feature__icon"><img src="{% static '/website-theme/images/cms-assets/icons/shield-tick.svg' %}"></div>
-								<h3 class="feature__title">Fidility</h3>
-								<div class="feature__text">
-									<p>We’re a privacy focused careers &amp; hiring solution focussed on putting people first.</p>
-								</div>
+								<h3 class="feature__title">+</h3>
 							</div>
 						</div>
-                        <div class="feature-list-div" data-in-view="">
+                        <div>
 							<div class="feature">
-								<div class="feature__icon"><img src="{% static '/website-theme/images/cms-assets/icons/shield-tick.svg' %}"></div>
-								<h3 class="feature__title">SunLife</h3>
-								<div class="feature__text">
-									<p>We’re a privacy focused careers &amp; hiring solution focussed on putting people first.</p>
-								</div>
+								<h3 class="feature__title">CSA Program</h3>
+							</div>
+						</div>
+                        <div class="self-center">
+							<div class="feature">
+								<h3 class="feature__title">=</h3>
+							</div>
+						</div>
+                        <div>
+							<div class="feature">
+								<h3 class="feature__title">Better Life</h3>
 							</div>
 						</div>
 					</div>
@@ -190,66 +188,6 @@
 					</div>
 				</div>
 			</div>
-            <div class="block bg-white bg-light block--features">
-				<div class="container swiper-container">
-					<div class="features-list swiper-wrapper">
-						<div class="flex-col-5 swiper-slide" data-in-view="">
-							<div class="feature">
-								<img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/nasscom.jpg" alt="partnership-images">
-							</div>
-						</div>
-						<div class="flex-col-5 swiper-slide" data-in-view="">
-							<div class="feature">
-								<img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/dsci.jpg" alt="partnership-images">
-							</div>
-						</div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-							<div class="feature">
-								<img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/hsd.jpg" alt="partnership-images">
-							</div>
-						</div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-							<div class="feature">
-								<img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/cii.jpg" alt="partnership-images">
-							</div>
-						</div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-							<div class="feature">
-								<img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/hitec.jpg" alt="partnership-images">
-							</div>
-						</div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-                            <div class="feature">
-                                <img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/csi.jpg" alt="partnership-images">
-                            </div>
-                        </div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-                            <div class="feature">
-                                <img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/msme.jpg" alt="partnership-images">
-                            </div>
-                        </div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-                            <div class="feature">
-                                <img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/nsic.jpg" alt="partnership-images">
-                            </div>
-                        </div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-                            <div class="feature">
-                                <img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/bis.jpg" alt="partnership-images">
-                            </div>
-                        </div>
-                        <div class="flex-col-5 swiper-slide" data-in-view="">
-                            <div class="feature">
-                                <img src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/01/doi.jpg" alt="partnership-images">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -259,21 +197,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
     <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 5,
-          spaceBetween: 30,
-          slidesPerGroup: 1,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-    </script>
 {% endblock page_level_scripts %}
