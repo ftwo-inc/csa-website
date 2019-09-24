@@ -18,11 +18,30 @@
 .pb-4{
 	padding-bottom: 4px;
 }
+.py-14{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.text-38{
+	font-size: 38px;
+}
 .text-light-gray{
 	color: #bebdbd;
 }
+.text-orange{
+	color: coral;
+}
+.text-yellow{
+	color: yellow;
+}
+.h-2{
+	height: 2rem;
+}
 .h-3{
 	height: 3rem;
+}
+.h-5{
+	height: 5rem;
 }
 .h-full {
 	height: 100%;
@@ -34,6 +53,15 @@
 	margin-left: 20px;
 	margin-right: 20px;
 }
+.mt-2rem{
+	margin-top: 2rem;
+}
+.mb-2rem{
+	margin-bottom: 2rem;
+}
+.mt--2rem{
+	margin-top: -2rem;
+}
 .border-radius-14{
 	border-radius: 14px;
 }
@@ -42,10 +70,6 @@
 }
 .csa-progress-line{
 	background-image:url("/static/website-theme/images/img/2019.png");
-	background-size: cover;
-}
-.CSA-5-bg:after{
-	background-image:url("/static/website-theme/images/img/CSA-logo_5.png");
 	background-size: cover;
 }
 .flex{
@@ -63,7 +87,7 @@
 .self-center{
     align-self: center;
 }
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1061,6 +1085,9 @@ label {
 .bg-light .tab:hover {
 	color: #056ff0
 }
+.bg-indigo{
+	background-color: #609;
+}
 .bg-light .tab:hover:after {
 	background-color: #056ff0
 }
@@ -1476,6 +1503,12 @@ label {
 	.hero--graphic-landscape {
 		padding-bottom: 0
 	}
+	.about-div-width{
+		width:50%;
+	}
+	.about-p-r{
+		padding-right: 20px;
+	}
 }
 .hero--graphic-landscape .hero__graphic {
 	bottom: -13vw
@@ -1493,6 +1526,18 @@ label {
 		left: 30rem;
 		max-width: 44.25rem
 	}
+	.about-div-width{
+		width:50%;
+	}
+	about-p-r{
+		padding-right: 20px;
+	}
+	.flex-md{
+		display: flex;
+	}
+}
+.about-mb{
+	margin-bottom: 88px;
 }
 .hero--graphic-landscape img {
 	width: 82.98vw
@@ -1500,6 +1545,15 @@ label {
 @media only screen and (min-width:56.25rem) {
 	.hero--graphic-landscape img {
 		width: 100%
+	}
+	.about-div-width{
+		width:50%;
+	}
+	about-p-r{
+		padding-right: 20px;
+	}
+	.flex-md{
+		display: flex;
 	}
 }
 .hero--graphic-square {
@@ -1531,12 +1585,30 @@ label {
 		left: 26rem;
 		max-width: 34.375rem
 	}
+	.about-div-width{
+		width:50%;
+	}
+	about-p-r{
+		padding-right: 20px;
+	}
+	.flex-md{
+		display: flex;
+	}
 }
 @media only screen and (min-width:95em) {
 	.hero--graphic-square .hero__graphic {
 		bottom: -13rem;
 		left: 35rem;
 		max-width: 39rem
+	}
+	.about-div-width{
+		width:50%;
+	}
+	about-p-r{
+		padding-right: 20px;
+	}
+	.flex-md{
+		display: flex;
 	}
 }
 .hero--graphic-square img {
@@ -1545,6 +1617,9 @@ label {
 @media only screen and (min-width:56.25rem) {
 	.hero--graphic-square img {
 		width: 100%
+	}
+	.flex-md{
+		display: flex;
 	}
 }
 .hero--graphic-portrait {
@@ -2140,8 +2215,8 @@ label {
 	}
 	.nav-items-dropdown option{
 		opacity: 0.5;
-		border: 0;
 		color: black;
+		font-size: 24px;
 	}
 }
 @media only screen and (min-width:64rem) {
@@ -2155,12 +2230,12 @@ label {
 		border: 0;
 		color: white;
 		font-weight: bolder;
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.nav-items-dropdown option{
 		opacity: 0.5;
-		border: 0;
 		color: black;
+		font-size: 18px;
 	}
 	.nav-primary-items, .nav-primary-items .nav-items {
 		display: -webkit-box;
@@ -2721,7 +2796,7 @@ label {
 		padding-bottom: 2rem
 	}
 	.space-top-bottom{
-		padding: 80px 0px;
+		padding: 60px 0px;
 	}
 }
 .site-header--graphic+.block {
@@ -2737,7 +2812,7 @@ label {
 		padding-top: 11rem
 	}
 	.space-top-bottom{
-		padding: 70px 0px;
+		padding: 60px 0px;
 	}
 }
 @media only screen and (min-width:65em) {
@@ -2745,7 +2820,7 @@ label {
 		padding-top: 13rem
 	}
 	.space-top-bottom{
-		padding: 80px 0px;
+		padding: 60px 0px;
 	}
 }
 @media only screen and (max-width:57.49rem) {
@@ -2761,7 +2836,7 @@ label {
 		padding-bottom: 20rem
 	}
 	.space-top-bottom{
-		padding: 80px 0px;
+		padding: 60px 0px;
 	}
 }
 @media only screen and (min-width:65em) {
