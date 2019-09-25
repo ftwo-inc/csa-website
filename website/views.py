@@ -14,8 +14,8 @@ class HomePageView(TemplateView):
     template_name = "home.html"
 
 
-class CourseView(TemplateView):
-    template_name = "course.html"
+class EnrollView(TemplateView):
+    template_name = "enroll.html"
 
 
 class AboutView(TemplateView):

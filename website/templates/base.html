@@ -19,6 +19,9 @@
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/owl.theme.default.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/jquery-ui.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/swiper.min.css' %}"/>
+        <link rel="stylesheet" href="{% static 'website-theme/css/jquery.sweet-dropdown.min.css' %}" />
+
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
         <link href="https://use.typekit.net/btq2hqj.css" rel="stylesheet">
         <link href="{% static 'website-theme/css/website-css/main.css' %}" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,11 +78,13 @@
 										<div class="nav-primary-items__links">
 											<ul class="nav-items">
 												<li class="nav-items__item">
-                                                    <select name="corrses" class="ouline-none nav-items-dropdown">
-                                                        <option value="courses">Courses</option>
-                                                        <option value="course1">Course1</option>
-                                                        <option value="course2">Course2</option>
-                                                    </select>
+                                                    <span class="nav-link cursor-pointer" data-dropdown="#dropdown-standard">Courses <i class="fa fa-chevron-down"></i></span>
+                                                    <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard">
+                                                        <ul>
+                                                            <li><a href="#">Course1</a>></li>
+                                                            <li><a href="#">Course2</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                                 <li class="nav-items__item">
 													<a class="nav-link" href="/about/">About</a>
@@ -162,11 +167,13 @@
 											<div class="nav-primary-items__links">
 												<ul class="nav-items">
 													<li class="nav-items__item">
-                                                        <select name="corrses" class="ouline-none nav-items-dropdown">
-                                                            <option value="courses">Courses</option>
-                                                            <option value="course1">Course1</option>
-                                                            <option value="course2">Course2</option>
-                                                        </select>
+                                                        <span class="nav-link cursor-pointer" data-dropdown="#dropdown-with-icons">Courses <i class="fa fa-chevron-down"></i></span>
+                                                        <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-with-icons">
+                                                            <ul>
+                                                                <li><a href="#">Course1</a>></li>
+                                                                <li><a href="#">Course2</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </li>
                                                     <li class="nav-items__item">
                                                         <a class="nav-link" href="/about/">About</a>
@@ -294,7 +301,7 @@
         <script type="text/javascript" src="{% static 'website-theme/js/owl.carousel.js' %}"></script>
         <script type="text/javascript" src="{% static 'website-theme/js/swiper.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'website-theme/js/website-js/base.js' %}"></script>
-
+        <script src="{% static 'website-theme/js/jquery.sweet-dropdown.min.js' %}"></script>
         <!--main js file end-->
         {% block page_level_scripts %}
         {% endblock %}

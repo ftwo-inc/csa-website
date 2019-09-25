@@ -16,7 +16,14 @@
                                 <p class="mb-2rem"><sup class="text-yellow"><i class="fa fa-quote-left"></i></sup> Give employers a better view of who you are by integrating Spotify, Twitter, LinkedIn and more into your profile. <sup class="text-yellow"><i class="fa fa-quote-right"></i></sup></p>
                             </div>
 							<div data-in-view="" class="about-div-width">
-                                <iframe src="https://www.youtube.com/embed/S5cFLTTIF30?rel=0&showinfo=0&autoplay=0" width="100%" height="400" allowfullscreen></iframe>
+                               <div class="plyr__video-embed" id="player">
+                                    <iframe
+                                        src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+                                        allowfullscreen
+                                        allowtransparency
+                                        allow="autoplay"
+                                    ></iframe>
+                                </div>
                             </div>
 						</div>
 					</div>
@@ -32,7 +39,7 @@
 						</div>
 						<div class="py-14">
 							<div class="feature">
-                                <h4>5,000 <img src="{% static 'website-theme/images/img/girl.svg' %}" class="h-2" alt="student">  <img src="{% static 'website-theme/images/img/boy.svg' %}" class="h-2" alt="student"> passed</h4>
+                                <h4>5,000 students passed</h4>
 							</div>
 						</div>
                         <div class="py-14">
@@ -52,7 +59,14 @@
 				<div class="container">
 					<div class="media-object" data-in-view="">
 						<div class="media-object__media" data-in-view="">
-                            <iframe src="https://www.youtube.com/embed/S5cFLTTIF30?rel=0&showinfo=0&autoplay=0" width="100%" height="400" allowfullscreen></iframe>
+                            <div class="plyr__video-embed" id="player2">
+                                <iframe
+                                    src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+                                    allowfullscreen
+                                    allowtransparency
+                                    allow="autoplay"
+                                ></iframe>
+                            </div>
                         </div>
 						<div class="media-object__content" data-in-view="">
 							<h2>Launched Jan 2016</h2>
@@ -116,6 +130,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
     <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
+    <script src="path/to/plyr.js"></script>
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+        const player2 = new Plyr('#player2');
+    </script>
     <script>
         var swiper = new Swiper('.swiper-container', {
       slidesPerView: 5,
