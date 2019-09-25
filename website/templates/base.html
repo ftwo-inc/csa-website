@@ -18,9 +18,9 @@
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/owl.carousel.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/owl.theme.default.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/jquery-ui.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/animate.min.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'website-theme/css/swiper.min.css' %}"/>
         <link rel="stylesheet" href="{% static 'website-theme/css/jquery.sweet-dropdown.min.css' %}" />
-
         <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
         <link href="https://use.typekit.net/btq2hqj.css" rel="stylesheet">
         <link href="{% static 'website-theme/css/website-css/main.css' %}" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
 					<div class="site-header-nav">
 						<div>
 							<a href="index.html">
-								<img class="w-8" src="{%static '/website-theme/images/img/CSA logo_PNG.png' %}" alt="logo">
+								<img class="w-8" src="{%static '/website-theme/images/img/CSA-logo-1.png' %}" alt="logo">
 							</a>
 						</div>
 						<div class="site-header-nav__nav">
@@ -48,7 +48,7 @@
 									<div class="nav-primary-items">
 										<div class="nav-primary-items__logo">
 											<a href="home.html"><svg height="128px" version="1.1" viewbox="0 0 248 128" width="248px" xmlns="http://www.w3.org/2000/svg">
-											<g fill="none" fill-rule="evenodd" id="Style-Guide" stroke="none" stroke-width="1">
+											<g fill="none" fill-rule="evenodd" id="Style-Guide" strokruk e="none" stroke-width="1">
 												<g class="logo" fill="none" transform="translate(-874.000000, -7907.000000)">
 													<g transform="translate(874.000000, 7907.000000)">
 														<g id="Group-23">
@@ -81,8 +81,8 @@
                                                     <span class="nav-link cursor-pointer" data-dropdown="#dropdown-standard">Courses <i class="fa fa-chevron-down"></i></span>
                                                     <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard">
                                                         <ul>
-                                                            <li><a href="#">Course1</a>></li>
-                                                            <li><a href="#">Course2</a></li>
+                                                            <li><a href="#">Application Security</a>></li>
+                                                            <li><a href="#">Security Operation Center</a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
@@ -100,7 +100,7 @@
 										<div class="nav-primary-items__ctas">
 											<ul class="nav-items">
 												<li class="nav-items__item">
-													<a class="btn btn--primary btn--small btn--short" href="https://app.digitalprofile.com/register"><span class="btn__text">Enroll</span></a>
+													<a class="btn btn--primary btn--small btn--short" href="/enroll"><span class="btn__text">Enroll</span></a>
 												</li>
 											</ul>
 										</div>
@@ -170,8 +170,8 @@
                                                         <span class="nav-link cursor-pointer" data-dropdown="#dropdown-with-icons">Courses <i class="fa fa-chevron-down"></i></span>
                                                         <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-with-icons">
                                                             <ul>
-                                                                <li><a href="#">Course1</a>></li>
-                                                                <li><a href="#">Course2</a></li>
+                                                                <li><a href="#">Application Security</a>></li>
+                                                                <li><a href="#">Security Operation Center</a></li>
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -189,7 +189,7 @@
 											<div class="nav-primary-items__ctas">
 												<ul class="nav-items">
 													<li class="nav-items__item">
-														<a class="btn btn--primary btn--small btn--short" href="https://app.digitalprofile.com/register"><span class="btn__text">Enroll</span></a>
+														<a class="btn btn--primary btn--small btn--short" href="/enroll"><span class="btn__text">Enroll</span></a>
 													</li>
 												</ul>
 											</div>
@@ -295,6 +295,7 @@
         <script type="text/javascript" src="{% static 'website-theme/js/jquery.js' %}"></script>
         <script type="text/javascript" src="{% static 'website-theme/js/jquery-ui.js' %}"></script>
         <script type="text/javascript" src="{% static 'website-theme/js/bootstrap.js' %}"></script>
+        <script type="text/javascript" src="{% static 'website-theme/js/animate-ext.js' %}"></script>
         <script src="{% static 'theme/js/shortcuts.js' %}" async></script>
         <script type="text/javascript" src="{% static 'website-theme/js/Chart.min.js' %}"></script>
         <script src="{% static 'website-theme/js/site.min.js' %}"></script>
