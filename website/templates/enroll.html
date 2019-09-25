@@ -8,11 +8,11 @@
 {% block content %}
     <div class="global-container">
 		<div class="global-container__main">
-			<div class="site-header site-header--graphic bg-dark bg-indigo" data-nav-parent="" id="header-bg">
+			<div class="site-header site-header--graphic bg-dark bg-indigo bg-doughnuts" data-nav-parent="" id="header-bg">
 				<div class="container">
 					<div class="site-header__hero enrollment-form">
 						<div class="flex-md about-mb hero hero--graphic">
-							<div class="about-div-width">
+							<div class="about-div-width pr-md-80">
                                 <div class="enroll-input-box">
                                     <input type="text" name="name" placeholder="Full Name"><br>
                                     <input type="email" name="email" placeholder="Email *">
@@ -23,8 +23,19 @@
                                     <button class="enroll-submit-btn">Submit</button>
                                 </div>
                             </div>
-							<div data-in-view="" class="about-div-width">
-
+							<div data-in-view="" class="about-div-width mt-sm-30">
+                                <div>
+                                    <div class="hero hero--graphic hero--graphic-landscape">
+                                        <div class="hero__cta">
+                                            <div class="cta" data-in-view="">
+                                                <h3 class="pb-15">Speek to a consultant</h3>
+                                                <h4><i class="fa fa-phone text-red" style="font-size: 44px;"></i> + 91 87 876 7568</h4>
+                                                <h4><i class="fa fa-comments text-light-blue" style="font-size: 48px;"></i> + 91 90 970 8901</h4>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: -99px"><img src="{% static 'website-theme/images/cms-assets/graphics/character-group.svg' %}"></div>
+                                    </div>
+                                </div>
                             </div>
 						</div>
 					</div>

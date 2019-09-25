@@ -17,11 +17,20 @@
 .text-white{
 	color: white;
 }
+.text-red{
+	color: #e04b4b;
+}
+.text-light-blue{
+	color: #7adff0;
+}
 .opacity-05{
 	opacity: 0.5;
 }
 .pb-4{
 	padding-bottom: 4px;
+}
+.pb-15{
+	padding-bottom: 15px;
 }
 .py-14{
 	padding-top: 14px;
@@ -75,6 +84,9 @@
 }
 .mb-2rem{
 	margin-bottom: 2rem;
+}
+.mb-4{
+	margin-bottom: 4px;
 }
 .mr-50{
 	margin-right: 50px;
@@ -165,7 +177,7 @@
 	border: none;
 	border-radius: 999px;
 	color: white;
-	padding: 15px 32px;
+	padding: 18px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -179,9 +191,18 @@
 .enroll-submit-btn:hover {
 	background-color: #7c29a5;
 }
+
+@media only screen and (min-width:65em) {
+	.pr-md-80{
+		padding-right: 80px;
+	}
+}
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
 		padding: 14px;
+	}
+	.mt-sm-30{
+		margin-top: 30px;
 	}
 }
 /*enroll end*/
