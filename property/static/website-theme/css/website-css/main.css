@@ -259,6 +259,9 @@
 	.text-38 {
     	font-size: 20px;
 	}
+	.flex-col-reverse{
+		flex-direction: column-reverse;
+	}
 }
 /*enroll end*/
 
