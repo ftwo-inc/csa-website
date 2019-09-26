@@ -18,10 +18,17 @@
 	color: white;
 }
 .text-red{
-	color: #e04b4b;
+	color: #f24f5a;
+}
+
+.text-indigo{
+	color: #660099;
+}
+.text-20{
+	font-size: 20px;
 }
 .text-light-blue{
-	color: #7adff0;
+	color: #53cdff;
 }
 .opacity-05{
 	opacity: 0.5;
@@ -31,6 +38,15 @@
 }
 .pb-15{
 	padding-bottom: 15px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.pr-16{
+	padding-right: 16px;
+}
+.pl-10{
+	padding-left: 10px;
 }
 .py-14{
 	padding-top: 14px;
@@ -60,8 +76,11 @@
 .shadow-on-hover:hover{
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .05);
 }
-.h-2{
+.h-2-half{
 	height: 2.3rem;
+}
+.h-2{
+	height: 2rem;
 }
 .h-3{
 	height: 3rem;
@@ -96,6 +115,9 @@
 }
 .mt--2rem{
 	margin-top: -2rem;
+}
+.mb-30{
+    margin-bottom: 30px;
 }
 .border-radius-14{
 	border-radius: 14px;
@@ -192,9 +214,27 @@
 	background-color: #7c29a5;
 }
 
+.text-gradiant-purple{
+	background: -webkit-linear-gradient(#62ebcb,#440d60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (min-width:65em) {
 	.pr-md-80{
 		padding-right: 80px;
+	}
+	.mt--md-99{
+		margin-top: -99px;
+	}
+	.w-80{
+		width: 80%;
+	}
+	.text-md-20{
+		font-size: 20px;
+	}
+	.text-md-26{
+		font-size: 26px;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -203,6 +243,12 @@
 	}
 	.mt-sm-30{
 		margin-top: 30px;
+	}
+	.text-md-20{
+		font-size: 15px;
+	}
+	.text-md-26{
+		font-size: 18px;
 	}
 }
 /*enroll end*/
