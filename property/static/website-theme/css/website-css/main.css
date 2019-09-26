@@ -241,7 +241,7 @@
 	.csa-progress-line{
 		background-image:url("/static/website-theme/images/img/home-bg.png");
 		background-size: cover;
-		background-position: center;
+		background-position: right;
 	}
 }
 @media only screen and (max-width:45em) {
