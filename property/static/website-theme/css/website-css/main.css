@@ -134,11 +134,7 @@
 .ouline-none:focus{
 	outline: -webkit-focus-ring-color auto 0px;
 }
-.csa-progress-line{
-	background-image:url("/static/website-theme/images/img/home-bg.png");
-	background-size: cover;
-	background-position: center;
-}
+
 .small-circles{
 	height: 2rem;
     width: 2rem;
@@ -242,6 +238,11 @@
 	.text-md-26{
 		font-size: 26px;
 	}
+	.csa-progress-line{
+		background-image:url("/static/website-theme/images/img/home-bg.png");
+		background-size: cover;
+		background-position: center;
+	}
 }
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
@@ -261,6 +262,9 @@
 	}
 	.flex-col-reverse{
 		flex-direction: column-reverse;
+	}
+	.bg-md-blue{
+		background-color: blue;
 	}
 }
 /*enroll end*/
