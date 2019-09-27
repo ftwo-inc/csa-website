@@ -14,6 +14,7 @@
 .w-8{
 	width: 8rem;
 }
+
 .text-white{
 	color: white;
 }
@@ -66,6 +67,9 @@
 }
 .text-yellow{
 	color: yellow;
+}
+.text-blue{
+	color: #056ff0;
 }
 .text-4rem{
 	font-size: 4.125rem !important;
@@ -217,7 +221,7 @@
 }
 
 .text-gradiant-purple{
-	background: -webkit-linear-gradient(#62ebcb,#440d60);
+	background: -webkit-linear-gradient(#660099,#ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
