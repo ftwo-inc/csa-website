@@ -32,7 +32,7 @@
 	color: #53cdff;
 }
 .opacity-05{
-	opacity: 0.5;
+	opacity: 0.7;
 }
 .pb-4{
 	padding-bottom: 4px;
@@ -66,7 +66,7 @@
 	color: coral;
 }
 .text-yellow{
-	color: yellow;
+	color: #fae46f;
 }
 .text-blue{
 	color: #056ff0;
@@ -183,7 +183,7 @@
 }
 
 .enrollment-form input:focus {
-  background-color: #f4f0f6;
+  background-color: #e5fff9;
 }
 .enroll-input-box{
 	background: white;
@@ -192,7 +192,7 @@
 }
 
 .country-code{
-	background: #a952d5;
+	background: #83eed5;
     font-weight: bold;
     align-self: center;
     padding: 19px 20px 19px 14px;
@@ -201,10 +201,9 @@
 	font-size: 1.1075rem;
 }
 .enroll-submit-btn {
-	background-color: #a952d5;
+	background-color: #83eed5;
 	border: none;
 	border-radius: 999px;
-	color: white;
 	padding: 18px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -217,13 +216,8 @@
 	transition: background-color 0.3s ease;
 }
 .enroll-submit-btn:hover {
-	background-color: #7c29a5;
-}
-
-.text-gradiant-purple{
-	background: -webkit-linear-gradient(#660099,#ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background-color: #42bea1;
+	color: white;
 }
 
 @media only screen and (min-width:65em) {
