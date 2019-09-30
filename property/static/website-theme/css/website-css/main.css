@@ -2,6 +2,11 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
 }
+
+a{
+	color: #282d39;
+    text-decoration: none;
+}
 .cursor-pointer{
 	cursor: pointer;
 }
@@ -15,6 +20,9 @@
 	width: 8rem;
 }
 
+.float-right{
+	float: right;
+}
 .text-white{
 	color: white;
 }
@@ -27,11 +35,17 @@
 .text-indigo{
 	color: #660099;
 }
+.text-light-orange{
+	color: #ffc9b5;
+}
 .text-20{
 	font-size: 20px;
 }
 .text-5rem{
 	font-size: 5rem !important;
+}
+.text-40{
+	font-size: 40px;
 }
 .text-light-blue{
 	color: #e0fafc;
@@ -60,6 +74,9 @@
 .py-14{
 	padding-top: 14px;
 	padding-bottom: 14px;
+}
+.line-height-1{
+	line-height: 1;
 }
 .text-38{
 	font-size: 38px;
@@ -200,13 +217,15 @@
 }
 
 .country-code{
-	background: #83eed5;
+	background: #ffffff;
     font-weight: bold;
     align-self: center;
     padding: 19px 20px 19px 14px;
     border-radius: 8px;
     margin-right: 12px;
-	font-size: 1.1075rem;
+    font-size: 1.1075rem;
+    border: 1px solid #c5c2c1;
+	color: #898585;
 }
 .enroll-submit-btn {
 	background-color: #83eed5;
@@ -224,7 +243,7 @@
 	transition: background-color 0.3s ease;
 }
 .enroll-submit-btn:hover {
-	background-color: #42bea1;
+	background-color: #282d39;
 	color: white;
 }
 
@@ -233,7 +252,10 @@
 		padding-right: 80px;
 	}
 	.mt--md-99{
-		margin-top: -99px;
+		margin-top: -140px;
+	}
+	.h-24rem{
+		height: 24rem;
 	}
 	.w-80{
 		width: 80%;
@@ -283,6 +305,12 @@
 	}
 	.mt-sm-20{
 		margin-top: 20px;
+	}
+	.mt-md-2rem{
+		margin-top: 2rem;
+	}
+	.text-40{
+		font-size: 26px;
 	}
 }
 /*enroll end*/
