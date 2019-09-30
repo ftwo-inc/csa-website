@@ -2,3 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/f-two-237108/csa-website', '.']
 images: ['gcr.io/f-two-237108/csa-website']
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['beta', 'run', 'deploy', 'csa-website-${_ENV}', '--image=gcr.io/f-two-237108/csa-website-${_ENV}:latest', '--region=asia-northeast1', '--allow-unauthenticated', '--platform=managed']
+
