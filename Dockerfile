@@ -15,4 +15,4 @@ COPY . /code/
 # Expose port
 EXPOSE 8080
 
-ENTRYPOINT /code/entrypoint.sh
+ENTRYPOINT ["bash", "./code/entrypoint.sh"]
