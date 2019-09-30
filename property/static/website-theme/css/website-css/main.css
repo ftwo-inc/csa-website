@@ -21,7 +21,9 @@
 .text-red{
 	color: #f24f5a;
 }
-
+.text-teal{
+	color: #62eacb;
+}
 .text-indigo{
 	color: #660099;
 }
@@ -97,6 +99,9 @@
 }
 .h-5{
 	height: 5rem;
+}
+.h-10{
+	height: 10rem;
 }
 .h-full {
 	height: 100%;
@@ -241,6 +246,9 @@
 		background-size: cover;
 		background-position: right;
 	}
+	.ml-md-70{
+		margin-left: 70px;
+	}
 }
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
@@ -263,6 +271,9 @@
 	}
 	.bg-md-blue{
 		background-color: blue;
+	}
+	.mt-sm-20{
+		margin-top: 20px;
 	}
 }
 /*enroll end*/
@@ -1720,6 +1731,7 @@ label {
 	.flex-md{
 		display: flex;
 	}
+
 }
 .about-mb{
 	margin-bottom: 88px;
