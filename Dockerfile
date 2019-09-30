@@ -12,4 +12,7 @@ COPY .secrets /code/.env
 
 COPY . /code/
 
+# Expose port
+EXPOSE 8080
+
 ENTRYPOINT /code/entrypoint.sh
