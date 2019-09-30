@@ -35,8 +35,17 @@ a{
 .text-indigo{
 	color: #660099;
 }
+.text-dark-blue{
+	color: #0073aa;
+}
 .text-light-orange{
 	color: #ffc9b5;
+}
+.text-dark-green{
+	color: #159946;
+}
+.text-brown{
+	color: #ca561a;
 }
 .text-20{
 	font-size: 20px;
@@ -70,6 +79,10 @@ a{
 }
 .pl-10{
 	padding-left: 10px;
+}
+.py-20{
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .py-14{
 	padding-top: 14px;
@@ -277,6 +290,30 @@ a{
 	.w-45{
 		width: 45%;
 	}
+	.w-md-45{
+		width: 45%;
+	}
+	.pl-md-34{
+		padding-left: 34px;
+	}
+	.pr-md-34{
+		padding-right: 34px;
+	}
+	.w-md-55{
+		width: 55%;
+	}
+	.enroll-vertical-line{
+		height: 12rem;
+		border-left: 2px solid #5c5e5f;
+		text-align: center;
+	}
+	.enroll-center-div{
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 29px;
+	}
 }
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
@@ -284,6 +321,9 @@ a{
 	}
 	.mt-sm-30{
 		margin-top: 30px;
+	}
+	.display-hidden-sm{
+		display: none;
 	}
 	.text-md-20{
 		font-size: 15px;
