@@ -11,3 +11,5 @@ RUN pip install -r requirements.txt
 COPY .secrets /code/.env
 
 COPY . /code/
+
+ENTRYPOINT /code/entrypoint.sh
