@@ -30,6 +30,9 @@
 .text-20{
 	font-size: 20px;
 }
+.text-5rem{
+	font-size: 5rem !important;
+}
 .text-light-blue{
 	color: #53cdff;
 }
@@ -265,6 +268,9 @@
 	}
 	.text-38 {
     	font-size: 20px;
+	}
+	.text-5rem{
+		font-size: 4rem !important;
 	}
 	.flex-col-reverse{
 		flex-direction: column-reverse;
