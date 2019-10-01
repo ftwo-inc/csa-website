@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 import os
 import sys
-
-from decouple import config
+import csa
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", config("DJANGO_SETTINGS_MODULE"))
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "csa.settings.prod")
     try:
         from django.core.management import execute_from_command_line
     except ImportError:

@@ -1,4 +1,4 @@
-{% load static from staticfiles %}
+{% load static %}
 <!doctype html>
 <html lang="en">
     <head>
@@ -39,7 +39,7 @@
 					<div class="site-header-nav">
 						<div>
 							<a href="/">
-								<img class="w-8" src="{%static '/website-theme/images/img/CSA-logo-1.png' %}" alt="logo">
+								<img class="w-8" src="{%static 'website-theme/images/img/CSA-logo-1.png' %}" alt="logo">
 							</a>
 						</div>
 						<div class="site-header-nav__nav">
@@ -128,7 +128,7 @@
 						<div class="site-header-nav" id="site-header-nav">
 							<div class="site-header-nav__logo">
 								<a href="/">
-									<img class="w-full" src="{%static '/website-theme/images/img/CSA-logo_2.png' %}" alt="logo">
+									<img class="w-full" src="{%static 'website-theme/images/img/CSA-logo_2.png' %}" alt="logo">
 								</a>
 							</div>
 							<div class="site-header-nav__nav">
@@ -223,11 +223,7 @@
                 <div class="container">
                     <footer class="site-footer">
                         <div class="site-footer__logo">
-<<<<<<< HEAD
-                            <img class="w-8" src="{%static '/website-theme/images/img/CSA-logo_2.png' %}" alt="logo">
-=======
                             <img class="w-8" src="{% static 'website-theme/images/img/CSA-logo_2.png' %}" alt="logo">
->>>>>>> 4cf109ac867bfbd42d10c5920a81da7dec556e6d
                         </div>
                         <div class="site-footer__nav">
 							<ul class="nav-footer">
