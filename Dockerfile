@@ -15,6 +15,6 @@ COPY . /code/
 # Expose port
 EXPOSE 8080
 
-RUN ["python", "manage.py", "collectstatic"]
+RUN ["python", "manage.py", "collectstatic", "--no-input"]
 
 ENTRYPOINT ["bash", "./entrypoint.sh"]
