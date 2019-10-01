@@ -10,6 +10,7 @@ eggs/
 .DS_Store
 .static/
 .env
-static/admin/
-static/rest_framework/
-manage.py
+static/*
+*.pyc
+__pycache__
+.vscode
