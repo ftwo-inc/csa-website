@@ -10,9 +10,7 @@ eggs/
 *.egg-info/
 .DS_Store
 ./static/*
-csa/static/*
 .env
-static/*
 *.pyc
 __pycache__
 .vscode
