@@ -1,0 +1,17 @@
+.idea/
+.idea/*
+*.pyc
+*.css.map
+venv/
+venv/*
+.venv
+eggs/
+.eggs/
+*.egg-info/
+.DS_Store
+.static/
+.env
+static/*
+*.pyc
+__pycache__
+.vscode

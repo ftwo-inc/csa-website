@@ -1,0 +1,27 @@
+steps:
+
+# Remove untracked files, they are not needed.
+- name: 'busybox'
+  args: ['rm', '-rf', '.gitignore']
+- name: 'busybox'
+  args: ['rm', '-rf', '.dockerignore']
+
+# Build images
+- name: 'docker'
+  args: ['build', '.', '-t', 'gcr.io/f-two-237108/csa-website-${_ENV}']
+  env:
+  - '_ENV=${_ENV}'
+  - 'BUILD_ID=${BUILD_ID}'
+  
+- name: 'docker'
+  args: ['push', 'gcr.io/f-two-237108/csa-website-${_ENV}']
+  env:
+  - '_ENV=${_ENV}'
+  - 'BUILD_ID=${BUILD_ID}'
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['auth', 'configure-docker']
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['beta', 'run', 'deploy', 'csa-website-${_ENV}', '--image=gcr.io/f-two-237108/csa-website-${_ENV}:latest', '--region=asia-northeast1', '--allow-unauthenticated', '--platform=managed']
+

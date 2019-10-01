@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block scoped_css %}
+
+{% endblock scoped_css %}
+
+{% block content %}
+    <div class="global-container">
+		<div class="global-container__main bg-blue">
+			<div class="site-header site-header--graphic bg-dark csa-progress-line bg-blue" data-nav-parent="" id="header-bg">
+				<div class="container">
+					<div class="site-header__hero">
+						<div class="hero hero--graphic hero--graphic-landscape">
+							<div class="hero__cta">
+								<div class="cta animated fadeIn" data-in-view="">
+									<h1 class="cta__title h1">Take charge of your career</h1>
+									<div class="cta__text">
+										<p>Replace your CV with a CSA to get personalised career matches & professional development. Free forever.</p>
+									</div>
+                                    <div class="mt-16 flex">
+                                        <span class="small-circles bg-tangerine"></span>
+                                        <h5 class="self-center">Industry Demand</h5>
+                                    </div>
+									<div class="cta__action">
+										<a class="btn btn--primary btn--icon" href="/enroll/"><span class="btn__text">Enroll Now</span> <span class="btn__icon"><svg height="42px" version="1.1" viewbox="0 0 45 42" width="45px" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+											<g class="icon" transform="translate(-478.000000, -5672.000000)">
+												<path d="M480.959902,5690.41381 C478.799483,5692.92183 480.521264,5696.88185 483.780798,5696.88185 L489.91921,5696.88185 L493.516547,5709.70404 C494.295507,5712.26641 496.289546,5714.37324 498.855831,5714.87277 C502.367456,5715.55607 505.687492,5713.42076 506.70846,5710.05863 L510.414196,5696.88185 L516.550087,5696.88185 C519.812142,5696.88185 521.533923,5692.92183 519.373504,5690.41381 C513.620791,5683.74131 509.662965,5679.07469 502.859033,5672.12783 C501.384302,5670.62406 498.949104,5670.62406 497.474373,5672.12783 C490.66792,5679.07469 486.712615,5683.74131 480.959902,5690.41381 Z" transform="translate(500.166667, 5693.000000) rotate(90.000000) translate(-500.166667, -5693.000000)"></path>
+											</g>
+										</g></svg></span></a>
+									</div>
+								</div>
+                            </div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="space-top-bottom bg-white bg-light block--features">
+				<div class="container">
+					<div class="features-list">
+						<div class="feature-list-div shadow-on-hover cursor-pointer border-radius-onhover">
+							<div class="feature">
+								<div style="margin-bottom: 1.4em;" ><img src="{% static 'website-theme/images/img/EY_logo.svg' %}" style="height: 5rem; margin-top: -30px;"></div>
+								<div class="feature__text">
+                                    <h6>Manager – Risk – Information Security</h6>
+                                    <p class="text-light-gray text-16 pb-4"><i class="fa fa-map-marker"></i> Chennai Area, India</p>
+									<p>EY is looking for Manager for Risk Advisory Services in Vulnerability Assessment Penetration Testing (VAPT) domain.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature-list-div shadow-on-hover cursor-pointer border-radius-onhover">
+							<div class="feature">
+								<div class="feature__icon"><img src="{% static 'website-theme/images/img/amazon-logo.jpg' %}"></div>
+								<div class="feature__text">
+                                    <h6>Information Security Engineer</h6>
+                                     <p class="text-light-gray text-16 pb-4"><i class="fa fa-map-marker"></i> Bengaluru, Karnataka</p>
+									<p>Amazon is seeking a qualified Security Engineer to join our innovative, high-energy India Information Security team. </p>
+								</div>
+							</div>
+						</div>
+                        <div class="feature-list-div shadow-on-hover cursor-pointer border-radius-onhover">
+							<div class="feature">
+                                <div class="feature__icon"><img src="{% static 'website-theme/images/img/fadility-logo.png' %}"></div>
+								<div class="feature__text">
+                                    <h6>Director - Cyber Security</h6>
+                                     <p class="text-light-gray text-16 pb-4"><i class="fa fa-map-marker"></i> Bangalore, KA IN</p>
+									<p>The individualwill be required to lead a team which is responsible for DevSecOpsimplementation, Incident Handling andThreat Intelligence.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="block bg-teal bg-light block--quotes">
+				<div class="container">
+					<div class="quotes-block">
+						<div class="quotes-block__info" data-in-view="">
+							<h2>Students who have made it big with CSA</h2>
+							<p></p>
+							<p>Join the best cyber Security course for freshers recognized by the Industry.</p>
+							<p></p>
+						</div>
+						<div class="quotes-block__quotes" data-in-view="">
+							<div class="quotes" data-glide="" data-quotes="">
+								<div class="quotes__quotes" data-glide-el="track">
+									<ul class="quotes-list">
+										<li class="quotes-list__item" style="transition-delay: 0.6s">
+											<div class="quote">
+												<div class="quote__avatar"><img class="avatar bg-white" src="{% static '/website-theme/images/testimonials_logo/Ashish.png' %}"></div>
+												<div class="quote__text">
+                                                    I shall always be grateful to SkillCube team for the fantastic industry readiness bootcamp conducted in 2014.  The learning was immense as compared to the full-time master’s degree course I did in Information Security. The training program not just elevated my knowledge but also lifted my confidence level.</div>
+                                                <div class="flex justify-between">
+                                                    <div class="quote__user-info">
+                                                        <div>
+                                                            Ashish Gupta,
+                                                        </div>
+                                                        <div class="pb-10">
+                                                            Aviva Singapore
+                                                        </div>
+                                                    </div>
+                                                    <div class="self-center">
+                                                        <img class="h-2-half" src="{% static 'website-theme/images/testimonials_logo/pwc.png' %}">
+                                                    </div>
+												</div>
+											</div>
+										</li>
+                                        <li class="quotes-list__item" style="transition-delay: 0.3s">
+											<div class="quote">
+												<div class="quote__avatar"><img class="avatar bg-white" src="{% static 'website-theme/images/testimonials_logo/ritu.png' %}"></div>
+												<div class="quote__text">
+													One thing which was missing in my candidature when I passed out from college in 2013 was the industry flavor & practical training. SkillCube team delivered the right training program and enabled me to start a successful career in the Cyber Security domain.</div>
+                                                 <div class="flex justify-between">
+                                                    <div class="quote__user-info">
+                                                        <div>
+                                                            Ritu Agnihotri,
+                                                        </div>
+                                                        <div class="pb-10">
+                                                            PWC India
+                                                        </div>
+                                                    </div>
+                                                    <div class="self-center">
+                                                        <img class="h-2-half" src="{% static 'website-theme/images/testimonials_logo/aviva.png' %}">
+                                                    </div>
+												</div>
+											</div>
+										</li>
+										<li class="quotes-list__item" style="transition-delay: 0.9s">
+											<div class="quote">
+												<div class="quote__avatar"><img class="avatar bg-white" src="{% static 'website-theme/images/testimonials_logo/ajay.png' %}"></div>
+												<div class="quote__text">
+													SkillCube lives up to its name by providing reals skills in multi-dimensional ways. Interactive sessions, unique skilling methodology and a friendly environment which really helped me in commencing my professional career.												</div>
+												<div class="flex justify-between">
+                                                    <div class="quote__user-info">
+                                                        <div>
+                                                            Ajay Pal,
+                                                        </div>
+                                                        <div class="pb-10">
+                                                            Deloitte Netherland
+                                                        </div>
+                                                    </div>
+                                                    <div class="self-center">
+                                                        <img class="h-2-half" src="{% static 'website-theme/images/testimonials_logo/deloitte.png' %}">
+                                                    </div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="quotes__ctrls">
+									<div class="gallery-ctrls" data-glide-el="controls">
+										<button aria-label="Previous" class="gallery-ctrls__item gallery-ctrls__item--prev icon-btn" data-glide-dir="&lt;"><svg height="42px" version="1.1" viewbox="0 0 45 42" width="45px" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+											<g class="icon" transform="translate(-478.000000, -5672.000000)">
+												<path d="M480.959902,5690.41381 C478.799483,5692.92183 480.521264,5696.88185 483.780798,5696.88185 L489.91921,5696.88185 L493.516547,5709.70404 C494.295507,5712.26641 496.289546,5714.37324 498.855831,5714.87277 C502.367456,5715.55607 505.687492,5713.42076 506.70846,5710.05863 L510.414196,5696.88185 L516.550087,5696.88185 C519.812142,5696.88185 521.533923,5692.92183 519.373504,5690.41381 C513.620791,5683.74131 509.662965,5679.07469 502.859033,5672.12783 C501.384302,5670.62406 498.949104,5670.62406 497.474373,5672.12783 C490.66792,5679.07469 486.712615,5683.74131 480.959902,5690.41381 Z" transform="translate(500.166667, 5693.000000) rotate(90.000000) translate(-500.166667, -5693.000000)"></path>
+											</g>
+										</g></svg><span>Prev</span></button> <button aria-label="Next" class="gallery-ctrls__item gallery-ctrls__item--next icon-btn" data-glide-dir="&gt;"><svg height="42px" version="1.1" viewbox="0 0 45 42" width="45px" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+											<g class="icon" transform="translate(-478.000000, -5672.000000)">
+												<path d="M480.959902,5690.41381 C478.799483,5692.92183 480.521264,5696.88185 483.780798,5696.88185 L489.91921,5696.88185 L493.516547,5709.70404 C494.295507,5712.26641 496.289546,5714.37324 498.855831,5714.87277 C502.367456,5715.55607 505.687492,5713.42076 506.70846,5710.05863 L510.414196,5696.88185 L516.550087,5696.88185 C519.812142,5696.88185 521.533923,5692.92183 519.373504,5690.41381 C513.620791,5683.74131 509.662965,5679.07469 502.859033,5672.12783 C501.384302,5670.62406 498.949104,5670.62406 497.474373,5672.12783 C490.66792,5679.07469 486.712615,5683.74131 480.959902,5690.41381 Z" transform="translate(500.166667, 5693.000000) rotate(90.000000) translate(-500.166667, -5693.000000)"></path>
+											</g>
+										</g></svg><span>Next</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="space-top-bottom bg-pinker block--features text-white">
+				<div class="container">
+                    <div class="flex justify-between">
+						<div class="self-center flex-col-5">
+							<div class="feature flex-md">
+                                <h1 class="text-5rem">3 </h1>
+								<h3 class="self-center"> Months</h3>
+							</div>
+						</div>
+						<div class="self-center flex-col-5">
+							<div class="feature">
+                                <img class="h-3" src="{% static 'website-theme/images/img/add.svg' %}">
+							</div>
+						</div>
+                        <div class="self-center flex-col-5">
+							<div class="feature">
+                                <h3><img src="{% static 'website-theme/images/img/CSA-logo_4.png' %}" class="feature-img" alt="csa-logo"> Program</h3>
+							</div>
+						</div>
+                        <div class="self-center flex-col-5">
+							<div class="feature">
+								<img class="h-3" src="{% static 'website-theme/images/img/equal.svg' %}">
+							</div>
+						</div>
+                        <div class="self-center flex-col-5">
+							<div class="feature flex-md">
+                                <img class="h-3-half" src="{% static 'website-theme/images/img/winner.svg' %}" alt="success">
+								<h3>Career</h3>
+							</div>
+						</div>
+					</div>
+                </div>
+			</div>
+			<div class="block bg-yellow bg-light block--single-cta">
+				<div class="container">
+					<div class="cta" data-in-view="">
+						<h3 class="cta__title h2">Start your career in Cyber Security today!</h3>
+						<div class="cta__text">
+							Take your dreams to reality
+						</div>
+						<div class="cta__action">
+							<a class="btn btn--primary btn--icon" href="/enroll/"><span class="btn__text">Get Enroll</span> <span class="btn__icon"><svg height="42px" version="1.1" viewbox="0 0 45 42" width="45px" xmlns="http://www.w3.org/2000/svg">
+							<g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+								<g class="icon" transform="translate(-478.000000, -5672.000000)">
+									<path d="M480.959902,5690.41381 C478.799483,5692.92183 480.521264,5696.88185 483.780798,5696.88185 L489.91921,5696.88185 L493.516547,5709.70404 C494.295507,5712.26641 496.289546,5714.37324 498.855831,5714.87277 C502.367456,5715.55607 505.687492,5713.42076 506.70846,5710.05863 L510.414196,5696.88185 L516.550087,5696.88185 C519.812142,5696.88185 521.533923,5692.92183 519.373504,5690.41381 C513.620791,5683.74131 509.662965,5679.07469 502.859033,5672.12783 C501.384302,5670.62406 498.949104,5670.62406 497.474373,5672.12783 C490.66792,5679.07469 486.712615,5683.74131 480.959902,5690.41381 Z" transform="translate(500.166667, 5693.000000) rotate(90.000000) translate(-500.166667, -5693.000000)"></path>
+								</g>
+							</g></svg></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block page_level_scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+    <script src="../package/js/swiper.min.js"></script>
+    <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
+{% endblock page_level_scripts %}
