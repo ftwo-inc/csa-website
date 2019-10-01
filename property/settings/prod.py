@@ -30,14 +30,12 @@ ALLOWED_HOSTS = [
 
 
 STATIC_URL = '/static/'
-# MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 
-if DEBUG:
-    STATICFILES_DIRS = (
-        os.path.join("static/"),
-    )
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 BASE_URL = "http://localhost:8000"
