@@ -9,9 +9,14 @@ eggs/
 .eggs/
 *.egg-info/
 .DS_Store
+<<<<<<< HEAD
 .static/
 .env
 static/*
+=======
+./static/*
+.env
+>>>>>>> 4cf109ac867bfbd42d10c5920a81da7dec556e6d
 *.pyc
 __pycache__
 .vscode
