@@ -15,11 +15,7 @@ COPY . /code/
 # Expose port
 EXPOSE 8080
 
-<<<<<<< HEAD
-RUN ["python", "manage.py", "collectstatic"]
-=======
 # RUN ["python", "manage.py", "collectstatic", "--no-input"]
 # This is too slow to be done on GCB. Manual for now.
->>>>>>> 4cf109ac867bfbd42d10c5920a81da7dec556e6d
 
 ENTRYPOINT ["bash", "./entrypoint.sh"]
