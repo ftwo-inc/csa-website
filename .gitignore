@@ -3,6 +3,7 @@
 *.pyc
 *.css.map
 venv/
+venv/*
 .venv
 eggs/
 .eggs/
