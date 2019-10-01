@@ -9,7 +9,8 @@ eggs/
 .eggs/
 *.egg-info/
 .DS_Store
-.static/
+./static/*
+csa/static/*
 .env
 static/*
 *.pyc
