@@ -22,9 +22,6 @@ a{
 .w-8{
 	width: 8rem;
 }
-.w-14{
-	width: 14rem;
-}
 .float-right{
 	float: right;
 }
@@ -41,16 +38,16 @@ a{
 	color: #660099;
 }
 .text-dark-blue{
-	color: #0073aa;
+	color: #3d6eff;
 }
 .text-light-orange{
 	color: #ffc9b5;
 }
 .text-dark-green{
-	color: #159946;
+	color: #66cc03;
 }
 .text-brown{
-	color: #ca561a;
+	color: #f24f5a;
 }
 .text-20{
 	font-size: 20px;
@@ -87,6 +84,9 @@ a{
 }
 .pr-16{
 	padding-right: 16px;
+}
+.pr-10{
+	padding-right: 10px;
 }
 .pl-10{
 	padding-left: 10px;
@@ -339,6 +339,12 @@ a{
 		height: 12rem;
 		border-left: 2px solid #5c5e5f;
 		text-align: center;
+	}
+	.w-md-14{
+		width: 14rem;
+	}
+	.h-md-8{
+		height: 8rem;
 	}
 }
 @media only screen and (max-width:45em) {
