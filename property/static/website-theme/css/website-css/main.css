@@ -7,11 +7,14 @@ a{
 	color: #282d39;
     text-decoration: none;
 }
+.d-block{
+	display: block;
+}
 .cursor-pointer{
 	cursor: pointer;
 }
 .w-full{
-	width: 100%;
+	width: 100% !important;
 }
 .w-half{
 	width: 50%;
@@ -19,7 +22,9 @@ a{
 .w-8{
 	width: 8rem;
 }
-
+.w-14{
+	width: 14rem;
+}
 .float-right{
 	float: right;
 }
@@ -54,7 +59,10 @@ a{
 	font-size: 5rem !important;
 }
 .text-40{
-	font-size: 40px;
+	font-size: 38px;
+}
+.text-1rem{
+	font-size: 1rem;
 }
 .text-light-blue{
 	color: #e0fafc;
@@ -67,6 +75,9 @@ a{
 }
 .pb-15{
 	padding-bottom: 15px;
+}
+.pb-30{
+	padding-bottom: 30px;
 }
 .pb-40{
 	padding-bottom: 40px;
@@ -84,6 +95,9 @@ a{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+.pb-0{
+	padding-bottom: 0!important;
+}
 .py-14{
 	padding-top: 14px;
 	padding-bottom: 14px;
@@ -94,11 +108,17 @@ a{
 .text-38{
 	font-size: 38px;
 }
+.font-1xl{
+	font-size: 1.8rem;
+}
 .text-light-gray{
 	color: #bebdbd;
 }
 .text-orange{
 	color: coral;
+}
+.text-gray-300{
+	color: #677493;
 }
 .text-yellow{
 	color: #fae46f;
@@ -118,11 +138,17 @@ a{
 .shadow-on-hover:hover{
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .05);
 }
+.font-bold{
+	font-width:bold;
+}
 .h-2-half{
 	height: 2.3rem;
 }
 .h-2{
 	height: 2rem;
+}
+.h-8{
+	height: 8rem;
 }
 .h-3{
 	height: 3rem;
@@ -211,13 +237,13 @@ a{
 /*enroll start*/
 .enrollment-form input {
 	width: 100%;
-    padding: 17px 20px;
-    margin: 10px 0;
+    padding: 24px 20px;
+    margin: 14px 0;
     box-sizing: border-box;
-    border: 1px solid #c5c1c1;
+    border: 1px solid #282d39;
     outline: none;
     border-radius: 8px;
-	font-size: 1.1075rem;
+    font-size: 1.1075rem;
 }
 
 .enrollment-form input:focus {
@@ -225,35 +251,39 @@ a{
 }
 .enroll-input-box{
 	background: white;
-    padding: 30px;
-    border-radius: 8px;
+    padding: 50px;
+    border-radius: .625rem;
 }
-
+.enroll-input-box div label{
+	font-weight: 600;
+	font-size: 1.125em;
+}
 .country-code{
 	background: #ffffff;
     font-weight: bold;
     align-self: center;
-    padding: 19px 20px 19px 14px;
+    padding: 26px 32px 26px 14px;
     border-radius: 8px;
     margin-right: 12px;
     font-size: 1.1075rem;
-    border: 1px solid #c5c2c1;
-	color: #898585;
+    border: 1px solid #282d39;
+	color: #282d39;
 }
 .enroll-submit-btn {
 	background-color: #83eed5;
-	border: none;
-	border-radius: 999px;
-	padding: 18px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin-top: 24px;
-	width: 100%;
-	cursor: pointer;
-	font-size: 1.1075rem;
-	transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 999px;
+    padding: 23px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px!;
+    margin-top: 24px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1075rem;
+    transition: background-color 0.3s ease;
 }
 .enroll-submit-btn:hover {
 	background-color: #282d39;
@@ -277,7 +307,10 @@ a{
 		font-size: 20px;
 	}
 	.text-md-26{
-		font-size: 26px;
+		font-size: 26px!important;
+	}
+	.text-md-46{
+		font-size: 46px;
 	}
 	.csa-progress-line{
 		background-image:url("/static/website-theme/images/img/2019.png");
@@ -290,8 +323,8 @@ a{
 	.w-45{
 		width: 45%;
 	}
-	.w-md-45{
-		width: 45%;
+	.w-md-50{
+		width: 50%;
 	}
 	.pl-md-34{
 		padding-left: 34px;
@@ -306,13 +339,6 @@ a{
 		height: 12rem;
 		border-left: 2px solid #5c5e5f;
 		text-align: center;
-	}
-	.enroll-center-div{
-		align-self: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		font-size: 29px;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -346,12 +372,27 @@ a{
 	.mt-sm-20{
 		margin-top: 20px;
 	}
-	.mt-md-2rem{
+	.mt-sm-2rem{
 		margin-top: 2rem;
 	}
 	.text-40{
 		font-size: 26px;
 	}
+	.enrollment-form input {
+		padding: 14px 19px;
+		margin: 14px 0;
+	}
+	.pb-30{
+		padding-bottom: 16px;
+	}
+	.enroll-submit-btn{
+		padding: 14px 32px;
+		margin-top: 0px;
+	}
+	.country-code{
+		padding: 16px 32px 16px 14px;
+	}
+
 }
 /*enroll end*/
 

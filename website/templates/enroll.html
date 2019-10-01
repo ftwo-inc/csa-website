@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'alt-base.html' %}
 {% load static from staticfiles %}
 
 {% block scoped_css %}
@@ -10,36 +10,51 @@
 		<div class="global-container__main">
 			<div class="site-header site-header--graphic bg-teal bg-doughnuts" data-nav-parent="" id="header-bg">
 				<div class="container">
-					<div class="site-header__hero enrollment-form">
+					<div class="enrollment-form">
 						<div class="flex flex-col-reverse about-mb hero hero--graphic">
-							<div class="w-md-45 pr-md-34 mt-md-2rem">
-                                <h3>Request a call back</h3>
-                                <div class="enroll-input-box mt-2rem">
-                                    <input type="text" name="name" placeholder="Full Name"><br>
-                                    <input type="email" name="email" placeholder="Email *">
-                                    <div class="flex">
-                                        <span class="country-code">+91</span>
-                                        <input type="number" name="mobile" placeholder="Mobile Number *">
-                                    </div>
-                                    <button class="enroll-submit-btn">Submit</button>
-                                </div>
-                            </div>
-                            <div class="enroll-center-div display-hidden-sm">
-                                <div class="enroll-vertical-line"></div>
-                                <p class="py-20">OR</p>
-                                <div class="enroll-vertical-line"></div>
-                            </div>
-							<div data-in-view="" class="w-md-55 pl-md-34 mt-sm-30">
+							<div class="w-md-50 pr-md-34 mt-sm-30">
                                 <div class="hero hero--graphic">
                                     <div class="hero__cta">
                                         <div class="cta">
-                                            <h2 class="pb-15">Speak to a consultant</h2>
+                                            <h2 class="pb-15 text-md-46">Give us a shout,</h2>
+                                            <h2 class="pb-15 text-md-46">We will make you a believer.</h2>
                                             <a href="tel:+91878767568"><h4><i class="fa fa-phone text-dark-blue text-40"></i> + 91 87 876 7568</h4></a>
                                             <a href="https://web.whatsapp.com" target="_blank"><h4><i class="fa fa-whatsapp text-dark-green text-40"></i> + 91 90 970 8901</h4></a>
-                                            <a href="mailto:Saurabh@skillcube.in"><h5><i class="fa fa-envelope text-brown text-40"></i> Saurabh@skillcube.in</h5></a>
+                                            <a href="mailto:Saurabh@skillcube.in"><h4><i class="fa fa-envelope text-brown text-40"></i> Saurabh@skillcube.in</h4></a>
                                         </div>
                                     </div>
-                                    <div class="mt-2rem"><img class="float-right h-24rem mt--md-99" src="https://www.pngkey.com/png/full/809-8095499_call-center-girl-png-indian-call-centre-girl.png"></div>
+{#                                    <div class="mt-2rem"><img class="float-right h-24rem" src="https://www.pngkey.com/png/full/809-8095499_call-center-girl-png-indian-call-centre-girl.png"></div>#}
+                                </div>
+                            </div>
+                            <div class="w-md-50 pl-md-34 mt-sm-2rem">
+                                <p class="font-1xl">
+                                    Ready to get started.
+                                </p>
+                                <div class="enroll-input-box mt-2rem">
+                                    <div class="pb-30">
+                                        <label>Full name</label>
+                                        <input type="text" name="name" placeholder="Full Name"><br>
+                                    </div>
+                                    <div class="pb-30">
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="Email *">
+                                    </div>
+                                    <div>
+                                        <label>Mobile no.</label>
+                                        <div class="flex">
+                                            <span class="country-code">+91</span>
+                                            <input type="number" name="mobile" placeholder="Mobile Number *">
+                                        </div>
+                                    </div>
+                                    <span class="text-gray-300 d-block mb-2rem">Request a from our executive to get started.</span>
+                                    <span class="mb-2rem d-block">Hear from us in 24 hours or dial + 91 87 876 7568.</span>
+                                    <div class="form-control__field mb-2rem">
+                                        <label class="checkbox" style="font-weight: normal">
+                                            <input id="accept_marketing" type="checkbox" name="accept_marketing" data-field="accept_marketing" class="checkbox__field" value="true" checked>
+                                            <span class="checkbox__label text-1rem">Would you like to receive occasional marketing from us?</span>
+                                        </label>
+                                    </div>
+                                    <button class="enroll-submit-btn">Submit</button>
                                 </div>
                             </div>
 						</div>
