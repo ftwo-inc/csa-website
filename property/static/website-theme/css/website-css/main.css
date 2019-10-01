@@ -346,10 +346,13 @@ a{
 	.h-md-8{
 		height: 8rem;
 	}
+	.mt-md-10{
+		margin-top: 10rem;
+	}
 }
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
-		padding: 14px;
+		padding: 26px;
 	}
 	.mt-sm-30{
 		margin-top: 30px;
@@ -396,7 +399,7 @@ a{
 		margin-top: 0px;
 	}
 	.country-code{
-		padding: 16px 32px 16px 14px;
+		padding: 16px 20px 16px 10px;
 	}
 
 }
@@ -704,16 +707,16 @@ body.env--dev:before {
 	}
 }
 .block--shape-bolts:before {
-	background-image: url(/static/website-theme/images/img/bg-shapes/bolts-dark.svg)
+	background-image: url("/static/website-theme/images/img/bg-shapes/bolts-dark.svg")
 }
 .block--shape-circles:before {
-	background-image: url(/static/website-theme/images/img/bg-shapes/circles-dark.svg)
+	background-image: url("/static/website-theme/images/img/bg-shapes/circles-dark.svg")
 }
 .block--shape-clouds:before {
-	background-image: url(/static/website-theme/images/img/bg-shapes/clouds-dark.svg)
+	background-image: url("/static/website-theme/images/img/bg-shapes/clouds-dark.svg")
 }
 .block--shape-doughnuts:before {
-	background-image: url(/static/website-theme/images/img/bg-shapes/doughnuts-dark.svg);
+	background-image: url("/static/website-theme/images/img/bg-shapes/doughnuts-dark.svg");
 	bottom: -10em
 }
 @media only screen and (min-width:65em) {
@@ -722,7 +725,7 @@ body.env--dev:before {
 	}
 }
 .block--shape-rounded-circles:before {
-	background-image: url(/static/website-theme/images/img/bg-shapes/rounded-circles-dark.svg)
+	background-image: url("/static/website-theme/images/img/bg-shapes/rounded-circles-dark.svg")
 }
 @media only screen and (min-width:45em) {
 	.block--shape-rounded-circles:before {
@@ -743,7 +746,7 @@ body.env--dev:before {
 	}
 }
 .block--shape-triangles:before {
-	background-image: url(/static/website-theme/images/img/bg-shapes/triangles-dark.svg)
+	background-image: url("/static/website-theme/images/img/bg-shapes/triangles-dark.svg")
 }
 .block--shape.block--single-feature:nth-of-type(odd):before {
 	left: auto;
@@ -795,7 +798,7 @@ body.env--dev:before {
 	}
 }
 .bg-clouds {
-	background-image: url(/static/website-theme/images/img/bg-shapes/clouds.svg);
+	background-image: url("/static/website-theme/images/img/bg-shapes/clouds.svg");
 	background-position: bottom 0 right -16em;
 	background-size: 48em
 }
@@ -806,7 +809,7 @@ body.env--dev:before {
 	}
 }
 .bg-circles {
-	background-image: url(/static/website-theme/images/img/bg-shapes/circles.svg);
+	background-image: url("/static/website-theme/images/img/bg-shapes/circles.svg");
 	background-position: bottom -16em right -15em;
 	background-size: 55em
 }
@@ -817,7 +820,7 @@ body.env--dev:before {
 	}
 }
 .bg-rounded-circles {
-	background-image: url(/static/website-theme/images/img/bg-shapes/rounded-circles.svg);
+	background-image: url("/static/website-theme/images/img/bg-shapes/rounded-circles.svg");
 	background-position: bottom -16em right -15em;
 	background-size: 36em
 }
@@ -828,7 +831,7 @@ body.env--dev:before {
 	}
 }
 .bg-doughnuts {
-	background-image: url(/static/website-theme/images/img/bg-shapes/doughnuts.svg);
+	background-image: url("/static/website-theme/images/img/bg-shapes/doughnuts.svg");
 	background-position: bottom -8.8em right -3em;
 	background-size: 28em
 }
@@ -971,7 +974,7 @@ body.env--dev:before {
 }
 .checkbox__field:checked+.checkbox__label:before {
 	background-color: #282d39;
-	background-image: url(/static/website-theme/images/img/tick-white.svg)
+	background-image: url("/static/website-theme/images/img/tick-white.svg")
 }
 .feature {
 	text-align: center
@@ -1084,10 +1087,10 @@ label {
 	background-size: contain
 }
 .link--icon-show:after {
-	background-image: url(/static/website-theme/images/img/show.svg)
+	background-image: url("/static/website-theme/images/img/show.svg");
 }
 .link--icon-hide:after {
-	background-image: url(/static/website-theme/images/img/hide.svg)
+	background-image: url("/static/website-theme/images/img/hide.svg")
 }
 .media-object {
 	display: -webkit-box;
@@ -1718,10 +1721,10 @@ label {
 	background-size: contain
 }
 .form-control--valid .form-control__field:after {
-	background-image: url(/static/website-theme/images/img/tick.svg)
+	background-image: url("/static/website-theme/images/img/tick.svg")
 }
 .form-control--invalid .form-control__field:after {
-	background-image: url(/static/website-theme/images/img/cross-red.svg)
+	background-image: url("/static/website-theme/images/img/cross-red.svg")
 }
 .gallery-ctrls {
 	display: -webkit-box;
@@ -2158,7 +2161,7 @@ label {
 	border-color: #282d39
 }
 .accordion__item--active .accordion-item__trigger:after {
-	background-image: url(/static/website-theme/images/img/accordion-close.svg)
+	background-image: url("/static/website-theme/images/img/accordion-close.svg")
 }
 .accordion__item--active .accordion-item__content {
 	display: block
@@ -2186,7 +2189,7 @@ label {
 	right: 2rem;
 	width: 1.375em;
 	height: 1.375em;
-	background: url(/static/website-theme/images/img/accordion-open.svg) no-repeat 50%;
+	background: url("/static/website-theme/images/img/accordion-open.svg") no-repeat 50%;
 	background-size: contain
 }
 .accordion-item__content {
@@ -2252,7 +2255,7 @@ label {
 	top: .2em;
 	width: 1em;
 	height: 1em;
-	background: url(/static/website-theme/images/img/arrow.svg) no-repeat 50%;
+	background: url("/static/website-theme/images/img/arrow.svg") no-repeat 50%;
 	background-size: contain
 }
 .content ol {
