@@ -16,5 +16,5 @@ from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import logout
 
 
-class DashboardView(LoginRequiredMixin, generic.ListView):
+class DashboardView(TemplateView):
     template_name = "../templates/dashboard/dashboard.html"
