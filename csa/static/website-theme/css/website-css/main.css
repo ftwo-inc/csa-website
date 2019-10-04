@@ -60,6 +60,9 @@ a{
 .text-20{
 	font-size: 20px;
 }
+.font__18{
+	font-size: 18px
+}
 .text-5rem{
 	font-size: 5rem !important;
 }
@@ -69,8 +72,11 @@ a{
 .text-40{
 	font-size: 38px;
 }
-.text-1rem{
-	font-size: 1rem;
+.text-13{
+	font-size: 13px;
+}
+.text-14{
+	font-size: 14px;
 }
 .text-light-blue{
 	color: #e0fafc;
@@ -102,6 +108,12 @@ a{
 .pl-10{
 	padding-left: 10px;
 }
+.pt-6{
+	padding-top: 6px;
+}
+.pb-6{
+	padding-bottom: 6px;
+}
 .py-20{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -116,11 +128,17 @@ a{
 .line-height-1{
 	line-height: 1;
 }
+.line-height-1-2{
+	line-height: 1.2;
+}
 .line-height-1-point-75{
 	line-height: 1.75;
 }
 .text-38{
 	font-size: 38px;
+}
+.font-bold{
+	font-weight: 600;
 }
 .font-1xl{
 	font-size: 1.8rem;
@@ -238,15 +256,15 @@ a{
 	text-decoration: none!important;
 }
 .youtube-link-btn{
-	background: transparent;
-    border: 1.3px solid white;
+	background: #f12802;
+    border: 1.3px solid #f12802;
     font-size: 16px;
     padding: 10px 14px;
     border-radius: 999px;
 }
 .youtube-icon{
 	font-size: 30px;
-    color: #f12802;
+    color: white;
     padding-right: 8px;
 }
 .flex{
@@ -364,11 +382,17 @@ a{
 	.ml-md-70{
 		margin-left: 70px;
 	}
+	.flex-md{
+		display: flex;
+	}
 	.w-45{
 		width: 45%;
 	}
 	.w-md-50{
 		width: 50%;
+	}
+	.w-md-25{
+		width: 25%;
 	}
 	.pl-md-34{
 		padding-left: 34px;
@@ -476,8 +500,17 @@ a{
 	.w-md-third{
 		width: 33.33%;
 	}
+	.w-md-25{
+		width: 25%;
+	}
 	.w-md-half{
 		width: 50%;
+	}
+	.pl-md-34{
+		padding-left: 34px;
+	}
+	.flex-md{
+		display: flex;
 	}
 }
 
@@ -1925,9 +1958,6 @@ label {
 	}
 	about-p-r{
 		padding-right: 20px;
-	}
-	.flex-md{
-		display: flex;
 	}
 
 }
