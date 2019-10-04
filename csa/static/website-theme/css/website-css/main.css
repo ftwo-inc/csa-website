@@ -337,7 +337,7 @@ a{
 	}
 	.csa-progress-line{
 		background-image:url("/static/website-theme/images/img/2019.png");
-		background-size: contain;
+		background-size: cover;
 		background-position: right;
 	}
 	.ml-md-70{
