@@ -69,8 +69,8 @@ a{
 .text-1rem{
 	font-size: 1rem;
 }
-.text-40{
-	font-size: 38px;
+.text-30{
+	font-size: 30px;
 }
 .text-13{
 	font-size: 13px;
@@ -417,8 +417,15 @@ a{
 	.h-md-8{
 		height: 8rem;
 	}
+	.h-md-full{
+		height: 100%;
+	}
 	.mt-md-7{
 		margin-top: 7rem;
+	}
+	.enroll-img{
+		height: 39rem;
+    	margin-bottom: -38px;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -458,7 +465,7 @@ a{
 	.mt-sm-2rem{
 		margin-top: 2rem;
 	}
-	.text-40{
+	.text-30{
 		font-size: 26px;
 	}
 	.enrollment-form input {
@@ -484,6 +491,10 @@ a{
 
 	.franchise-profile{
 		margin-right: 0;
+	}
+	.enroll-img{
+		height: auto;
+    	margin-bottom: 0px;
 	}
 
 }
@@ -511,6 +522,14 @@ a{
 	}
 	.flex-md{
 		display: flex;
+	}
+	.enroll-img{
+		height: 34rem;
+    	margin-bottom: -38px;
+	}
+
+	.h-md-full{
+		height: 100%;
 	}
 }
 

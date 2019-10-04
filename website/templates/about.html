@@ -17,11 +17,12 @@
                 <div class="container">
 					<div class="site-header__hero">
 						<div class="flex-md about-mb hero hero--graphic">
-							<div class="about-p-r 4px w-45 text-38">
+							<div class="about-p-r 4px w-md-50 text-38">
                                 <p class="mb-2rem"><sup class="text-yellow"><i class="fa fa-quote-left"></i></sup> Give employers a better view of who you are by integrating Spotify, Twitter, LinkedIn and more into your profile. <sup class="text-yellow"><i class="fa fa-quote-right"></i></sup></p>
                                 <h5>Saurabh Agarwal</h5>
+                                <p class="text-20">Cyber Security Academy</p>
                             </div>
-							<div class="w-full">
+							<div class="w-md-50">
                                <div class="plyr__video-embed" id="player">
                                     <iframe src="https://www.youtube.com/embed/2REkk9SCRn0?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fwww.starterscfo.com%2Flearn&noCookie=false&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&origin=https%3A%2F%2Fwww.starterscfo.com&widgetid=1"></iframe>
                                 </div>
@@ -31,30 +32,30 @@
 				</div>
             </div>
             <div class="py-30 bg-white bg-light block--features">
-				<div class="container swiper-container">
-					<div class="swiper-wrapper features-list justify-between">
-						<div class="swiper-slide py-14" data-swiper-autoplay="2000">
-							<div class="feature flex-md justify-center">
-                                <img src="{% static 'website-theme/images/cms-assets/graphics/caffeine-irene-integrations.svg' %}" class="h-10" alt="slider-img">
-                                <h4 class="mt-sm-20 self-center text-teal ml-md-70">Establish in 2016</h4>
+				<div class="container">
+					<div class="features-list justify-between">
+						<div class="py-14" data-swiper-autoplay="2000">
+							<div class="feature justify-center">
+                                <img src="{% static 'website-theme/images/cms-assets/graphics/caffeine-irene-integrations.svg' %}" class="h-8" alt="slider-img">
+                                <h5 class="mt-sm-20 self-center text-teal">Establish in 2016</h5>
 							</div>
 						</div>
-						<div class="swiper-slide py-14" data-swiper-autoplay="2000">
-                            <div class="feature flex-md justify-center">
-                                <img src="{% static 'website-theme/images/cms-assets/graphics/hexy-hands-baseball-new.svg' %}" class="h-10" alt="slider-img">
-                                <h4 class="mt-sm-20 self-center ml-md-70">5,000 students passed</h4>
+						<div class="py-14" data-swiper-autoplay="2000">
+                            <div class="feature justify-center">
+                                <img src="{% static 'website-theme/images/cms-assets/graphics/hexy-hands-baseball-new.svg' %}" class="h-8" alt="slider-img">
+                                <h5 class="mt-sm-20 self-center">5,000 students passed</h5>
 							</div>
 						</div>
-                        <div class="swiper-slide py-14" data-swiper-autoplay="2000">
-							<div class="feature flex-md justify-center">
-                                <img src="{% static 'website-theme/images/cms-assets/graphics/toby-blue-nose-dashboard.svg' %}" class="h-10" alt="slider-img">
-                                <h4 class="mt-sm-20 self-center text-indigo ml-md-70">4,200 students placed</h4>
+                        <div class="py-14" data-swiper-autoplay="2000">
+							<div class="feature justify-center">
+                                <img src="{% static 'website-theme/images/cms-assets/graphics/toby-blue-nose-dashboard.svg' %}" class="h-8" alt="slider-img">
+                                <h5 class="mt-sm-20 self-center text-indigo">4,200 students placed</h5>
 							</div>
 						</div>
-                        <div class="swiper-slide py-14" data-swiper-autoplay="2000">
-							<div class="feature flex-md justify-center">
-                                <img src="{% static 'website-theme/images/cms-assets/graphics/dorky-devil-cv.svg' %}" class="h-10" alt="slider-img">
-                                <h4 class="mt-sm-20 self-center text-red ml-md-70">5 locations</h4>
+                        <div class="py-14" data-swiper-autoplay="2000">
+							<div class="feature justify-center">
+                                <img src="{% static 'website-theme/images/cms-assets/graphics/dorky-devil-cv.svg' %}" class="h-8" alt="slider-img">
+                                <h5 class="mt-sm-20 self-center text-red">5 locations</h5>
 							</div>
 						</div>
                     </div>
@@ -82,7 +83,7 @@
 					<div class="media-object" data-in-view="">
 						<div class="media-object__media flex justify-center flex-wrap" data-in-view="">
                             <img class="w-half border-radius-14" src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/02/nasscomm.jpg">
-                            <img class="w-half mt-2rem border-radius-14" src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/02/prasant.jpg">
+                            <img class="w-half mt-2rem border-radius-14 pl-10" src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/02/prasant.jpg">
                             <img class="w-half mt--2rem border-radius-14" src="https://cybersecurityacademy.co.in/wp-content/uploads/2019/02/irpp.jpg">
                         </div>
 						<div class="media-object__content" data-in-view="">
@@ -105,7 +106,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="block bg-yellow bg-light block--single-cta">
+            <div class="space-top-bottom bg-yellow bg-light">
 				<div class="container">
 					<div class="cta" data-in-view="">
 						<h3 class="cta__title h2">Start your career in Cyber Security today!</h3>
@@ -135,13 +136,5 @@
     <script>
         const player = new Plyr('#player');
         const player2 = new Plyr('#player2');
-
-        var swiper = new Swiper('.swiper-container', {
-          loop: true,
-          speed: 1500,
-          centeredSlides: true,
-          grabCursor: true,
-          autoplay: 1,
-    });
     </script>
 {% endblock page_level_scripts %}
