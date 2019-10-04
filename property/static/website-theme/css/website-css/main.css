@@ -7,6 +7,7 @@ a{
 	color: #282d39;
     text-decoration: none;
 }
+
 .d-block{
 	display: block;
 }
@@ -24,6 +25,9 @@ a{
 }
 .float-right{
 	float: right;
+}
+.bg-gray-bluish{
+	background-color: rgba(57,115,230,.05);
 }
 .text-white{
 	color: white;
@@ -289,6 +293,12 @@ a{
 	background-color: #282d39;
 	color: white;
 }
+.franchise-profile{
+	border-radius: 50%;
+	height: 10rem;
+	width: 10rem;
+	margin-right: 4px;
+}
 
 @media only screen and (min-width:65em) {
 	.pr-md-80{
@@ -400,6 +410,10 @@ a{
 	}
 	.country-code{
 		padding: 16px 20px 16px 10px;
+	}
+
+	.franchise-profile{
+		margin-right: 0;
 	}
 
 }

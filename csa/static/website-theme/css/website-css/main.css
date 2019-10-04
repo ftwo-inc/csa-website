@@ -7,6 +7,7 @@ a{
 	color: #282d39;
     text-decoration: none;
 }
+
 .d-block{
 	display: block;
 }
@@ -25,8 +26,14 @@ a{
 .float-right{
 	float: right;
 }
+.bg-gray-bluish{
+	background-color: rgba(57,115,230,.05);
+}
 .text-white{
 	color: white;
+}
+.text-light-black{
+	color: #666;
 }
 .text-red{
 	color: #f24f5a;
@@ -54,6 +61,9 @@ a{
 }
 .text-5rem{
 	font-size: 5rem !important;
+}
+.text-1rem{
+	font-size: 1rem;
 }
 .text-40{
 	font-size: 38px;
@@ -104,6 +114,9 @@ a{
 }
 .line-height-1{
 	line-height: 1;
+}
+.line-height-1-point-75{
+	line-height: 1.75;
 }
 .text-38{
 	font-size: 38px;
@@ -177,6 +190,9 @@ a{
 }
 .mb-2rem{
 	margin-bottom: 2rem;
+}
+.mb-point-5{
+	margin-bottom: 0.5rem;
 }
 .mb-4{
 	margin-bottom: 4px;
@@ -289,6 +305,13 @@ a{
 	background-color: #282d39;
 	color: white;
 }
+.franchise-profile{
+	border-radius: 50%;
+	height: 10rem;
+	width: 10rem;
+	margin-right: 4px;
+}
+/*enroll end*/
 
 @media only screen and (min-width:65em) {
 	.pr-md-80{
@@ -335,6 +358,9 @@ a{
 	.w-md-55{
 		width: 55%;
 	}
+	.w-md-third{
+		width: 33.33%;
+	}
 	.enroll-vertical-line{
 		height: 12rem;
 		border-left: 2px solid #5c5e5f;
@@ -346,8 +372,8 @@ a{
 	.h-md-8{
 		height: 8rem;
 	}
-	.mt-md-10{
-		margin-top: 10rem;
+	.mt-md-7{
+		margin-top: 7rem;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -375,6 +401,9 @@ a{
 	.flex-col-reverse{
 		flex-direction: column-reverse;
 	}
+	.flex-wrap{
+		flex-wrap: wrap;
+	}
 	.bg-md-blue{
 		background-color: blue;
 	}
@@ -391,6 +420,12 @@ a{
 		padding: 14px 19px;
 		margin: 14px 0;
 	}
+	.h-sm-6{
+		height: 6rem;
+	}
+	.w-sm-10{
+		width: 10rem;
+	}
 	.pb-30{
 		padding-bottom: 16px;
 	}
@@ -402,8 +437,25 @@ a{
 		padding: 16px 20px 16px 10px;
 	}
 
+	.franchise-profile{
+		margin-right: 0;
+	}
+
 }
-/*enroll end*/
+@media only screen and (min-width:45em) {
+	.h2, h2 {
+		font-size: 4.8vw
+	}
+	.w-md-14{
+		width: 14rem;
+	}
+	.h-md-8{
+		height: 8rem;
+	}
+	.w-md-third{
+		width: 33.33%;
+	}
+}
 
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
@@ -513,11 +565,6 @@ strong {
 @media only screen and (min-width:30em) {
 	.h2, h2 {
 		font-size: 5.6vw
-	}
-}
-@media only screen and (min-width:45em) {
-	.h2, h2 {
-		font-size: 4.8vw
 	}
 }
 @media only screen and (min-width:65em) {
