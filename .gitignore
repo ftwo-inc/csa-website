@@ -13,4 +13,4 @@ eggs/
 .env
 __pycache__
 .vscode
-manage.py
+.secrets
