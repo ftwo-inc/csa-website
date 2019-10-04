@@ -18,3 +18,7 @@ class AboutView(TemplateView):
 
 class PrivacyView(TemplateView):
     template_name = "privacy.html"
+
+
+class IndustrySpeakView(TemplateView):
+    template_name = "industry.html"
