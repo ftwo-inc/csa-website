@@ -170,6 +170,7 @@ a{
 .shadow-on-hover {
 	transition: box-shadow 0.2s ease;
 }
+
 .shadow-on-hover:hover{
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.11);
 }
@@ -205,6 +206,13 @@ a{
 }
 .move-up-on-hover:hover{
 	margin-top: -20px;
+	margin-bottom: 20px;
+}
+.move-left-on-hover{
+	transition: all .3s ease-out;
+}
+.move-left-on-hover:hover{
+	margin-left: -50px;
 }
 .py-30{
 	padding: 30px 0px;
@@ -249,6 +257,9 @@ a{
 .border-radius-onhover:hover{
 	border-radius: 1.875rem;
 }
+.border-radius-10{
+	border-radius: 10px;
+}
 a:hover, a:focus {
     color: black;
 }
@@ -276,7 +287,7 @@ a:hover, a:focus {
     font-size: 16px;
     padding: 10px 14px;
     border-radius: 999px;
-	transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+	transition: all .3s ease-out;
 }
 .youtube-link-btn:hover {
     background: transparent;
@@ -290,7 +301,7 @@ a:hover, a:focus {
     color: white;
     padding-right: 8px;
 }
-.youtube-icon:hover{
+.youtube-link-btn:hover .youtube-icon{
 	font-size: 30px;
     color: #f12802;
     padding-right: 8px;
@@ -321,7 +332,13 @@ a:hover, a:focus {
 .items-center{
 	align-items: center;
 }
-
+.hover-on-plyr{
+	transition: all 0.2s ease-out;
+}
+.hover-on-plyr:hover{
+	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+}
 /*enroll start*/
 .enrollment-form input {
 	width: 100%;
@@ -655,6 +672,7 @@ p {
 strong {
 	font-weight: 700
 }
+
 .accordion-item__trigger, .h1, .h2, .h3, .h4, .h5, .h6, .heading, .label, .nav-link, .price__currency, .price__price, .pricing-type-plans-table__feature-category, .pricing-type-plans-table__plan-row td:first-child, .quote__text, .site-footer__strapline, .tab-panel__title, .toggle-switch-item__text, h1, h2, h3, h4, h5, h6 {
 	font-family: urbane, "sans-serif";
 	font-weight: 600
@@ -1375,7 +1393,7 @@ label {
 }
 @media only screen and (min-width:64rem) {
 	.nav-primary .nav-link:hover {
-		opacity: .5
+		color: #f44e21;
 	}
 }
 .bg-light .nav-link {
