@@ -171,7 +171,7 @@ a{
 	transition: box-shadow 0.2s ease;
 }
 .shadow-on-hover:hover{
-	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .05);
+	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.11);
 }
 .font-bold{
 	font-width:bold;
@@ -208,7 +208,7 @@ a{
 	margin-right: 20px;
 }
 .mt-2rem{
-	margin-top: 2rem;
+	margin-top: 2rem !important;
 }
 .mb-2rem{
 	margin-bottom: 2rem;
@@ -242,6 +242,9 @@ a{
 }
 .border-radius-onhover:hover{
 	border-radius: 1.875rem;
+}
+a:hover, a:focus {
+    color: black;
 }
 .ouline-none:focus{
 	outline: -webkit-focus-ring-color auto 0px;
@@ -290,10 +293,9 @@ a{
 	position: absolute;
     transform: rotate(43deg);
     margin-left: -160px;
-    height: 39rem;
-    margin-top: 5rem;
-    width: 100%;
-	opacity: 0.4;
+    height: 36rem;
+    margin-top: -12rem;
+    opacity: 0.4;
 }
 .flex{
 	display: flex;
@@ -483,6 +485,9 @@ a{
 	}
 	.d-sm-hidden{
 		display: none;
+	}
+	.transition-delay-sm-9{
+		transition-delay: 0.9s;
 	}
 	.flex-wrap{
 		flex-wrap: wrap;
@@ -2234,7 +2239,7 @@ label {
 }
 .quote__avatar {
 	position: absolute;
-	width: 5rem
+	width: 6rem
 }
 @media only screen and (max-width:44.99em) {
 	.quote__avatar {
@@ -3090,14 +3095,19 @@ label {
 @media only screen and (min-width:45em) {
 	.js .quotes-list__item {
 		opacity: 0;
-		-webkit-transition: opacity .8s ease;
-		transition: opacity .8s ease, margin-right .5s ease;
+		transition: opacity .8s ease;
 	}
 	.js .in-view .quotes-list__item {
-		opacity: 1
+		opacity: 1;
+	}
+	.quotes-list__item {
+		opacity: 1;
+		transition: all .2s ease-out;
 	}
 	.quotes-list__item:hover{
-		margin-right: -90px;
+		box-shadow: 0 2px 25px 0 rgba(14, 14, 14, 0.37);
+    	border-radius: 28px;
+		margin-right: -23px;
 	}
 }
 @media only screen and (min-width:45em) {
@@ -3254,7 +3264,7 @@ label {
 	line-height: 1.5
 }
 .site-header {
-	padding: 2rem 0;
+	padding: 1rem 0;
 	background-repeat: no-repeat
 }
 
@@ -3359,7 +3369,6 @@ label {
 	left: 0;
 	width: 100vw;
 	background-color: #fff;
-	padding: 1rem 0;
 	border-bottom: 1px solid #dee1e8;
 	z-index: 3;
 	opacity: 0;
