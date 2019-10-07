@@ -200,6 +200,12 @@ a{
 .h-full {
 	height: 100%;
 }
+.move-up-on-hover{
+	transition: all .3s ease-out;
+}
+.move-up-on-hover:hover{
+	margin-top: -20px;
+}
 .py-30{
 	padding: 30px 0px;
 }
