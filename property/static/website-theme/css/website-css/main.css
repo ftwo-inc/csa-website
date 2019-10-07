@@ -5,7 +5,7 @@
 
 a{
 	color: #282d39;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .d-block{
@@ -29,8 +29,12 @@ a{
 .bg-gray-bluish{
 	background-color: rgba(57,115,230,.05);
 }
+
 .text-white{
 	color: white;
+}
+.text-light-black{
+	color: #666;
 }
 .text-red{
 	color: #f24f5a;
@@ -56,14 +60,23 @@ a{
 .text-20{
 	font-size: 20px;
 }
+.font__18{
+	font-size: 18px
+}
 .text-5rem{
 	font-size: 5rem !important;
 }
-.text-40{
-	font-size: 38px;
-}
 .text-1rem{
 	font-size: 1rem;
+}
+.text-30{
+	font-size: 30px;
+}
+.text-13{
+	font-size: 13px;
+}
+.text-14{
+	font-size: 14px;
 }
 .text-light-blue{
 	color: #e0fafc;
@@ -95,6 +108,12 @@ a{
 .pl-10{
 	padding-left: 10px;
 }
+.pt-6{
+	padding-top: 6px;
+}
+.pb-6{
+	padding-bottom: 6px;
+}
 .py-20{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -109,11 +128,23 @@ a{
 .line-height-1{
 	line-height: 1;
 }
+.line-height-1-2{
+	line-height: 1.2;
+}
+.line-height-1-point-75{
+	line-height: 1.75;
+}
 .text-38{
 	font-size: 38px;
 }
+.font-bold{
+	font-weight: 600;
+}
 .font-1xl{
 	font-size: 1.8rem;
+}
+.font__20{
+	font-size: 20px;
 }
 .text-light-gray{
 	color: #bebdbd;
@@ -182,6 +213,9 @@ a{
 .mb-2rem{
 	margin-bottom: 2rem;
 }
+.mb-point-5{
+	margin-bottom: 0.5rem;
+}
 .mb-4{
 	margin-bottom: 4px;
 }
@@ -199,6 +233,9 @@ a{
 }
 .border-radius-14{
 	border-radius: 14px;
+}
+.border-0{
+	border: none;
 }
 .border-radius-onhover:hover{
 	border-radius: 1.875rem;
@@ -221,6 +258,39 @@ a{
     color: #2d2f3c;
 	text-decoration: none!important;
 }
+.youtube-link-btn{
+	background: #f12802;
+    border: 1.3px solid #f12802;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 999px;
+}
+.youtube-link-btn:hover {
+    background: transparent;
+    border: 1.3px solid white;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 999px;
+}
+.youtube-icon{
+	font-size: 30px;
+    color: white;
+    padding-right: 8px;
+}
+.youtube-icon:hover{
+	font-size: 30px;
+    color: #f12802;
+    padding-right: 8px;
+}
+.csa-bedge{
+	position: absolute;
+    transform: rotate(43deg);
+    margin-left: -160px;
+    height: 39rem;
+    margin-top: 5rem;
+    width: 100%;
+	opacity: 0.4;
+}
 .flex{
 	display: flex;
 }
@@ -236,7 +306,9 @@ a{
 .self-center{
     align-self: center;
 }
-
+.items-center{
+	align-items: center;
+}
 
 /*enroll start*/
 .enrollment-form input {
@@ -299,6 +371,7 @@ a{
 	width: 10rem;
 	margin-right: 4px;
 }
+/*enroll end*/
 
 @media only screen and (min-width:65em) {
 	.pr-md-80{
@@ -313,6 +386,9 @@ a{
 	.w-80{
 		width: 80%;
 	}
+	.w-md-half{
+		width: 50%;
+	}
 	.text-md-20{
 		font-size: 20px;
 	}
@@ -324,17 +400,23 @@ a{
 	}
 	.csa-progress-line{
 		background-image:url("/static/website-theme/images/img/2019.png");
-		background-size: contain;
+		background-size: cover;
 		background-position: right;
 	}
 	.ml-md-70{
 		margin-left: 70px;
+	}
+	.flex-md{
+		display: flex;
 	}
 	.w-45{
 		width: 45%;
 	}
 	.w-md-50{
 		width: 50%;
+	}
+	.w-md-25{
+		width: 25%;
 	}
 	.pl-md-34{
 		padding-left: 34px;
@@ -344,6 +426,9 @@ a{
 	}
 	.w-md-55{
 		width: 55%;
+	}
+	.w-md-third{
+		width: 33.33%;
 	}
 	.enroll-vertical-line{
 		height: 12rem;
@@ -356,8 +441,15 @@ a{
 	.h-md-8{
 		height: 8rem;
 	}
+	.h-md-full{
+		height: 100%;
+	}
 	.mt-md-7{
 		margin-top: 7rem;
+	}
+	.enroll-img{
+		height: 39rem;
+    	margin-bottom: -38px;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -385,6 +477,12 @@ a{
 	.flex-col-reverse{
 		flex-direction: column-reverse;
 	}
+	.d-sm-hidden{
+		display: none;
+	}
+	.flex-wrap{
+		flex-wrap: wrap;
+	}
 	.bg-md-blue{
 		background-color: blue;
 	}
@@ -394,12 +492,18 @@ a{
 	.mt-sm-2rem{
 		margin-top: 2rem;
 	}
-	.text-40{
+	.text-30{
 		font-size: 26px;
 	}
 	.enrollment-form input {
 		padding: 14px 19px;
 		margin: 14px 0;
+	}
+	.h-sm-6{
+		height: 6rem;
+	}
+	.w-sm-10{
+		width: 10rem;
 	}
 	.pb-30{
 		padding-bottom: 16px;
@@ -415,9 +519,46 @@ a{
 	.franchise-profile{
 		margin-right: 0;
 	}
+	.enroll-img{
+		height: auto;
+    	margin-bottom: 0px;
+	}
 
 }
-/*enroll end*/
+@media only screen and (min-width:45em) {
+	.h2, h2 {
+		font-size: 4.8vw
+	}
+	.w-md-14{
+		width: 14rem;
+	}
+	.h-md-8{
+		height: 8rem;
+	}
+	.w-md-third{
+		width: 33.33%;
+	}
+	.w-md-25{
+		width: 25%;
+	}
+	.w-md-half{
+		width: 50%;
+	}
+	.pl-md-34{
+		padding-left: 34px;
+	}
+	.flex-md{
+		display: flex;
+	}
+	.enroll-img{
+		height: 34rem;
+    	margin-bottom: -38px;
+	}
+
+	.h-md-full{
+		height: 100%;
+	}
+}
 
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
@@ -527,11 +668,6 @@ strong {
 @media only screen and (min-width:30em) {
 	.h2, h2 {
 		font-size: 5.6vw
-	}
-}
-@media only screen and (min-width:45em) {
-	.h2, h2 {
-		font-size: 4.8vw
 	}
 }
 @media only screen and (min-width:65em) {
@@ -1868,9 +2004,6 @@ label {
 	}
 	about-p-r{
 		padding-right: 20px;
-	}
-	.flex-md{
-		display: flex;
 	}
 
 }

@@ -60,17 +60,23 @@ a{
 .text-20{
 	font-size: 20px;
 }
+.font__18{
+	font-size: 18px
+}
 .text-5rem{
 	font-size: 5rem !important;
 }
 .text-1rem{
 	font-size: 1rem;
 }
-.text-40{
-	font-size: 38px;
+.text-30{
+	font-size: 30px;
 }
-.text-1rem{
-	font-size: 1rem;
+.text-13{
+	font-size: 13px;
+}
+.text-14{
+	font-size: 14px;
 }
 .text-light-blue{
 	color: #e0fafc;
@@ -102,6 +108,12 @@ a{
 .pl-10{
 	padding-left: 10px;
 }
+.pt-6{
+	padding-top: 6px;
+}
+.pb-6{
+	padding-bottom: 6px;
+}
 .py-20{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -116,11 +128,17 @@ a{
 .line-height-1{
 	line-height: 1;
 }
+.line-height-1-2{
+	line-height: 1.2;
+}
 .line-height-1-point-75{
 	line-height: 1.75;
 }
 .text-38{
 	font-size: 38px;
+}
+.font-bold{
+	font-weight: 600;
 }
 .font-1xl{
 	font-size: 1.8rem;
@@ -205,7 +223,10 @@ a{
 	margin-right: 50px;
 }
 .mt-16{
-	margin-top: 16px;
+	margin-top: 16px !important;
+}
+.mt-0{
+	margin-top:0;
 }
 .mt--2rem{
 	margin-top: -2rem;
@@ -215,6 +236,9 @@ a{
 }
 .border-radius-14{
 	border-radius: 14px;
+}
+.border-0{
+	border: none;
 }
 .border-radius-onhover:hover{
 	border-radius: 1.875rem;
@@ -238,7 +262,15 @@ a{
 	text-decoration: none!important;
 }
 .youtube-link-btn{
-	background: transparent;
+	background: #f12802;
+    border: 1.3px solid #f12802;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 999px;
+	transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+.youtube-link-btn:hover {
+    background: transparent;
     border: 1.3px solid white;
     font-size: 16px;
     padding: 10px 14px;
@@ -246,8 +278,22 @@ a{
 }
 .youtube-icon{
 	font-size: 30px;
+    color: white;
+    padding-right: 8px;
+}
+.youtube-icon:hover{
+	font-size: 30px;
     color: #f12802;
     padding-right: 8px;
+}
+.csa-bedge{
+	position: absolute;
+    transform: rotate(43deg);
+    margin-left: -160px;
+    height: 39rem;
+    margin-top: 5rem;
+    width: 100%;
+	opacity: 0.4;
 }
 .flex{
 	display: flex;
@@ -364,11 +410,17 @@ a{
 	.ml-md-70{
 		margin-left: 70px;
 	}
+	.flex-md{
+		display: flex;
+	}
 	.w-45{
 		width: 45%;
 	}
 	.w-md-50{
 		width: 50%;
+	}
+	.w-md-25{
+		width: 25%;
 	}
 	.pl-md-34{
 		padding-left: 34px;
@@ -393,8 +445,15 @@ a{
 	.h-md-8{
 		height: 8rem;
 	}
+	.h-md-full{
+		height: 100%;
+	}
 	.mt-md-7{
 		margin-top: 7rem;
+	}
+	.enroll-img{
+		height: 39rem;
+    	margin-bottom: -38px;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -422,6 +481,9 @@ a{
 	.flex-col-reverse{
 		flex-direction: column-reverse;
 	}
+	.d-sm-hidden{
+		display: none;
+	}
 	.flex-wrap{
 		flex-wrap: wrap;
 	}
@@ -434,7 +496,7 @@ a{
 	.mt-sm-2rem{
 		margin-top: 2rem;
 	}
-	.text-40{
+	.text-30{
 		font-size: 26px;
 	}
 	.enrollment-form input {
@@ -461,6 +523,10 @@ a{
 	.franchise-profile{
 		margin-right: 0;
 	}
+	.enroll-img{
+		height: auto;
+    	margin-bottom: 0px;
+	}
 
 }
 @media only screen and (min-width:45em) {
@@ -476,8 +542,25 @@ a{
 	.w-md-third{
 		width: 33.33%;
 	}
+	.w-md-25{
+		width: 25%;
+	}
 	.w-md-half{
 		width: 50%;
+	}
+	.pl-md-34{
+		padding-left: 34px;
+	}
+	.flex-md{
+		display: flex;
+	}
+	.enroll-img{
+		height: 34rem;
+    	margin-bottom: -38px;
+	}
+
+	.h-md-full{
+		height: 100%;
 	}
 }
 
@@ -1926,9 +2009,6 @@ label {
 	about-p-r{
 		padding-right: 20px;
 	}
-	.flex-md{
-		display: flex;
-	}
 
 }
 .about-mb{
@@ -2072,7 +2152,7 @@ label {
 .nav-footer__item {
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 1.5em
+	margin-bottom: 0.4em
 }
 .nav-footer a:hover {
 	color: #056ff0
@@ -2906,13 +2986,13 @@ label {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 1 30%;
 		flex: 0 1 30%;
-		margin-right: 10%
+		/*margin-right: 10%*/
 	}
 }
 @media only screen and (min-width:65em) {
 	.quotes-block__info {
 		-ms-flex-preferred-size: 46%;
-		flex-basis: 46%
+		flex-basis: 42%
 	}
 }
 .js .quotes-block__info {
@@ -3011,10 +3091,13 @@ label {
 	.js .quotes-list__item {
 		opacity: 0;
 		-webkit-transition: opacity .8s ease;
-		transition: opacity .8s ease
+		transition: opacity .8s ease, margin-right .5s ease;
 	}
 	.js .in-view .quotes-list__item {
 		opacity: 1
+	}
+	.quotes-list__item:hover{
+		margin-right: -90px;
 	}
 }
 @media only screen and (min-width:45em) {
@@ -3135,7 +3218,7 @@ label {
 }
 @media only screen and (max-width:56.24rem) {
 	.site-footer__social {
-		margin-bottom: 3rem
+		margin-bottom: 1rem
 	}
 }
 @media only screen and (min-width:56.25rem) {
@@ -3145,15 +3228,15 @@ label {
 }
 .site-footer__social h3 {
 	font-size: 1.125em;
-	margin-bottom: 1.6em
+	margin-bottom: 0.6em
 }
 .site-footer__strapline {
-	margin-bottom: 2rem;
+	margin-bottom: 0.4rem;
 	line-height: 1.5
 }
 @media only screen and (min-width:56.25rem) {
 	.site-footer__strapline {
-		margin: 3rem 5% 0 0;
+		margin: 0.4rem 5% 0 0;
 		width: 25%
 	}
 }
@@ -3163,7 +3246,7 @@ label {
 		-ms-flex: 1;
 		flex: 1;
 		width: 70%;
-		margin-top: 3rem
+		margin-top: 0.3rem
 	}
 }
 .site-footer__contact p {

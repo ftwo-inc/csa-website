@@ -223,7 +223,10 @@ a{
 	margin-right: 50px;
 }
 .mt-16{
-	margin-top: 16px;
+	margin-top: 16px !important;
+}
+.mt-0{
+	margin-top:0;
 }
 .mt--2rem{
 	margin-top: -2rem;
@@ -233,6 +236,9 @@ a{
 }
 .border-radius-14{
 	border-radius: 14px;
+}
+.border-0{
+	border: none;
 }
 .border-radius-onhover:hover{
 	border-radius: 1.875rem;
@@ -261,10 +267,23 @@ a{
     font-size: 16px;
     padding: 10px 14px;
     border-radius: 999px;
+	transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+.youtube-link-btn:hover {
+    background: transparent;
+    border: 1.3px solid white;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 999px;
 }
 .youtube-icon{
 	font-size: 30px;
     color: white;
+    padding-right: 8px;
+}
+.youtube-icon:hover{
+	font-size: 30px;
+    color: #f12802;
     padding-right: 8px;
 }
 .csa-bedge{
@@ -811,7 +830,7 @@ body.env--dev:before {
 }
 @media only screen and (min-width:45em) {
 	.block--footer {
-		padding: 4rem 0
+		padding: 1rem 0
 	}
 }
 .block--pricing, .block--quotes, .block--single-feature {
@@ -2133,7 +2152,7 @@ label {
 .nav-footer__item {
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 1.5em
+	margin-bottom: 0.4em
 }
 .nav-footer a:hover {
 	color: #056ff0
@@ -2967,13 +2986,13 @@ label {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 1 30%;
 		flex: 0 1 30%;
-		margin-right: 10%
+		/*margin-right: 10%*/
 	}
 }
 @media only screen and (min-width:65em) {
 	.quotes-block__info {
 		-ms-flex-preferred-size: 46%;
-		flex-basis: 46%
+		flex-basis: 42%
 	}
 }
 .js .quotes-block__info {
@@ -3072,10 +3091,13 @@ label {
 	.js .quotes-list__item {
 		opacity: 0;
 		-webkit-transition: opacity .8s ease;
-		transition: opacity .8s ease
+		transition: opacity .8s ease, margin-right .5s ease;
 	}
 	.js .in-view .quotes-list__item {
 		opacity: 1
+	}
+	.quotes-list__item:hover{
+		margin-right: -90px;
 	}
 }
 @media only screen and (min-width:45em) {
@@ -3196,7 +3218,7 @@ label {
 }
 @media only screen and (max-width:56.24rem) {
 	.site-footer__social {
-		margin-bottom: 3rem
+		margin-bottom: 1rem
 	}
 }
 @media only screen and (min-width:56.25rem) {
@@ -3206,15 +3228,15 @@ label {
 }
 .site-footer__social h3 {
 	font-size: 1.125em;
-	margin-bottom: 1.6em
+	margin-bottom: 0.6em
 }
 .site-footer__strapline {
-	margin-bottom: 2rem;
+	margin-bottom: 0.4rem;
 	line-height: 1.5
 }
 @media only screen and (min-width:56.25rem) {
 	.site-footer__strapline {
-		margin: 3rem 5% 0 0;
+		margin: 0.4rem 5% 0 0;
 		width: 25%
 	}
 }
@@ -3224,7 +3246,7 @@ label {
 		-ms-flex: 1;
 		flex: 1;
 		width: 70%;
-		margin-top: 3rem
+		margin-top: 1.3rem
 	}
 }
 .site-footer__contact p {
