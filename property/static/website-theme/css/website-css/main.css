@@ -171,7 +171,7 @@ a{
 	transition: box-shadow 0.2s ease;
 }
 .shadow-on-hover:hover{
-	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .05);
+	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.11);
 }
 .font-bold{
 	font-width:bold;
@@ -208,7 +208,7 @@ a{
 	margin-right: 20px;
 }
 .mt-2rem{
-	margin-top: 2rem;
+	margin-top: 2rem !important;
 }
 .mb-2rem{
 	margin-bottom: 2rem;
@@ -223,7 +223,10 @@ a{
 	margin-right: 50px;
 }
 .mt-16{
-	margin-top: 16px;
+	margin-top: 16px !important;
+}
+.mt-0{
+	margin-top:0;
 }
 .mt--2rem{
 	margin-top: -2rem;
@@ -239,6 +242,9 @@ a{
 }
 .border-radius-onhover:hover{
 	border-radius: 1.875rem;
+}
+a:hover, a:focus {
+    color: black;
 }
 .ouline-none:focus{
 	outline: -webkit-focus-ring-color auto 0px;
@@ -264,6 +270,7 @@ a{
     font-size: 16px;
     padding: 10px 14px;
     border-radius: 999px;
+	transition: background-color .3s ease, color .3s ease, border-color .3s ease;
 }
 .youtube-link-btn:hover {
     background: transparent;
@@ -286,10 +293,9 @@ a{
 	position: absolute;
     transform: rotate(43deg);
     margin-left: -160px;
-    height: 39rem;
-    margin-top: 5rem;
-    width: 100%;
-	opacity: 0.4;
+    height: 36rem;
+    margin-top: -12rem;
+    opacity: 0.4;
 }
 .flex{
 	display: flex;
@@ -479,6 +485,9 @@ a{
 	}
 	.d-sm-hidden{
 		display: none;
+	}
+	.transition-delay-sm-9{
+		transition-delay: 0.9s;
 	}
 	.flex-wrap{
 		flex-wrap: wrap;
@@ -826,7 +835,7 @@ body.env--dev:before {
 }
 @media only screen and (min-width:45em) {
 	.block--footer {
-		padding: 4rem 0
+		padding:3rem 0 1rem 0
 	}
 }
 .block--pricing, .block--quotes, .block--single-feature {
@@ -2140,6 +2149,9 @@ label {
 		bottom: -9rem
 	}
 }
+.footer-linkedin:hover{
+	color: #056ff0;
+}
 .nav-footer {
 	-webkit-columns: 2;
 	-moz-columns: 2;
@@ -2148,7 +2160,7 @@ label {
 .nav-footer__item {
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 1.5em
+	margin-bottom: 0.4em
 }
 .nav-footer a:hover {
 	color: #056ff0
@@ -2230,7 +2242,7 @@ label {
 }
 .quote__avatar {
 	position: absolute;
-	width: 5rem
+	width: 6rem
 }
 @media only screen and (max-width:44.99em) {
 	.quote__avatar {
@@ -2982,13 +2994,13 @@ label {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 1 30%;
 		flex: 0 1 30%;
-		margin-right: 10%
+		/*margin-right: 10%*/
 	}
 }
 @media only screen and (min-width:65em) {
 	.quotes-block__info {
 		-ms-flex-preferred-size: 46%;
-		flex-basis: 46%
+		flex-basis: 42%
 	}
 }
 .js .quotes-block__info {
@@ -3086,11 +3098,19 @@ label {
 @media only screen and (min-width:45em) {
 	.js .quotes-list__item {
 		opacity: 0;
-		-webkit-transition: opacity .8s ease;
-		transition: opacity .8s ease
+		transition: opacity .8s ease;
 	}
 	.js .in-view .quotes-list__item {
-		opacity: 1
+		opacity: 1;
+	}
+	.quotes-list__item {
+		opacity: 1;
+		transition: all .2s ease-out;
+	}
+	.quotes-list__item:hover{
+		box-shadow: 0 2px 25px 0 rgba(14, 14, 14, 0.37);
+    	border-radius: 28px;
+		margin-right: -23px;
 	}
 }
 @media only screen and (min-width:45em) {
@@ -3195,9 +3215,9 @@ label {
 }
 @media only screen and (max-width:56.24rem) {
 	.site-footer__nav {
-		padding-bottom: 2.5rem;
+		padding-bottom: 1.5rem;
 		border-bottom: 1px solid #fff;
-		margin-bottom: 2rem
+		margin-bottom: 1rem
 	}
 }
 @media only screen and (min-width:56.25rem) {
@@ -3211,7 +3231,7 @@ label {
 }
 @media only screen and (max-width:56.24rem) {
 	.site-footer__social {
-		margin-bottom: 3rem
+		margin-bottom: 1rem
 	}
 }
 @media only screen and (min-width:56.25rem) {
@@ -3221,15 +3241,15 @@ label {
 }
 .site-footer__social h3 {
 	font-size: 1.125em;
-	margin-bottom: 1.6em
+	margin-bottom: 0.6em
 }
 .site-footer__strapline {
-	margin-bottom: 2rem;
+	margin-bottom: 0.4rem;
 	line-height: 1.5
 }
 @media only screen and (min-width:56.25rem) {
 	.site-footer__strapline {
-		margin: 3rem 5% 0 0;
+		margin: 0.4rem 5% 0 0;
 		width: 25%
 	}
 }
@@ -3239,7 +3259,7 @@ label {
 		-ms-flex: 1;
 		flex: 1;
 		width: 70%;
-		margin-top: 3rem
+		margin-top: 1.3rem
 	}
 }
 .site-footer__contact p {
@@ -3247,7 +3267,7 @@ label {
 	line-height: 1.5
 }
 .site-header {
-	padding: 2rem 0;
+	padding: 1rem 0;
 	background-repeat: no-repeat
 }
 
@@ -3352,7 +3372,6 @@ label {
 	left: 0;
 	width: 100vw;
 	background-color: #fff;
-	padding: 1rem 0;
 	border-bottom: 1px solid #dee1e8;
 	z-index: 3;
 	opacity: 0;

@@ -835,7 +835,7 @@ body.env--dev:before {
 }
 @media only screen and (min-width:45em) {
 	.block--footer {
-		padding: 1rem 0
+		padding:3rem 0 1rem 0
 	}
 }
 .block--pricing, .block--quotes, .block--single-feature {
@@ -2149,6 +2149,9 @@ label {
 		bottom: -9rem
 	}
 }
+.footer-linkedin:hover{
+	color: #056ff0;
+}
 .nav-footer {
 	-webkit-columns: 2;
 	-moz-columns: 2;
@@ -3212,9 +3215,9 @@ label {
 }
 @media only screen and (max-width:56.24rem) {
 	.site-footer__nav {
-		padding-bottom: 2.5rem;
+		padding-bottom: 1.5rem;
 		border-bottom: 1px solid #fff;
-		margin-bottom: 2rem
+		margin-bottom: 1rem
 	}
 }
 @media only screen and (min-width:56.25rem) {
