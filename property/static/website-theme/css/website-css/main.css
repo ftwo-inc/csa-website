@@ -201,6 +201,9 @@ a{
 .h-full {
 	height: 100%;
 }
+.h-90vh{
+	height: 91vh;
+}
 .move-up-on-hover{
 	transition: all .3s ease-out;
 }
@@ -254,7 +257,7 @@ a{
 .border-0{
 	border: none;
 }
-.border-radius-onhover:hover{
+.border-radius-corn{
 	border-radius: 1.875rem;
 }
 .border-radius-10{
@@ -339,6 +342,70 @@ a:hover, a:focus {
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.09);
     border-radius: 4px;
 }
+/*franchise*/
+.franchise-input-box{
+	background: white;
+    padding: 50px;
+    border-radius: .625rem;
+}
+.franchise-form input {
+	width: 100%;
+    padding: 18px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #282d39;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.1075rem;
+}
+.franchise-form input:focus {
+  	background-color: #e5fff9;
+	border: 1px solid #5cd7bd;
+}
+.franchise-input-box div label{
+	font-weight: 600;
+	font-size: 1.125em;
+	color: black;
+}
+.franchise-submit-btn {
+	background-color: #bd82dd;
+    border: none;
+    border-radius: 999px;
+    padding: 23px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px!;
+    margin-top: 24px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1075rem;
+    transition: background-color 0.3s ease;
+}
+.franchise-submit-btn:hover {
+	background-color: #282d39;
+	color: white;
+}
+.franchise-country-code{
+	background: #ffffff;
+    font-weight: bold;
+    align-self: center;
+    padding: 18px 32px 18px 14px;
+    border-radius: 8px;
+    margin-right: 12px;
+    font-size: 1.1075rem;
+    border: 1px solid #282d39;
+	color: #282d39;
+}
+.textarea-style{
+	color: #282d39;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 8px 8px;
+    margin: 14px 0;
+}
+
 /*enroll start*/
 .enrollment-form input {
 	width: 100%;
@@ -489,6 +556,12 @@ a:hover, a:focus {
 	.mt-sm-30{
 		margin-top: 30px;
 	}
+	.franchise-input-box{
+		padding:25px;
+	}
+	.franchise-form input {
+		padding: 12px 18px;
+	}
 	.display-hidden-sm{
 		display: none;
 	}
@@ -518,6 +591,9 @@ a:hover, a:focus {
 	}
 	.bg-md-blue{
 		background-color: blue;
+	}
+	.franchise-country-code{
+		padding: 13.2px 20px 13.2px 8px;
 	}
 	.mt-sm-20{
 		margin-top: 20px;
@@ -3135,7 +3211,6 @@ label {
 	.quotes-list__item:hover{
 		box-shadow: 0 2px 25px 0 rgba(14, 14, 14, 0.37);
     	border-radius: 28px;
-		margin-right: -23px;
 	}
 }
 @media only screen and (min-width:45em) {
