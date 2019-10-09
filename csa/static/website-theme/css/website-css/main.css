@@ -51,6 +51,9 @@ a{
 .text-light-orange{
 	color: #ffc9b5;
 }
+.text-light-green{
+	color: #97f497;
+}
 .text-dark-green{
 	color: #66cc03;
 }
@@ -133,6 +136,9 @@ a{
 }
 .line-height-1-point-75{
 	line-height: 1.75;
+}
+.line-height-1-pont-5{
+	line-height: 1.5;
 }
 .text-38{
 	font-size: 38px;

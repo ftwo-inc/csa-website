@@ -51,6 +51,9 @@ a{
 .text-light-orange{
 	color: #ffc9b5;
 }
+.text-light-green{
+	color: #97f497;
+}
 .text-dark-green{
 	color: #66cc03;
 }
@@ -133,6 +136,9 @@ a{
 }
 .line-height-1-point-75{
 	line-height: 1.75;
+}
+.line-height-1-pont-5{
+	line-height: 1.5;
 }
 .text-38{
 	font-size: 38px;
@@ -329,6 +335,9 @@ a:hover, a:focus {
 .justify-center{
 	justify-content: center;
 }
+.justify-left{
+	justify-content: left !important;
+}
 .justify-between{
     justify-content: space-between !important;
 }
@@ -499,7 +508,7 @@ a:hover, a:focus {
 		font-size: 46px;
 	}
 	.csa-progress-line{
-		background-image:url("/static/website-theme/images/img/2019.png");
+		background-image:url("/static/website-theme/images/img/progress_bar.png");
 		background-size: cover;
 		background-position: right;
 	}
