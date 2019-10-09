@@ -251,6 +251,9 @@ a{
 .mb-30{
     margin-bottom: 30px;
 }
+.mb-4{
+	margin-bottom: 4rem;
+}
 .border-radius-14{
 	border-radius: 14px;
 }
