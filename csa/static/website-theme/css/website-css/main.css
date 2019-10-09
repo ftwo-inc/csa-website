@@ -167,6 +167,9 @@ a{
 .text-blue{
 	color: #056ff0;
 }
+.text-black{
+	color: #282d39;
+}
 .text-4rem{
 	font-size: 4.125rem !important;
 }
@@ -355,24 +358,9 @@ a:hover, a:focus {
     border-radius: 4px;
 }
 /*franchise*/
-.franchise-input-box{
-	background: white;
-    padding: 50px;
-    border-radius: .625rem;
-}
-.franchise-form input {
-	width: 100%;
-    padding: 18px 18px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px solid #282d39;
-    outline: none;
-    border-radius: 8px;
-    font-size: 1.1075rem;
-}
 .franchise-form input:focus {
-  	background-color: #e5fff9;
-	border: 1px solid #5cd7bd;
+  	background-color: #f6edfb;
+    border: 1px solid #660099;
 }
 .franchise-input-box div label{
 	font-weight: 600;
@@ -399,24 +387,6 @@ a:hover, a:focus {
 	background-color: #282d39;
 	color: white;
 }
-.franchise-country-code{
-	background: #ffffff;
-    font-weight: bold;
-    align-self: center;
-    padding: 18px 32px 18px 14px;
-    border-radius: 8px;
-    margin-right: 12px;
-    font-size: 1.1075rem;
-    border: 1px solid #282d39;
-	color: #282d39;
-}
-.textarea-style{
-	color: #282d39;
-    border-radius: 8px;
-    border: 1px solid;
-    padding: 8px 8px;
-    margin: 14px 0;
-}
 
 /*enroll start*/
 .enrollment-form input {
@@ -442,6 +412,7 @@ a:hover, a:focus {
 .enroll-input-box div label{
 	font-weight: 600;
 	font-size: 1.125em;
+	color: #282d39;
 }
 .country-code{
 	background: #ffffff;
