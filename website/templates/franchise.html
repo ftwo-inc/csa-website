@@ -13,7 +13,93 @@
 {% block content %}
     <div class="global-container">
 		<div class="global-container__main">
-
+            <div class="site-header site-header--graphic bg-indigo bg-doughnuts bg-dark" data-nav-parent="" id="header-bg">
+				<div class="container">
+					<div class="franchise-form">
+						<div class="flex-md hero hero--graphic">
+							<div class="w-md-50 pr-md-34">
+                                <div class="hero hero--graphic">
+                                    <div class="hero__cta">
+                                        <div class="cta mt-sm-2rem">
+                                            <h3>
+                                                Let's
+                                            </h3>
+                                            <h2 class="text-md-46">Grow Together</h2>
+                                            <hr class="pb-15">
+                                        </div>
+                                    </div>
+                                    <div class="mt-2rem franchise-img">
+                                        <div class="plyr__video-embed" id="player">
+                                            <iframe src="https://www.youtube.com/embed/2REkk9SCRn0?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fwww.starterscfo.com%2Flearn&noCookie=false&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&origin=https%3A%2F%2Fwww.starterscfo.com&widgetid=1"></iframe>
+                                        </div>
+                                    </div>
+                                     <div class="cta__text">
+										<p>Cyber Security Academy (CSA) is a brand of SkillCube. SkillCube established in 2012 is one of the pioneers in India focusing on Cyber Security Skill Development Solutions. The academy is a trusted and one-stop destination for all capacity building initiatives in the realm of Cyber Security.</p>
+									</div>
+                                </div>
+                            </div>
+                            <div class="w-md-50 pl-md-34">
+                                <div class="franchise-input-box mt-2rem">
+                                    <div class="pb-15">
+                                        <label>Full name</label>
+                                        <input type="text" name="name" placeholder="Full Name"><br>
+                                    </div>
+                                    <div class="pb-15">
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="Email *">
+                                    </div>
+                                    <div class="pb-15">
+                                        <label>Mobile no.</label>
+                                        <div class="flex">
+                                            <span class="franchise-country-code">+91</span>
+                                            <input type="number" name="mobile" placeholder="Mobile Number *">
+                                        </div>
+                                    </div>
+                                    <div class="pb-15">
+                                        <label>Location</label>
+                                        <input type="text" name="email" placeholder="Location">
+                                    </div>
+                                    <div>
+                                        <label>Massage</label>
+                                        <textarea class="w-full textarea-style h-5">
+                                        </textarea>
+                                    </div>
+                                    <div class="form-control__field">
+                                        <label class="checkbox" style="font-weight: normal">
+                                            <input id="accept_marketing" type="checkbox" name="accept_marketing" data-field="accept_marketing" class="checkbox__field" value="true" checked>
+                                            <span class="checkbox__label text-1rem">Would you like to receive occasional marketing from us?</span>
+                                        </label>
+                                    </div>
+                                    <button class="franchise-submit-btn">Submit</button>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="space-top-bottom bg-gray-bluish block--single-feature">
+				<div class="container">
+                    <h3 class="pb-15">What we offer to franchisee?</h3>
+                    <p class="mb-2rem">Cyber Security Academy offers high-level support, assistance, advice and effective guidance to franchisee pertaining to setting up and operating the Academy in an efficient manner.</p>
+				    <div class="features-list flex-wrap">
+						<div class="feature-list-div cursor-pointer w-md-third">
+                            div
+                            <div class="feature__text">
+                                <h5>Set Up</h5>
+                                <p class="text-light-black">Assist in architectural aspects and furniture designing of the Academy with a view to provide a brand experience.</p>
+                            </div>
+						</div>
+                       <div class="feature-list-div cursor-pointer w-md-third">
+                            <div class="feature__text">
+                            </div>
+						</div>
+                       <div class="feature-list-div cursor-pointer w-md-third">
+                            <div class="feature__text">
+                            </div>
+						</div>
+					</div>
+                </div>
+			</div>
         </div>
     </div>
 {% endblock %}
@@ -22,4 +108,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
     <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
 {% endblock page_level_scripts %}
