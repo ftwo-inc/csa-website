@@ -329,6 +329,9 @@ a:hover, a:focus {
 .justify-center{
 	justify-content: center;
 }
+.justify-left{
+	justify-content: left !important;
+}
 .justify-between{
     justify-content: space-between !important;
 }
@@ -499,7 +502,7 @@ a:hover, a:focus {
 		font-size: 46px;
 	}
 	.csa-progress-line{
-		background-image:url("/static/website-theme/images/img/2019.png");
+		background-image:url("/static/website-theme/images/img/progress_bar.png");
 		background-size: cover;
 		background-position: right;
 	}
