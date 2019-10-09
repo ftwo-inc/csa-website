@@ -22,3 +22,7 @@ class PrivacyView(TemplateView):
 
 class IndustrySpeakView(TemplateView):
     template_name = "industry.html"
+
+
+class FranchiseView(TemplateView):
+    template_name = "franchise.html"

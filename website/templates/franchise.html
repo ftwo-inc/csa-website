@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block scoped_css %}
+
+{% endblock scoped_css %}
+
+{% block head_content %}
+    <title>CSA - Franchise</title>
+{% endblock head_content %}
+
+
+{% block content %}
+    <div class="global-container">
+		<div class="global-container__main">
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block page_level_scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+    <script src="../package/js/swiper.min.js"></script>
+    <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
+{% endblock page_level_scripts %}
