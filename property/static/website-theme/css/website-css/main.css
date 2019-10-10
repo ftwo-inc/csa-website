@@ -220,6 +220,10 @@ a{
 	margin-top: -20px;
 	margin-bottom: 20px;
 }
+.rotate-half-on-hover:hover{
+	transition: all 0.3s ease-out;
+	transform: rotateY(180deg);
+}
 .move-left-on-hover{
 	transition: all .3s ease-out;
 }
