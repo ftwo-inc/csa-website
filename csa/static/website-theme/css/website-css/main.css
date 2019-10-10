@@ -468,7 +468,6 @@ a:hover, a:focus {
 
 /*courses*/
 .module-border-left{
-	min-height: 280px;
 	border-left: 3px solid #e7e8e9;
 	padding-left: 40px;
 }
