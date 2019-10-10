@@ -26,3 +26,7 @@ class IndustrySpeakView(TemplateView):
 
 class FranchiseView(TemplateView):
     template_name = "franchise.html"
+
+
+class CoursesView(TemplateView):
+    template_name = "courses.html"

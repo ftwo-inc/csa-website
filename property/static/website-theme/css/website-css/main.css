@@ -229,6 +229,9 @@ a{
 .py-30{
 	padding: 30px 0px;
 }
+.pb-35{
+	padding-bottom: 35px;
+}
 .mx-20{
 	margin-left: 20px;
 	margin-right: 20px;
@@ -247,6 +250,9 @@ a{
 }
 .mr-50{
 	margin-right: 50px;
+}
+.mb-10{
+	margin-bottom: 10px;
 }
 .mt-16{
 	margin-top: 16px !important;
@@ -460,6 +466,15 @@ a:hover, a:focus {
 }
 /*enroll end*/
 
+/*courses*/
+.module-border-left{
+	min-height: 280px;
+	border-left: 3px solid #e7e8e9;
+	padding-left: 40px;
+}
+/*end corses*/
+
+
 @media only screen and (min-width:65em) {
 	.pr-md-80{
 		padding-right: 80px;
@@ -505,6 +520,15 @@ a:hover, a:focus {
 	.w-md-25{
 		width: 25%;
 	}
+	.w-md-15{
+		width: 15%;
+	}
+	.w-md-75{
+		width: 75%;
+	}
+	.w-md-10{
+		width: 10%;
+	}
 	.pl-md-34{
 		padding-left: 34px;
 	}
@@ -537,6 +561,9 @@ a:hover, a:focus {
 	.enroll-img{
 		height: 39rem;
     	margin-bottom: -38px;
+	}
+	.pr-md-40{
+		padding-right: 40px;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -591,8 +618,20 @@ a:hover, a:focus {
 	.mt-sm-2rem{
 		margin-top: 2rem;
 	}
+	.pb-sm-30{
+		padding-bottom: 30px;
+	}
+	.px-sm-10{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 	.text-30{
 		font-size: 26px;
+	}
+	.module-border-left {
+		min-height: 0;
+		border-left: 0;
+		padding-left: 0;
 	}
 	.enrollment-form input {
 		padding: 14px 19px;
@@ -637,6 +676,15 @@ a:hover, a:focus {
 	.w-md-third{
 		width: 33.33%;
 	}
+	.w-md-15{
+		width: 15%;
+	}
+	.w-md-75{
+		width: 75%;
+	}
+	.w-md-10{
+		width: 10%;
+	}
 	.w-md-25{
 		width: 25%;
 	}
@@ -656,6 +704,9 @@ a:hover, a:focus {
 
 	.h-md-full{
 		height: 100%;
+	}
+	.pr-md-40{
+		padding-right: 40px;
 	}
 }
 
