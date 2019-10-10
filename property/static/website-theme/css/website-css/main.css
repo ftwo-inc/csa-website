@@ -263,6 +263,9 @@ a{
 .mb-4{
 	margin-bottom: 4rem;
 }
+.shadow-hidden{
+	box-shadow: none;
+}
 .border-radius-14{
 	border-radius: 14px;
 }
@@ -295,6 +298,10 @@ a:hover, a:focus {
     background-color: #f7f7f2;
     color: #2d2f3c;
 	text-decoration: none!important;
+}
+.dropdown-menu ul{
+	box-shadow: none;
+	font-size: 17px;
 }
 .youtube-link-btn{
 	background: #f12802;
