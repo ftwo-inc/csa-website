@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^privacy/$', views.PrivacyView.as_view(), name="privacy-details"),
     url(r'^industry-speak/$', views.IndustrySpeakView.as_view(), name="industry-speak"),
     url(r'^franchise/$', views.FranchiseView.as_view(), name="franchise"),
-    url(r'^courses/$', views.CoursesView.as_view(), name="courses")
+    url(r'^application-security/$', views.ApplicationSecurityView.as_view(), name="course1"),
+    url(r'^security-operation-center/$', views.SecurityOperationCenterView.as_view(), name="course2")
 ]

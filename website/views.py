@@ -28,5 +28,9 @@ class FranchiseView(TemplateView):
     template_name = "franchise.html"
 
 
-class CoursesView(TemplateView):
-    template_name = "courses.html"
+class ApplicationSecurityView(TemplateView):
+    template_name = "course1.html"
+
+
+class SecurityOperationCenterView(TemplateView):
+    template_name = "course2.html"

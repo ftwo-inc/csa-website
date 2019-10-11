@@ -66,6 +66,12 @@ a{
 .font__18{
 	font-size: 18px
 }
+.font__28{
+	font-size: 28px;
+}
+.font__22{
+	font-size: 22px;
+}
 .text-5rem{
 	font-size: 5rem !important;
 }
@@ -303,6 +309,14 @@ a:hover, a:focus {
 }
 .plyr__controls{
     visibility: hidden;
+}
+.nav-mobile-dropdown{
+	margin-bottom: 20px;
+    font-size: 26px;
+	display: none;
+}
+.nav-mobile-dropdown ul li{
+	padding: 10px 0;
 }
 .dropdown-menu ul li>a:not(.grey):hover, .dropdown-menu ul li>a:hover, .dropdown-menu ul li label:not(.grey):hover, .dropdown-menu ul li label:hover {
     background-color: #f7f7f2;
@@ -574,6 +588,9 @@ a:hover, a:focus {
 	.pr-md-40{
 		padding-right: 40px;
 	}
+	.d-md-hidden{
+		display: none;
+	}
 }
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
@@ -607,7 +624,7 @@ a:hover, a:focus {
 		flex-direction: column-reverse;
 	}
 	.d-sm-hidden{
-		display: none;
+		display: none!important;
 	}
 	.transition-delay-sm-9{
 		transition-delay: 0.9s;
@@ -626,6 +643,9 @@ a:hover, a:focus {
 	}
 	.mt-sm-2rem{
 		margin-top: 2rem;
+	}
+	.nav-mobile-dropdown{
+		display: inherit;
 	}
 	.pb-sm-30{
 		padding-bottom: 30px;
@@ -722,6 +742,9 @@ a:hover, a:focus {
 	}
 	.pr-md-1rem{
 		padding-right: 1rem;
+	}
+	.d-md-hidden{
+		display: none;
 	}
 }
 
@@ -1526,7 +1549,7 @@ label {
 }
 @media only screen and (min-width:64rem) {
 	.nav-primary .nav-link:hover {
-		color: #f44e21;
+		color: #fe9f85;
 	}
 }
 .bg-light .nav-link {
