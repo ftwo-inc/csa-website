@@ -340,10 +340,10 @@ a:hover, a:focus {
 }
 .csa-bedge{
 	position: absolute;
-    transform: rotate(43deg);
+    /*transform: rotate(43deg);*/
     margin-left: -160px;
     height: 36rem;
-    margin-top: -12rem;
+    margin-top: -29rem;
     opacity: 0.4;
 }
 .flex{
@@ -535,6 +535,9 @@ a:hover, a:focus {
 	.pl-md-34{
 		padding-left: 34px;
 	}
+	.pr-md-1rem{
+		padding-right: 1rem;
+	}
 	.w-md-45{
 		width: 45%;
 	}
@@ -716,6 +719,9 @@ a:hover, a:focus {
 	}
 	.pr-md-40{
 		padding-right: 40px;
+	}
+	.pr-md-1rem{
+		padding-right: 1rem;
 	}
 }
 
