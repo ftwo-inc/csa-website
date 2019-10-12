@@ -236,6 +236,16 @@ a{
 .move-left-on-hover:hover{
 	margin-left: -50px;
 }
+.franchise-img-parent-height{
+	height: 8.2rem;
+}
+.franchise-img-height{
+	height: 7rem;
+	transition: height .2s ease-out;
+}
+.franchise-cards .feature-list-div:hover .franchise-img-height{
+	height: 7.5rem;
+}
 .py-30{
 	padding: 30px 0px;
 }
@@ -319,9 +329,16 @@ a:hover, a:focus {
 	padding: 10px 0;
 }
 .dropdown-menu ul li>a:not(.grey):hover, .dropdown-menu ul li>a:hover, .dropdown-menu ul li label:not(.grey):hover, .dropdown-menu ul li label:hover {
-    background-color: #f7f7f2;
+    background-color: #f3eaea;
     color: #2d2f3c;
 	text-decoration: none!important;
+}
+.dropdown-menu ul li{
+	line-height: 0;
+	padding: 4px;
+}
+.dropdown-menu ul li:hover{
+	background-color: #f3eaea;
 }
 .dropdown-menu ul{
 	box-shadow: none;
