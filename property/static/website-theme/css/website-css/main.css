@@ -374,10 +374,9 @@ a:hover, a:focus {
 }
 .csa-bedge{
 	position: absolute;
-    /*transform: rotate(43deg);*/
-    margin-left: -160px;
+    margin-left: -3rem;
     height: 36rem;
-    margin-top: -29rem;
+    margin-top: 2rem;
     opacity: 0.4;
 }
 .flex{
@@ -442,7 +441,7 @@ a:hover, a:focus {
 /*enroll start*/
 .enrollment-form input {
 	width: 100%;
-    padding: 24px 20px;
+    padding: 18px 18px;
     margin: 14px 0;
     box-sizing: border-box;
     border: 1px solid #282d39;
@@ -469,7 +468,7 @@ a:hover, a:focus {
 	background: #ffffff;
     font-weight: bold;
     align-self: center;
-    padding: 26px 32px 26px 14px;
+    padding: 18.5px 32px 18.5px 14px;
     border-radius: 8px;
     margin-right: 12px;
     font-size: 1.1075rem;
