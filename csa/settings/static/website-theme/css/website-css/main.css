@@ -265,6 +265,9 @@ a{
 .mb-2rem{
 	margin-bottom: 2rem;
 }
+.mb-20{
+	margin-bottom: 20px;
+}
 .mb-point-5{
 	margin-bottom: 0.5rem;
 }
@@ -376,7 +379,7 @@ a:hover, a:focus {
 	position: absolute;
     margin-left: -3rem;
     height: 36rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     opacity: 0.4;
 }
 .flex{
@@ -405,7 +408,6 @@ a:hover, a:focus {
 }
 .hover-on-plyr:hover{
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.09);
-    border-radius: 4px;
 }
 /*franchise*/
 .franchise-form input:focus {
@@ -441,7 +443,7 @@ a:hover, a:focus {
 /*enroll start*/
 .enrollment-form input {
 	width: 100%;
-    padding: 18px 18px;
+    padding: 14px 14px;
     margin: 14px 0;
     box-sizing: border-box;
     border: 1px solid #282d39;
@@ -468,7 +470,7 @@ a:hover, a:focus {
 	background: #ffffff;
     font-weight: bold;
     align-self: center;
-    padding: 18.5px 32px 18.5px 14px;
+    padding: 16px 32px 16px 14px;
     border-radius: 8px;
     margin-right: 12px;
     font-size: 1.1075rem;
@@ -662,9 +664,6 @@ a:hover, a:focus {
 	}
 	.mt-sm-2rem{
 		margin-top: 2rem;
-	}
-	.nav-mobile-dropdown{
-		display: inherit;
 	}
 	.pb-sm-30{
 		padding-bottom: 30px;
