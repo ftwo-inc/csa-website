@@ -579,6 +579,9 @@ a:hover, a:focus {
 	.pr-md-34{
 		padding-right: 34px;
 	}
+	.pr-md-30{
+		padding-right: 30px;
+	}
 	.w-md-55{
 		width: 55%;
 	}
@@ -757,6 +760,9 @@ a:hover, a:focus {
 	}
 	.pr-md-40{
 		padding-right: 40px;
+	}
+	.pr-md-30{
+		padding-right: 30px;
 	}
 	.pr-md-1rem{
 		padding-right: 1rem;
