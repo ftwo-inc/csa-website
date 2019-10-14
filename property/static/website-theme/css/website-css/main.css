@@ -219,9 +219,6 @@ a{
 .h-full {
 	height: 100%;
 }
-.h-90vh{
-	height: 91vh;
-}
 .move-up-on-hover{
 	transition: all .3s ease-out;
 }
@@ -579,6 +576,9 @@ a:hover, a:focus {
 	.pr-md-34{
 		padding-right: 34px;
 	}
+	.pr-md-30{
+		padding-right: 30px;
+	}
 	.w-md-55{
 		width: 55%;
 	}
@@ -611,6 +611,9 @@ a:hover, a:focus {
 	}
 	.d-md-hidden{
 		display: none;
+	}
+	.h-md-90vh{
+		height: 91vh;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -758,11 +761,17 @@ a:hover, a:focus {
 	.pr-md-40{
 		padding-right: 40px;
 	}
+	.pr-md-30{
+		padding-right: 30px;
+	}
 	.pr-md-1rem{
 		padding-right: 1rem;
 	}
 	.d-md-hidden{
 		display: none;
+	}
+	.h-md-90vh{
+		height: 91vh;
 	}
 }
 

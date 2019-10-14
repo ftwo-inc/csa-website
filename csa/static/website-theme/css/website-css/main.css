@@ -219,9 +219,6 @@ a{
 .h-full {
 	height: 100%;
 }
-.h-90vh{
-	height: 91vh;
-}
 .move-up-on-hover{
 	transition: all .3s ease-out;
 }
@@ -615,6 +612,9 @@ a:hover, a:focus {
 	.d-md-hidden{
 		display: none;
 	}
+	.h-md-90vh{
+		height: 91vh;
+	}
 }
 @media only screen and (max-width:45em) {
 	.enroll-input-box{
@@ -769,6 +769,9 @@ a:hover, a:focus {
 	}
 	.d-md-hidden{
 		display: none;
+	}
+	.h-md-90vh{
+		height: 91vh;
 	}
 }
 
