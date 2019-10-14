@@ -663,9 +663,6 @@ a:hover, a:focus {
 	.mt-sm-2rem{
 		margin-top: 2rem;
 	}
-	.nav-mobile-dropdown{
-		display: inherit;
-	}
 	.pb-sm-30{
 		padding-bottom: 30px;
 	}
