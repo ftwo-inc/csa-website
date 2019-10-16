@@ -60,6 +60,9 @@ a{
 .text-brown{
 	color: #f24f5a;
 }
+.text-pinker{
+	color: #fa426f;
+}
 .text-20{
 	font-size: 20px;
 }
@@ -533,6 +536,9 @@ a:hover, a:focus {
 	.pr-md-80{
 		padding-right: 80px;
 	}
+	.pt-md-0{
+		padding-top: 0 !important;
+	}
 	.mt--md-99{
 		margin-top: -140px;
 	}
@@ -593,11 +599,12 @@ a:hover, a:focus {
 		width: 45%;
 	}
 	.pr-md-34{
-		padding-right: 34px;
+		padding-right: 34px!important;
 	}
 	.pr-md-30{
 		padding-right: 30px;
 	}
+
 	.w-md-55{
 		width: 55%;
 	}
@@ -768,6 +775,9 @@ a:hover, a:focus {
 	}
 	.pl-md-34{
 		padding-left: 34px;
+	}
+	.pt-md-0{
+		padding-top: 0 !important;
 	}
 	.flex-md{
 		display: flex;
