@@ -33,35 +33,36 @@
 				</div>
             </div>
             <div class="py-30 bg-white bg-light block--features">
-				<div class="container">
-					<div class="flex-md justify-between">
-						<div class="py-14">
-							<div class="feature text-blue">
-                                <h2 class="pb-6">7000</h2>
-                                <h6 class="self-center">hours of skill Development</h6>
-							</div>
-						</div>
-						<div class="py-14">
-                            <div class="feature">
-                                <h2 class="pb-6">1200</h2>
-                                <h5 class="self-center">Participants Skilled</h5>
-							</div>
-						</div>
-                        <div class="py-14">
-							<div class="feature text-indigo">
-                                <h2 class="pb-6">400</h2>
-                                <h5 class="self-center">Participants up skilled</h5>
-							</div>
-						</div>
-                        <div class="py-14">
-							<div class="feature text-red">
-                                <h2 class="pb-6">75%</h2>
-                                <h5 class="self-center">Fresh Talent placed</h5>
-							</div>
-						</div>
-                    </div>
-                </div>
-			</div>
+               <div class="container">
+                  <div class="flex-md justify-between numbers">
+                     <div class="py-14">
+                        <div class="feature text-blue number-item">
+                           <h2 class="pb-6 value">7000</h2>
+                           <h6 class="self-center">hours of skill Development</h6>
+                        </div>
+                     </div>
+                     <div class="py-14">
+                        <div class="feature number-item">
+                           <h2 class="pb-6 value">1200</h2>
+                           <h5 class="self-center">Participants Skilled</h5>
+                        </div>
+                     </div>
+                     <div class="py-14">
+                        <div class="feature text-indigo number-item">
+                           <h2 class="pb-6 value">400</h2>
+                           <h5 class="self-center">Participants up=skilled</h5>
+                        </div>
+                     </div>
+                     <div class="py-14">
+                        <div class="feature text-red number-item" style="position: relative;">
+                           <h2 class="pb-6 value" data-speed="1500">75</h2>
+                           <h2 class="pb-6" style="position: absolute;top: 0;right: 20px;">%</h2>
+                           <h5 class="self-center">Fresh Talent placed</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div class="block bg-grey bg-dark block--single-feature block--shape block--shape-bolts">
 				<div class="container">
 					<div class="media-object">
@@ -82,9 +83,9 @@
 				<div class="container">
 					<div class="media-object">
 						<div class="media-object__media flex justify-center flex-wrap">
-                            <img class="move-up-on-hover w-half border-radius-14" src="{% static 'website-theme/images/Journey/12-14/20140124_153859.jpg' %}">
-                            <img class="move-left-on-hover w-half mt-2rem border-radius-14 pl-10" src="{% static 'website-theme/images/Journey/12-14/FSCN0628.JPG' %}">
-                            <img class="move-left-on-hover w-half mt--2rem border-radius-14" src="{% static 'website-theme/images/Journey/12-14/DSCN0100.JPG' %}">
+                            <img class="move-up-on-hover w-half border-radius-14" src="{% static 'website-theme/images/Journey/12-14/FSCN0628.JPG' %}">
+                            <img class="move-left-on-hover w-half mt-2rem border-radius-14 pl-10" src="{% static 'website-theme/images/Journey/12-14/DSCN0100.JPG' %}">
+                            <img class="move-left-on-hover w-half mt--2rem border-radius-14" src="{% static 'website-theme/images/Journey/12-14/20140124_153859.jpg' %}">
                         </div>
 						<div class="media-object__content">
 							<h2>2012- 2014</h2>
@@ -164,5 +165,34 @@
     <script>
         const player = new Plyr('#player');
         const player2 = new Plyr('#player2');
+        $(window).scroll(testScroll);
+			var viewed = false;
+
+			function isScrolledIntoView(elem) {
+			    var docViewTop = $(window).scrollTop();
+			    var docViewBottom = docViewTop + $(window).height();
+
+			    var elemTop = $(elem).offset().top;
+			    var elemBottom = elemTop + $(elem).height();
+
+			    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+			}
+
+			function testScroll() {
+			  if (isScrolledIntoView($(".numbers")) && !viewed) {
+			      viewed = true;
+			      $('.value').each(function () {
+			      $(this).prop('Counter',0).animate({
+			          Counter: $(this).text()
+			      }, {
+			          duration: 4000,
+			          easing: 'swing',
+			          step: function (now) {
+			              $(this).text(Math.ceil(now));
+			          }
+			      });
+			    });
+			  }
+			}
     </script>
 {% endblock page_level_scripts %}
