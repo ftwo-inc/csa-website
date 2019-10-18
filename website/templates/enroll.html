@@ -35,83 +35,30 @@
                                 <div class="enroll-input-box mt-2rem">
                                     <div class="pb-15">
                                         <label>Full name</label>
-                                        <input type="text" name="name" placeholder="Full Name"><br>
+                                        <input type="text" name="name" placeholder="Full Name" id="full_name" required><br>
                                     </div>
                                     <div class="pb-15">
+                                        <span id="enroll-error" style="color:red"></span>
                                         <label>Email</label>
-                                        <input type="email" name="email" placeholder="Email *">
+                                        <input type="email" name="email" placeholder="Email *" id="email" required>
+                                        <span id="email-error" hidden style="color:red">Please enter valid email id.</span>
                                     </div>
                                     <div>
                                         <label>Mobile no.</label>
                                         <div class="flex">
                                             <span class="country-code">+91</span>
-                                            <input type="number" name="mobile" placeholder="Mobile Number *">
+                                            <input type="number" name="mobile" onKeyPress="if(this.value.length===10) return false;" placeholder="Mobile Number *" id="mobile" required>
                                         </div>
                                     </div>
-                                    <span class="text-gray-300 d-block pb-15">Request a call from our executive to get started.</span>
-                                    <span class="pb-15 d-block">Hear from us in 24 hours or dial <a href="tel:+91878767568">+ 91 87 876 7568.</a></span>
-                                    <button class="enroll-submit-btn">Submit</button>
+                                    <span class="text-gray-300 d-block pb-15">Request a from our executive to get started.</span>
+                                    <span class="pb-15 d-block">Hear from us in 24 hours or dial + 91 87 876 7568.</span>
+                                    <button class="enroll-submit-btn" id="enroll_submit" onclick="enroll();">Submit</button>
                                 </div>
                             </div>
 						</div>
 					</div>
 				</div>
             </div>
-{#            <div class="space-top-bottom bg-gray-bluish bg-light block--features">#}
-{#				<div class="container">#}
-{#                    <h3 class="pb-15">Center Details</h3>#}
-{#					<div class="features-list flex-wrap">#}
-{#						<div class="feature-list-div cursor-pointer w-md-third mb-2rem">#}
-{#                            <div class="feature__text">#}
-{#                                <h6 class="mb-point-5">Saurabh Agarwal</h6>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Founder & Managing Director</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Reception/General enquiries: <a href="tel:+91878767568" class="text-blue">+ 91 87 876 7568, </a><br>Saurabh@skillcube.com</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Availability: (Mon-Fri) 9AM to 5PM AEST</p>#}
-{#                            </div>#}
-{#						</div>#}
-{#                       <div class="feature-list-div cursor-pointer w-md-third mb-2rem">#}
-{#                            <div class="feature__text">#}
-{#                                <h6 class="mb-point-5">Saurabh Agarwal</h6>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Founder & Managing Director</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Reception/General enquiries: <a href="tel:+91878767568" class="text-blue">+ 91 87 876 7568, </a><br>Saurabh@skillcube.com</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Availability: (Mon-Fri) 9AM to 5PM AEST</p>#}
-{#                            </div>#}
-{#						</div>#}
-{#                       <div class="feature-list-div cursor-pointer w-md-third mb-2rem">#}
-{#                            <div class="feature__text">#}
-{#                                <h6 class="mb-point-5">Saurabh Agarwal</h6>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Founder & Managing Director</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Reception/General enquiries: <a href="tel:+91878767568" class="text-blue">+ 91 87 876 7568, </a><br>Saurabh@skillcube.com</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Availability: (Mon-Fri) 9AM to 5PM AEST</p>#}
-{#                            </div>#}
-{#						</div>#}
-{#                       <div class="feature-list-div cursor-pointer w-md-third mb-2rem">#}
-{#                            <div class="feature__text">#}
-{#                                <h6 class="mb-point-5">Saurabh Agarwal</h6>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Founder & Managing Director</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Reception/General enquiries: <a href="tel:+91878767568" class="text-blue">+ 91 87 876 7568, </a><br>Saurabh@skillcube.com</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Availability: (Mon-Fri) 9AM to 5PM AEST</p>#}
-{#                            </div>#}
-{#						</div>#}
-{#                       <div class="feature-list-div cursor-pointer w-md-third mb-2rem">#}
-{#                            <div class="feature__text">#}
-{#                                <h6 class="mb-point-5">Saurabh Agarwal</h6>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Founder & Managing Director</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Reception/General enquiries: <a href="tel:+91878767568" class="text-blue">+ 91 87 876 7568, </a><br>Saurabh@skillcube.com</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Availability: (Mon-Fri) 9AM to 5PM AEST</p>#}
-{#                            </div>#}
-{#						</div>#}
-{#                        <div class="feature-list-div cursor-pointer w-md-third mb-2rem">#}
-{#                            <div class="feature__text">#}
-{#                                <h6 class="mb-point-5">Saurabh Agarwal</h6>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Founder & Managing Director</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Reception/General enquiries: <a href="tel:+91878767568" class="text-blue">+ 91 87 876 7568, </a><br>Saurabh@skillcube.com</p>#}
-{#                                <p class="text-light-black text-1rem line-height-1-point-75">Availability: (Mon-Fri) 9AM to 5PM AEST</p>#}
-{#                            </div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#			</div>#}
             <div class="space-top-bottom bg-gray-bluish block--single-feature">
 				<div class="container">
                     <h3 class="pb-15">Frequently Asked Questions</h3>
@@ -166,5 +113,5 @@
 {% block page_level_scripts %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
-    <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
+    <script src="{% static 'website-theme/js/website-js/enroll.js' %}"></script>
 {% endblock page_level_scripts %}

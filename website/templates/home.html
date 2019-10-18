@@ -52,39 +52,19 @@
             <div class="animated fadeInUp pt-0 space-top-bottom bg-white block--features">
 				<div class="container">
 					<div class="features-list">
-                        <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
-                            <a target="_blank" href="https://www.linkedin.com/jobs/view/information-security-engineer-gurgaon-at-make-my-trip-1526084341/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdomain=in">
-                                <div class="feature">
-                                    <div class="feature__icon"><img src="{% static 'website-theme/images/img/makemytrip1.png' %}"></div>
-                                    <div class="feature__text">
-                                        <h6>Information Security Engineer</h6>
-                                         <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> Gurgaon, IN</p>
+                        {% for job in job_postings %}
+                            <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
+                                <a target="_blank" href="{{ job.link }}">
+                                    <div class="feature">
+                                        <div class="feature__icon"><img src="{{ job.logo.url }}"></div>
+                                        <div class="feature__text">
+                                            <h6>{{ job.title }}</h6>
+                                             <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> {{ job.location }}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
-                            <a target="_blank" href="https://www.linkedin.com/jobs/view/it-security-analyst-ii-at-fis-global-1536131709/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdomain=in">
-                                <div class="feature">
-                                    <div class="feature__icon"><img src="{% static 'website-theme/images/img/fis.png' %}"></div>
-                                    <div class="feature__text">
-                                        <h6>IT Security Analyst II</h6>
-                                         <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> Gurgaon, IN</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
-                            <a target="_blank" href="https://www.thoughtfocus.com/job-details/?c=BX&id=27">
-                                <div class="feature">
-                                    <div class="feature__icon"><img src="{% static 'website-theme/images/img/thought-focus.png' %}"></div>
-                                    <div class="feature__text">
-                                        <h6>Security Analyst for Technology</h6>
-                                         <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> Gurgaon, IN</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        {% endfor %}
 					</div>
 				</div>
 			</div>
@@ -104,66 +84,28 @@
 							<div class="quotes" data-glide="" data-quotes="">
 								<div class="quotes__quotes" data-glide-el="track">
 									<ul class="quotes-list">
-										<li class="quotes-list__item transition-delay-sm-9">
-											<div class="quote">
-												<div class="quote__avatar"><img class="avatar bg-white" src="{% static 'website-theme/images/testimonials_logo/Ashish.png' %}"></div>
-												<div class="quote__text">
-													One thing which was missing in my candidature when I passed out from college in 2013 was the industry flavor & practical training. SkillCube team delivered the right training program and enabled me to start a successful career in the Cyber Security domain.</div>
-                                                <div class="flex justify-between">
-                                                    <div class="quote__user-info">
-                                                        <div>
-                                                            Ashish Gupta,
+                                        {% for data in testimonials %}
+                                            <li class="quotes-list__item transition-delay-sm-9">
+                                                <div class="quote">
+                                                    <div class="quote__avatar"><img class="avatar bg-white" src="{{ data.pic.url }}"></div>
+                                                    <div class="quote__text">
+                                                        {{ data.content }}</div>
+                                                    <div class="flex justify-between">
+                                                        <div class="quote__user-info">
+                                                            <div>
+                                                                {{ data.name }},
+                                                            </div>
+                                                            <div class="pb-10">
+                                                                {{ data.company }}
+                                                            </div>
                                                         </div>
-                                                        <div class="pb-10">
-                                                            PWC India
-                                                        </div>
-                                                    </div>
-                                                    <div class="self-center">
-                                                        <img class="h-2-half" src="{% static 'website-theme/images/testimonials_logo/pwc.png' %}">
-                                                    </div>
-												</div>
-											</div>
-										</li>
-                                        <li class="quotes-list__item transition-delay-sm-9">
-											<div class="quote">
-												<div class="quote__avatar"><img class="avatar bg-white" src="{% static 'website-theme/images/testimonials_logo/ritu.png' %}"></div>
-												<div class="quote__text">
-													I shall always be grateful to SkillCube team for the fantastic industry readiness bootcamp conducted in 2014.  The learning was immense as compared to the full-time master’s degree course I did in Information Security. The training program not just elevated my knowledge but also lifted my confidence level.</div>
-                                                 <div class="flex justify-between">
-                                                    <div class="quote__user-info">
-                                                        <div>
-                                                            Ritu Agnihotri,
-                                                        </div>
-                                                        <div class="pb-10">
-                                                            Aviva Singapore
+                                                        <div class="self-center">
+                                                            <img class="h-2-half" src="{{ data.logo.url }}">
                                                         </div>
                                                     </div>
-                                                    <div class="self-center">
-                                                        <img class="h-2-half" src="{% static 'website-theme/images/testimonials_logo/aviva.png' %}">
-                                                    </div>
-												</div>
-											</div>
-										</li>
-										<li class="quotes-list__item transition-delay-sm-9">
-											<div class="quote">
-												<div class="quote__avatar"><img class="avatar bg-white" src="{% static 'website-theme/images/testimonials_logo/ajay.png' %}"></div>
-												<div class="quote__text">
-													SkillCube lives up to its name by providing reals skills in multi-dimensional ways. Interactive sessions, unique skilling methodology and a friendly environment which really helped me in commencing my professional career.												</div>
-												<div class="flex justify-between">
-                                                    <div class="quote__user-info">
-                                                        <div>
-                                                            Ajay Pal,
-                                                        </div>
-                                                        <div class="pb-10">
-                                                            Deloitte Netherland
-                                                        </div>
-                                                    </div>
-                                                    <div class="self-center">
-                                                        <img class="h-2-half" src="{% static 'website-theme/images/testimonials_logo/deloitte.png' %}">
-                                                    </div>
-												</div>
-											</div>
-										</li>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
 									</ul>
 								</div>
 								<div class="quotes__ctrls">
@@ -186,39 +128,6 @@
 					</div>
 				</div>
 			</div>
-{#			<div class="space-top-bottom bg-pinker block--features text-white">#}
-{#				<div class="container">#}
-{#                    <div class="flex justify-between">#}
-{#						<div class="self-center flex-col-5">#}
-{#							<div class="feature flex-md">#}
-{#                                <h1 class="text-5rem">3 </h1>#}
-{#								<h3 class="self-center"> Months</h3>#}
-{#							</div>#}
-{#						</div>#}
-{#						<div class="self-center flex-col-5">#}
-{#							<div class="feature">#}
-{#                                <img class="h-3" src="{% static 'website-theme/images/img/add.svg' %}">#}
-{#							</div>#}
-{#						</div>#}
-{#                        <div class="self-center flex-col-5">#}
-{#							<div class="feature">#}
-{#                                <h3><img src="{% static 'website-theme/images/img/CSA-logo_4.png' %}" class="feature-img" alt="csa-logo"> Program</h3>#}
-{#							</div>#}
-{#						</div>#}
-{#                        <div class="self-center flex-col-5">#}
-{#							<div class="feature">#}
-{#								<img class="h-3" src="{% static 'website-theme/images/img/equal.svg' %}">#}
-{#							</div>#}
-{#						</div>#}
-{#                        <div class="self-center flex-col-5">#}
-{#							<div class="feature flex-md">#}
-{#                                <img class="h-3-half" src="{% static 'website-theme/images/img/winner.svg' %}" alt="success">#}
-{#								<h3>Career</h3>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#                </div>#}
-{#			</div>#}
 			<div class="space-top-bottom bg-yellow bg-light">
 				<div class="container">
 					<div class="cta" data-in-view="">
