@@ -40,22 +40,22 @@
                                <div class="enroll-input-box mt-2rem">
                                     <div class="pb-15">
                                         <label>Full name</label>
-                                        <input type="text" name="name" placeholder="Full Name"><br>
+                                        <input type="text" name="name" placeholder="Full Name" id="full_name" required><br>
                                     </div>
                                     <div class="pb-15">
                                         <label>Email</label>
-                                        <input type="email" name="email" placeholder="Email *">
+                                        <input type="email" name="email" placeholder="Email *" id="email" required>
                                     </div>
                                     <div>
                                         <label>Mobile no.</label>
                                         <div class="flex">
                                             <span class="country-code">+91</span>
-                                            <input type="number" name="mobile" placeholder="Mobile Number *">
+                                            <input type="number" name="mobile" onKeyPress="if(this.value.length===10) return false;" placeholder="Mobile Number *" id="mobile" required>
                                         </div>
                                     </div>
                                     <span class="text-gray-300 d-block pb-15">Request a call from our executive to get started.</span>
-                                   <span class="pb-15 text-black d-block">Hear from us in 24 hours or dial <a href="tel:+919654912585" class="text-black">+91 96549 12585</a>.</span>
-                                    <button class="franchise-submit-btn">Submit</button>
+                                   <span class="pb-15 text-black d-block">Hear from us in 24 hours or dial <a href="tel:+919654912585" class="text-black">+91 8448695936</a>.</span>
+                                    <button class="franchise-submit-btn" id="franchise_submit" onclick="franchise();">Submit</button>
                                 </div>
                             </div>
 						</div>
@@ -162,7 +162,7 @@
 {% block page_level_scripts %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
-    <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
+    <script src="{% static 'website-theme/js/website-js/franchise.js' %}"></script>
     <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
     <script>
         const player = new Plyr('#player');
@@ -195,5 +195,74 @@
 			    });
 			  }
 			}
+    </script>
+    <script>
+        function validate_login_form(){
+            let email_regex = new RegExp(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/);
+            let has_error = false;
+            let mobile_el =  $("#mobile");
+            let email_el =  $("#email");
+            let full_name =  $("#full_name");
+            if(!email_el.val()){
+                // no value
+                has_error = true;
+                email_el.animateCss("shake");
+            }
+            else if(!email_regex.test(email_el.val())){
+                // regex fail
+                has_error = true;
+                email_el.animateCss("shake");
+            }
+            else if(!full_name.val()){
+                has_error = true;
+                full_name.val("").animateCss("shake");
+            }
+            else if(!mobile_el.val()){
+                has_error = true;
+                mobile_el.val("").animateCss("shake");
+            }
+            return has_error
+        }
+
+        function franchise() {
+            // loading on franchise button
+
+            const body = {
+                "fullname": $("#full_name").val(),
+                "email": $("#email").val(),
+                "mobile": $("#mobile").val(),
+                "csrfmiddlewaretoken": "{{ csrf_token }}"
+            };
+            let settings = {
+                url: '/franchise/',
+                data: body,
+                "success": function (response) {
+                    if(!response.status) {
+                        $("#email-error").attr("hidden", "hidden");
+                        $("#franchise-error").text(response.message);
+                    }
+                    else{
+                        $("#franchise-error").text(response.message);
+                        window.location = "/franchise/"
+                    }
+                    $("#franchise_submit").attr("disabled", "disabled");
+                    show_notification("success", "Franchise Form Submitted!");
+                },
+                "error": function () {
+                    show_notification("danger", "Something goes wrong. Please contact to admin");
+                }};
+                if(!validate_login_form()) {
+                    $("#franchise_submit").removeAttr("disabled");
+                    $.post(settings)
+                }
+                else{
+                    if ($("#full_name").val() && $("#email").val() && $("#mobile")){
+                        $("#email-error").removeAttr("hidden");
+                    }
+                    else{
+                        $("#email-error").attr("hidden", "hidden");
+                    }
+                }
+        }
     </script>
 {% endblock page_level_scripts %}
