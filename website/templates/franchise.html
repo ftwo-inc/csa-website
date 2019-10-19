@@ -40,22 +40,22 @@
                                <div class="enroll-input-box mt-2rem">
                                     <div class="pb-15">
                                         <label>Full name</label>
-                                        <input type="text" name="name" placeholder="Full Name"><br>
+                                        <input type="text" name="name" placeholder="Full Name" id="full_name" required><br>
                                     </div>
                                     <div class="pb-15">
                                         <label>Email</label>
-                                        <input type="email" name="email" placeholder="Email *">
+                                        <input type="email" name="email" placeholder="Email *" id="email" required>
                                     </div>
                                     <div>
                                         <label>Mobile no.</label>
                                         <div class="flex">
                                             <span class="country-code">+91</span>
-                                            <input type="number" name="mobile" placeholder="Mobile Number *">
+                                            <input type="number" name="mobile" onKeyPress="if(this.value.length===10) return false;" placeholder="Mobile Number *" id="mobile" required>
                                         </div>
                                     </div>
                                     <span class="text-gray-300 d-block pb-15">Request a call from our executive to get started.</span>
                                    <span class="pb-15 text-black d-block">Hear from us in 24 hours or dial <a href="tel:+919654912585" class="text-black">+91 96549 12585</a>.</span>
-                                    <button class="franchise-submit-btn">Submit</button>
+                                    <button class="franchise-submit-btn" id="franchise_submit" onclick="franchise();">Submit</button>
                                 </div>
                             </div>
 						</div>
@@ -115,18 +115,38 @@
             <div class="space-top-bottom bg-blue bg-dark block--single-feature">
 				<div class="container">
                     <h3 class="mb-2rem">Why become a CSA Franchise owner?</h3>
-                    <ul class="text-20 flex-md justify-between flex-wrap">
-                        <li class="text-center"><h3>7000</h3><p>hours of skill Development</p></li>
-                        <li class="text-center"><h3>1200</h3><p>Participants Skilled</p></li>
-                        <li class="text-center"><h3>400</h3><p>Participants up=skilled</p></li>
-                        <li class="text-center"><h3>75%</h3><p>Fresh Talent placed</p></li>
-                    </ul>
+                    <div class="flex-md justify-between numbers">
+                     <div class="py-14 w-md-50">
+                        <div class="feature number-item">
+                           <h3 class="pb-6 value">7000</h3>
+                           <h6 class="self-center">hours of skill Development</h6>
+                        </div>
+                     </div>
+                     <div class="py-14 w-md-50">
+                        <div class="feature number-item">
+                           <h3 class="pb-6 value">1200</h3>
+                           <h5 class="self-center">Participants Skilled</h5>
+                        </div>
+                     </div>
+                     <div class="py-14 w-md-50">
+                        <div class="feature number-item">
+                           <h3 class="pb-6 value">400</h3>
+                           <h5 class="self-center">Participants up skilled</h5>
+                        </div>
+                     </div>
+                     <div class="py-14 w-md-50">
+                        <div class="feature number-item" style="position: relative;">
+                           <h3 class="pb-6 value" data-speed="1500">75</h3>
+                           <h3 class="pb-6" style="position: absolute;top: 0;right: 3rem;">%</h3>
+                           <h5 class="self-center">Fresh Talent placed</h5>
+                        </div>
+                     </div>
+                  </div>
                 </div>
 			</div>
             <div class="space-top-bottom bg-white block--single-feature">
 				<div class="container">
-                    <h3 class="mb-2rem">Eligibility Criteria</h3>
-{#                    <h6 class="mb-2rem"></h6>#}
+                    <h3 class="mb-2rem">Our ideal franchise partners </h3>
                     <ul class="text-20">
                         <li class="pb-10 line-height-1-pont-5"><i class="fa fa-check-circle pr-10 text-dark-green"></i>Already running a IT vocational education business</li>
                         <li class="pb-10 line-height-1-pont-5"><i class="fa fa-check-circle pr-10 text-dark-green"></i>Aspirants already working in the IT education sector</li>
@@ -146,5 +166,103 @@
     <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
     <script>
         const player = new Plyr('#player');
+        $(window).scroll(testScroll);
+			var viewed = false;
+
+			function isScrolledIntoView(elem) {
+			    var docViewTop = $(window).scrollTop();
+			    var docViewBottom = docViewTop + $(window).height();
+
+			    var elemTop = $(elem).offset().top;
+			    var elemBottom = elemTop + $(elem).height();
+
+			    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+			}
+
+			function testScroll() {
+			  if (isScrolledIntoView($(".numbers")) && !viewed) {
+			      viewed = true;
+			      $('.value').each(function () {
+			      $(this).prop('Counter',0).animate({
+			          Counter: $(this).text()
+			      }, {
+			          duration: 4000,
+			          easing: 'swing',
+			          step: function (now) {
+			              $(this).text(Math.ceil(now));
+			          }
+			      });
+			    });
+			  }
+			}
+    </script>
+    <script>
+        function validate_login_form(){
+            let email_regex = new RegExp(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/);
+            let has_error = false;
+            let mobile_el =  $("#mobile");
+            let email_el =  $("#email");
+            let full_name =  $("#full_name");
+            if(!email_el.val()){
+                // no value
+                has_error = true;
+                email_el.animateCss("shake");
+            }
+            else if(!email_regex.test(email_el.val())){
+                // regex fail
+                has_error = true;
+                email_el.animateCss("shake");
+            }
+            else if(!full_name.val()){
+                has_error = true;
+                full_name.val("").animateCss("shake");
+            }
+            else if(!mobile_el.val()){
+                has_error = true;
+                mobile_el.val("").animateCss("shake");
+            }
+            return has_error
+        }
+
+        function franchise() {
+            // loading on franchise button
+
+            const body = {
+                "fullname": $("#full_name").val(),
+                "email": $("#email").val(),
+                "mobile": $("#mobile").val(),
+                "csrfmiddlewaretoken": "{{ csrf_token }}"
+            };
+            let settings = {
+                url: '/franchise/',
+                data: body,
+                "success": function (response) {
+                    if(!response.status) {
+                        $("#email-error").attr("hidden", "hidden");
+                        $("#franchise-error").text(response.message);
+                    }
+                    else{
+                        $("#franchise-error").text(response.message);
+                        window.location = "/franchise/"
+                    }
+                    $("#franchise_submit").attr("disabled", "disabled");
+                    show_notification("success", "Franchise Form Submitted!");
+                },
+                "error": function () {
+                    show_notification("danger", "Something goes wrong. Please contact to admin");
+                }};
+                if(!validate_login_form()) {
+                    $("#franchise_submit").removeAttr("disabled");
+                    $.post(settings)
+                }
+                else{
+                    if ($("#full_name").val() && $("#email").val() && $("#mobile")){
+                        $("#email-error").removeAttr("hidden");
+                    }
+                    else{
+                        $("#email-error").attr("hidden", "hidden");
+                    }
+                }
+        }
     </script>
 {% endblock page_level_scripts %}

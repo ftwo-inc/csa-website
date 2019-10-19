@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.views.generic import TemplateView
+from django.http import HttpResponseRedirect, JsonResponse
 
 
 class HomePageView(TemplateView):
@@ -18,9 +19,14 @@ class HomePageView(TemplateView):
 class EnrollView(TemplateView):
     template_name = "enroll.html"
 
-    def post(self, request):
-        import pdb
-        pdb.set_trace()
+    def post(self, request, *args, **kwargs):
+        from website.models import Enroll
+        Enroll.objects.create(
+            fullname=self.request.POST.get("fullname"),
+            email=self.request.POST.get("email"),
+            mobile=self.request.POST.get("mobile")
+        )
+        return JsonResponse({"status": True, "message": ""})
 
 
 class AboutView(TemplateView):
@@ -37,6 +43,15 @@ class IndustrySpeakView(TemplateView):
 
 class FranchiseView(TemplateView):
     template_name = "franchise.html"
+
+    def post(self, request, *args, **kwargs):
+        from website.models import Franchise
+        Franchise.objects.create(
+            fullname=self.request.POST.get("fullname"),
+            email=self.request.POST.get("email"),
+            mobile=self.request.POST.get("mobile")
+        )
+        return JsonResponse({"status": True, "message": ""})
 
 
 class ApplicationSecurityView(TemplateView):

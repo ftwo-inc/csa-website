@@ -60,6 +60,9 @@ a{
 .text-brown{
 	color: #f24f5a;
 }
+.text-pinker{
+	color: #fa426f;
+}
 .text-20{
 	font-size: 20px;
 }
@@ -177,7 +180,7 @@ a{
 	color: #056ff0;
 }
 .text-black{
-	color: #282d39;
+	color: #282d39 !important;
 }
 .text-4rem{
 	font-size: 4.125rem !important;
@@ -218,9 +221,6 @@ a{
 }
 .h-full {
 	height: 100%;
-}
-.h-90vh{
-	height: 91vh;
 }
 .move-up-on-hover{
 	transition: all .3s ease-out;
@@ -382,6 +382,21 @@ a:hover, a:focus {
     margin-top: 3rem;
     opacity: 0.4;
 }
+.view-more-video{
+	background: none;
+    border: 1px solid #292d40;
+    padding: 14px;
+    color: white;
+    border-radius: 999px;
+    background-color: #292d40;
+    font-weight: 600;
+    font-size: 18px;
+	transition: background-color .2s ease-out, color .2s ease-out;
+}
+.view-more-video:hover{
+	color: #292d40;
+	background-color: transparent;
+}
 .flex{
 	display: flex;
 }
@@ -408,6 +423,9 @@ a:hover, a:focus {
 }
 .hover-on-plyr:hover{
 	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.09);
+}
+.h-md-90vh{
+	height: 91vh;
 }
 /*franchise*/
 .franchise-form input:focus {
@@ -450,6 +468,7 @@ a:hover, a:focus {
     outline: none;
     border-radius: 8px;
     font-size: 1.1075rem;
+	color: #282d39;
 }
 
 .enrollment-form input:focus {
@@ -517,6 +536,9 @@ a:hover, a:focus {
 	.pr-md-80{
 		padding-right: 80px;
 	}
+	.pt-md-0{
+		padding-top: 0 !important;
+	}
 	.mt--md-99{
 		margin-top: -140px;
 	}
@@ -577,8 +599,12 @@ a:hover, a:focus {
 		width: 45%;
 	}
 	.pr-md-34{
-		padding-right: 34px;
+		padding-right: 34px!important;
 	}
+	.pr-md-30{
+		padding-right: 30px;
+	}
+
 	.w-md-55{
 		width: 55%;
 	}
@@ -611,6 +637,9 @@ a:hover, a:focus {
 	}
 	.d-md-hidden{
 		display: none;
+	}
+	.h-md-90vh{
+		height: 91vh;
 	}
 }
 @media only screen and (max-width:45em) {
@@ -708,6 +737,9 @@ a:hover, a:focus {
 		height: auto;
     	margin-bottom: 0px;
 	}
+	.h-md-90vh{
+		height: auto;
+	}
 
 }
 @media only screen and (min-width:45em) {
@@ -744,6 +776,9 @@ a:hover, a:focus {
 	.pl-md-34{
 		padding-left: 34px;
 	}
+	.pt-md-0{
+		padding-top: 0 !important;
+	}
 	.flex-md{
 		display: flex;
 	}
@@ -758,11 +793,17 @@ a:hover, a:focus {
 	.pr-md-40{
 		padding-right: 40px;
 	}
+	.pr-md-30{
+		padding-right: 30px;
+	}
 	.pr-md-1rem{
 		padding-right: 1rem;
 	}
 	.d-md-hidden{
 		display: none;
+	}
+	.h-md-90vh{
+		height: 91vh;
 	}
 }
 
@@ -847,7 +888,7 @@ strong {
 	font-weight: 700
 }
 
-.accordion-item__trigger, .h1, .h2, .h3, .h4, .h5, .h6, .heading, .label, .nav-link, .price__currency, .price__price, .pricing-type-plans-table__feature-category, .pricing-type-plans-table__plan-row td:first-child, .quote__text, .site-footer__strapline, .tab-panel__title, .toggle-switch-item__text, h1, h2, h3, h4, h5, h6 {
+.accordion-item__trigger, .h1, .h2, .h3, .h4, .h5, .h6, .heading, .label, .nav-link, .price__currency, .price__price, .pricing-type-plans-table__feature-category, .pricing-type-plans-table__plan-row td:first-child, .site-footer__strapline, .tab-panel__title, .toggle-switch-item__text, h1, h2, h3, h4, h5, h6 {
 	font-family: urbane, "sans-serif";
 	font-weight: 600
 }
@@ -2435,7 +2476,7 @@ label {
 }
 @media only screen and (min-width:65em) {
 	.quote {
-		padding: 3rem 3rem 3rem 4.2rem
+		padding: 2rem 2rem 2rem 4.2rem
 	}
 }
 .quote__avatar {
