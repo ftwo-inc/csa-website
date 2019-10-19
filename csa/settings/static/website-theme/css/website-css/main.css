@@ -1346,6 +1346,11 @@ body.env--dev:before {
 	-webkit-transform: translate(.5em, -50%);
 	transform: translate(.5em, -50%)
 }
+.btn--icon:hover .btn__text {
+	-webkit-transform: translate(.5em, -50%);
+	transform: translate(.5em, -50%)
+}
+
 .checkbox {
 	position: relative;
 	display: block;
