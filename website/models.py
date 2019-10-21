@@ -13,7 +13,7 @@ class JobPosting(models.Model):
 
 class Testimonials(models.Model):
     pic = models.FileField()
-    content = models.CharField(max_length=220)
+    content = models.CharField(max_length=440)
     name = models.CharField(max_length=220)
     company = models.CharField(max_length=220)
     logo = models.FileField()
