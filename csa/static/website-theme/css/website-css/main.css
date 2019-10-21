@@ -1346,11 +1346,6 @@ body.env--dev:before {
 	-webkit-transform: translate(.5em, -50%);
 	transform: translate(.5em, -50%)
 }
-.btn--icon:hover .btn__text {
-	-webkit-transform: translate(.5em, -50%);
-	transform: translate(.5em, -50%)
-}
-
 .checkbox {
 	position: relative;
 	display: block;
@@ -1540,8 +1535,8 @@ label {
 @media only screen and (min-width:65em) {
 	.media-object__media {
 		-webkit-box-flex: 1;
-		-ms-flex: 1 0 60%;
-		flex: 1 0 60%;
+		-ms-flex: 1 0 53%;
+		flex: 1 0 53%;
 		margin-right: 10%
 	}
 }
