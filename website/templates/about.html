@@ -58,15 +58,14 @@
                      </div>
                      <div class="py-14">
                         <div class="feature text-red number-item" style="position: relative;">
-                           <h2 class="pb-6 value" data-speed="1500">75</h2>
-                           <h2 class="pb-6" style="position: absolute;top: 0;right: 20px;">%</h2>
+                           <h2 class="pb-6 value perc" data-speed="1500">75</h2>
                            <h5 class="self-center">fresh talent placed</h5>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="block bg-grey bg-dark block--single-feature block--shape block--shape-bolts">
+            <div class="py-20 bg-grey bg-dark block--single-feature block--shape block--shape-bolts">
 				<div class="container">
 					<div class="media-object">
 						<div class="media-object__media">
@@ -117,8 +116,12 @@
             <div class="block block--single-feature block--shape block--shape-doughnuts pb-0">
 				<div class="container">
 					<div class="media-object">
-						<div class="media-object__media"><img class="move-up-on-hover border-radius-14" src="{% static 'website-theme/images/Journey/2016-2018/IMG-20161018-WA0003.jpg' %}"></div>
-						<div class="media-object__content">
+						<div class="media-object__media flex justify-center flex-wrap">
+                            <img class="move-up-on-hover w-half border-radius-14" src="{% static 'website-theme/images/Journey/2016-2018/WP_20170117_15_36_42_Pro.jpg' %}">
+                            <img class="move-left-on-hover w-half mt-2rem border-radius-14 pl-10" src="{% static 'website-theme/images/Journey/2016-2018/IMG-20161018-WA0003.jpg' %}">
+                            <img class="move-left-on-hover w-half mt--2rem border-radius-14" src="{% static 'website-theme/images/Journey/2016-2018/IMG_20161217_145904.jpg' %}">
+                        </div>
+                        <div class="media-object__content">
 							<h2>2016 -2018</h2>
 							<p></p>
                             <p><sup class="text-orange"><i class="fa fa-quote-left"></i></sup> Worked with Central/State Governments, industry organizations (Information Technology/BFSI/Aviation/PSUs) at national as well as global level for bridging Cyber Security skill gap through skill development initiatives, setting-up labs, development of training strategies & content, and exclusive talent acquisition partnerships <sup class="text-orange"><i class="fa fa-quote-right"></i></sup></p>
@@ -205,6 +208,10 @@
     <style type="text/css">
     	.value.sign::after {
                   content: "+";
+                  
+                }
+	    .value.perc::after {
+                  content: "%";
                   
                 }
     </style>
