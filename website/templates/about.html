@@ -58,8 +58,7 @@
                      </div>
                      <div class="py-14">
                         <div class="feature text-red number-item" style="position: relative;">
-                           <h2 class="pb-6 value" data-speed="1500">75</h2>
-                           <h2 class="pb-6" style="position: absolute;top: 0;right: 20px;">%</h2>
+                           <h2 class="pb-6 value perc" data-speed="1500">75</h2>
                            <h5 class="self-center">fresh talent placed</h5>
                         </div>
                      </div>
@@ -209,6 +208,10 @@
     <style type="text/css">
     	.value.sign::after {
                   content: "+";
+                  
+                }
+	    .value.perc::after {
+                  content: "%";
                   
                 }
     </style>
