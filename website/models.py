@@ -4,7 +4,7 @@ from django.db import models
 
 
 class JobPosting(models.Model):
-    logo = models.FileField(upload_to="")
+    logo = models.FileField()
     link = models.CharField(max_length=220)
     title = models.CharField(max_length=220)
     location = models.CharField(max_length=220)
