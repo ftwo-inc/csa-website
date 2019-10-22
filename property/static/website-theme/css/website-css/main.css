@@ -899,6 +899,13 @@ strong {
 	font-size: 10vw;
 	line-height: 1.1
 }
+
+.plyr__video-embed.pad, .plyr__video-wrapper--fixed-ratio {
+    height: 0;
+    padding-bottom: 56.25%!important;
+}
+
+
 @media only screen and (min-width:30em) {
 	.h1, h1 {
 		font-size: 11vw
@@ -906,7 +913,7 @@ strong {
 }
 @media only screen and (min-width:65em) {
 	.h1, h1 {
-		font-size: 7.5rem
+		font-size: 5.8rem
 	}
 }
 .h2, h2 {
