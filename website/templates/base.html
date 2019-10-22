@@ -266,6 +266,42 @@
               });
             });
        </script>
+	
+	
+	<style>
+	.btn--icon.effect .btn__text {
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		right: 1.8em;
+		width: .9em;
+		-webkit-transition: -webkit-transform .3s ease;
+		transition: -webkit-transform .3s ease;
+		transition: transform .3s ease;
+		transition: transform .3s ease, -webkit-transform .3s ease;
+		position: absolute;
+		top: 50%;
+		left: 10%;
+	}
+
+	.btn--icon.effect {
+		background-color: #fff;
+		color: #282d39;
+		padding: 28px 110px;
+	}
+
+	.btn--icon.effect:hover .btn__text {
+		-webkit-transform: translate(.5em, -50%);
+		transform: translate(.5em, -50%);
+	}
+
+	.bg-light .btn--primary.effect2 {
+		background-color: #056ff0;
+		color: #fff;
+		padding: 32px 110px;
+	}
+
+	</style>
+	
         <!--main js file end-->
         {% block page_level_scripts %}
         {% endblock %}
