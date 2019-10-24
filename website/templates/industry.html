@@ -28,9 +28,10 @@
 {#                                </a>#}
                             </div>
                             <div class="w-md-half mt-sm-2rem">
-                                <div class="plyr__video-embed js-player section  pad">
+                                <div class="plyr__video-embed" id="player">
                                     <iframe src="https://www.youtube.com/embed/zWQIwCx7eoE&feature?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fwww.starterscfo.com%2Flearn&noCookie=false&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&origin=https%3A%2F%2Fwww.starterscfo.com&widgetid=1"></iframe>
                                 </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -79,7 +80,6 @@
 <div class="bg-light block--features mb-2rem industry_leader">
    <div class="container">
       <h4>Views of Industry Leaders</h4>
-      <p class="mb-2rem">Listen to Industry Leader on cyber security</p>
       <a target="_blank" href="https://www.youtube.com/watch?v=6W1fT0K5sjY" class="text-black">
       </a>
       <div class="feature-list-div cursor-pointer mb-2rem">
@@ -428,7 +428,6 @@
 </div>
 <div class="bg-light block--features mb-2rem">
    <div class="container">
-      <hr style="color:#e2e4e9;">
       <h4 class="mb-2rem">News & Updates</h4>
       <div class="features-list">
          <div class="feature-list-div hover-on-plyr cursor-pointer">
@@ -500,4 +499,14 @@
              },
         });
     </script>
+
+    <style>
+      .plyr_content h5 {
+        font-size: 20px;
+        font-weight: normal!important;
+        line-height: 24px;
+        font-family: unset;
+        text-align: center;
+    }
+	</style>
 {% endblock page_level_scripts %}
