@@ -4120,3 +4120,24 @@ font-size: 28px;
 .icon_quote{
 	margin: 10px;
 }
+.btn--icon.effect.header_enr {
+	background-color: #fff;
+	color: #282d39;
+	padding: 20px 80px;
+	font-size: 16px;
+}
+.btn--icon.effect.header_enr .btn__icon {
+    right: 1.2em;
+}
+.btn--icon.effect.header_enr:hover {
+ 	background-color: #282d39;
+	color: #fff;
+}
+.btn--icon.effect.header_enr.bg_blue{
+	background-color: #056ff0;
+    	color: #fff;
+}
+.btn--icon.effect.header_enr.bg_blue:hover {
+	background-color: #282d39;
+	color: #fff;
+}
