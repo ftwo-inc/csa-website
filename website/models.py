@@ -92,7 +92,7 @@ class Enroll(models.Model):
     updated_on = models.DateField(auto_now=True)
 
     def send_notifications(self, type=None):
-        from comms.models import EmailTemplate, SmsTemplate
+        from comms.models import EmailTemplate
         if type is None:
             return
         elif type == "enroll-submit-to-customer":

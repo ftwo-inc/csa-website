@@ -29,7 +29,7 @@ def get_client(server_token):
 
 def send_mail(subject, message, recipient_list, from_email, attachments=[]):
     try:
-        tasks.send_mail_task.delay(check_secrets()['server_token'], subject, message, attachments, recipient_list,
+        tasks.send_mail_task(check_secrets()['server_token'], subject, message, attachments, recipient_list,
                                    from_email)
         logger.info("An email was scheduled to send. " + str(recipient_list))
     except Exception as e:

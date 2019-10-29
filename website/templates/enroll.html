@@ -178,7 +178,7 @@
                     }
                     else{
                         $("#enroll-error").text(response.message);
-                        {#window.location = "/enroll/"#}
+                        window.location = "/enroll/"
                     }
                     $("#enroll_submit").attr("disabled", "disabled");
                     show_notification("success", "Enroll Successful!");
