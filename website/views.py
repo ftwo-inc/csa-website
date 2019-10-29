@@ -62,13 +62,18 @@ class FranchiseView(TemplateView):
 
     def post(self, request, *args, **kwargs):
         from website.models import Franchise
-        Franchise.objects.create(
+        franchise = Franchise.objects.create(
             fullname=self.request.POST.get("fullname"),
             email=self.request.POST.get("email"),
             mobile=self.request.POST.get("mobile"),
             location=self.request.POST.get("location"),
             comment=self.request.POST.get("comment")
         )
+        try:
+            franchise.send_notifications("franchise-submit-to-customer")
+            franchise.send_notifications("franchise-submit-to-admin")
+        except Exception as e:
+            logging.error(e)
         return JsonResponse({"status": True, "message": ""})
 
 
