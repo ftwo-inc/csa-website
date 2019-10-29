@@ -65,15 +65,15 @@ class Franchise(models.Model):
             #     slug="to:customer|product:franchise|slug:submit-franchise-to-admin").first()
 
             template_keys = {
-                "email": 'pawan@sqre1.com',
-                "mobile": '8802900919',
+                "email": self.email,
+                "mobile": self.mobile,
                 "created_on": str(self.created_on),
-                "fullname": 'Pawan Katiyar'
+                "fullname": self.fullname
             }
             # Send email
             from comms.communication import send_email_template
             try:
-                send_email_template(self.email, template=email_template, **template_keys)
+                send_email_template('pawan@sqre1.com', template=email_template, **template_keys)
                 # send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting franchise to admin.")
@@ -124,15 +124,15 @@ class Enroll(models.Model):
             #     slug="to:customer|product:enroll|slug:submit-enroll-to-admin").first()
 
             template_keys = {
-                "email": 'pawan@sqre1.com',
-                "mobile": '8802900919',
+                "email": self.email,
+                "mobile": self.mobile,
                 "created_on": str(self.created_on),
-                "fullname": 'Pawan Katiyar'
+                "fullname": self.fullname
             }
             # Send email
             from comms.communication import send_email_template
             try:
-                send_email_template(self.email, template=email_template, **template_keys)
+                send_email_template('pawan@sqre1.com', template=email_template, **template_keys)
                 # send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting enroll to admin.")
