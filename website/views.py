@@ -4,6 +4,9 @@ from __future__ import unicode_literals
 from django.views.generic import TemplateView
 from django.http import HttpResponseRedirect, JsonResponse
 
+import logging
+logging.getLogger(__name__)
+
 
 class HomePageView(TemplateView):
     template_name = "home.html"
@@ -21,11 +24,18 @@ class EnrollView(TemplateView):
 
     def post(self, request, *args, **kwargs):
         from website.models import Enroll
-        Enroll.objects.create(
+        enroll = Enroll.objects.create(
             fullname=self.request.POST.get("fullname"),
             email=self.request.POST.get("email"),
-            mobile=self.request.POST.get("mobile")
+            mobile=self.request.POST.get("mobile"),
+            location=self.request.POST.get("location"),
+            comment=self.request.POST.get("comment")
         )
+        try:
+            enroll.send_notifications("enroll-submit-to-customer")
+            enroll.send_notifications("enroll-submit-to-admin")
+        except Exception as e:
+            logging.error(e)
         return JsonResponse({"status": True, "message": ""})
 
 
@@ -40,6 +50,12 @@ class PrivacyView(TemplateView):
 class IndustrySpeakView(TemplateView):
     template_name = "industry.html"
 
+    def get_context_data(self, *args, **kwargs):
+        from website.models import NewsAndUpdates
+        ctx = super(IndustrySpeakView, self).get_context_data(*args, **kwargs)
+        ctx["news_and_update"] = NewsAndUpdates.objects.all()
+        return ctx
+
 
 class FranchiseView(TemplateView):
     template_name = "franchise.html"
@@ -49,7 +65,9 @@ class FranchiseView(TemplateView):
         Franchise.objects.create(
             fullname=self.request.POST.get("fullname"),
             email=self.request.POST.get("email"),
-            mobile=self.request.POST.get("mobile")
+            mobile=self.request.POST.get("mobile"),
+            location=self.request.POST.get("location"),
+            comment=self.request.POST.get("comment")
         )
         return JsonResponse({"status": True, "message": ""})
 

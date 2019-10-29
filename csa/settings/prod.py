@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'storages',
     'website',
     'csa',
+    'comms',
+    'import_export'
 ]
 
 MIDDLEWARE = [

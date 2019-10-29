@@ -55,7 +55,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'csa',
-    'website'
+    'website',
+    'comms',
+    'import_export'
 ]
 
 MIDDLEWARE = [

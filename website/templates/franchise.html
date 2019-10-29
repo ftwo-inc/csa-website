@@ -59,7 +59,7 @@
                                     </div>
                                       <div class="pb-15">
                                         <label>Comment  </label>
-                                        <input type="text" name="comment" placeholder="Comment " id="comment "><br>
+                                        <input type="text" name="comment" placeholder="Comment" id="comment"><br>
                                     </div>
                                     <button class="franchise-submit-btn" id="franchise_submit" onclick="franchise();">Submit</button>
                                 </div>
@@ -208,6 +208,8 @@
             let mobile_el =  $("#mobile");
             let email_el =  $("#email");
             let full_name =  $("#full_name");
+            let location_el =  $("#location");
+            let comment_el =  $("#comment");
             if(!email_el.val()){
                 // no value
                 has_error = true;
@@ -226,6 +228,14 @@
                 has_error = true;
                 mobile_el.val("").animateCss("shake");
             }
+            else if(!location_el.val()){
+                has_error = true;
+                mobile_el.val("").animateCss("shake");
+            }
+            else if(!comment_el.val()){
+                has_error = true;
+                mobile_el.val("").animateCss("shake");
+            }
             return has_error
         }
 
@@ -236,6 +246,8 @@
                 "fullname": $("#full_name").val(),
                 "email": $("#email").val(),
                 "mobile": $("#mobile").val(),
+                "location": $("#location").val(),
+                "comment": $("#comment").val(),
                 "csrfmiddlewaretoken": "{{ csrf_token }}"
             };
             let settings = {
@@ -248,7 +260,7 @@
                     }
                     else{
                         $("#franchise-error").text(response.message);
-                        window.location = "/franchise/"
+                        {#window.location = "/franchise/"#}
                     }
                     $("#franchise_submit").attr("disabled", "disabled");
                     show_notification("success", "Franchise Form Submitted!");
