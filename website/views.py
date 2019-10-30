@@ -23,6 +23,12 @@ class HomePageView(TemplateView):
 class EnrollView(TemplateView):
     template_name = "enroll.html"
 
+    def get_context_data(self, *args, **kwargs):
+        from website.models import PopupFrame
+        ctx = super(EnrollView, self).get_context_data(*args, **kwargs)
+        ctx["popup_frame"] = PopupFrame.objects.all()
+        return ctx
+
     def post(self, request, *args, **kwargs):
         from website.models import Enroll
         enroll = Enroll.objects.create(
@@ -55,11 +61,18 @@ class IndustrySpeakView(TemplateView):
         from website.models import NewsAndUpdates
         ctx = super(IndustrySpeakView, self).get_context_data(*args, **kwargs)
         ctx["news_and_update"] = NewsAndUpdates.objects.all()
+        ctx["popup_frame"] = PopupFrame.objects.all()
         return ctx
 
 
 class FranchiseView(TemplateView):
     template_name = "franchise.html"
+
+    def get_context_data(self, *args, **kwargs):
+        from website.models import PopupFrame
+        ctx = super(EnrollView, self).get_context_data(*args, **kwargs)
+        ctx["popup_frame"] = PopupFrame.objects.all()
+        return ctx
 
     def post(self, request, *args, **kwargs):
         from website.models import Franchise
