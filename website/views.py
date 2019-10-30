@@ -70,7 +70,7 @@ class FranchiseView(TemplateView):
 
     def get_context_data(self, *args, **kwargs):
         from website.models import PopupFrame
-        ctx = super(EnrollView, self).get_context_data(*args, **kwargs)
+        ctx = super(FranchiseView, self).get_context_data(*args, **kwargs)
         ctx["popup_frame"] = PopupFrame.objects.all()
         return ctx
 
@@ -94,6 +94,18 @@ class FranchiseView(TemplateView):
 class ApplicationSecurityView(TemplateView):
     template_name = "course1.html"
 
+    def get_context_data(self, *args, **kwargs):
+        from website.models import PopupFrame
+        ctx = super(ApplicationSecurityView, self).get_context_data(*args, **kwargs)
+        ctx["popup_frame"] = PopupFrame.objects.all()
+        return ctx
+
 
 class SecurityOperationCenterView(TemplateView):
     template_name = "course2.html"
+
+    def get_context_data(self, *args, **kwargs):
+        from website.models import PopupFrame
+        ctx = super(SecurityOperationCenterView, self).get_context_data(*args, **kwargs)
+        ctx["popup_frame"] = PopupFrame.objects.all()
+        return ctx
