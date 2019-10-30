@@ -19,6 +19,7 @@ a{
 }
 .w-half{
 	width: 50%;
+	height: 100%;
 }
 .w-8{
 	width: 8rem;
@@ -1536,6 +1537,9 @@ label {
 	}
 	.feature_img {
    	   margin: 0 auto;
+	}
+	.swiper-slide {
+    	padding: 0% 4%;
 	}
 }
 @media only screen and (min-width:45em) {
@@ -4015,6 +4019,9 @@ label {
 	.mobile-only {
 		display: none
 	}
+	.swiper-slide{
+		padding: 0% 20%;
+	}
 }
 [data-elementary]:before {
 	display: none
@@ -4087,9 +4094,7 @@ label {
 .plyr_content h5{
 
 }
-.swiper-slide{
-	padding: 0% 20%;
-}
+
 .swiper-slide h6{
 	font-size: 20px;
     font-weight: 600;

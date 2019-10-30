@@ -469,24 +469,26 @@
 			</div>
 		</div>
 	</div>
-	  <!-- let's call the following div as the POPUP FRAME -->	
-    <div id="popup" class="popup panel panel-primary">	
-        {{ popup_frame }}	
-        {% for data in popup_frame %}	
-            {% if forloop.counter == 1 %}	
-                <!-- and here comes the image -->	
-                <img src="{{ data.image.url }}" alt="popup">	
-            {% endif %}	
-        {% endfor %}	
+	 <div id="popup" class="popup panel panel-primary">    
+         
+               <!-- <img src="{% static 'website-theme/images/img/Application_Security.png' %}" alt="popup">  -->
+              <!--  {{ popup_frame }}    -->
+        {% for data in popup_frame %}  
+            {% if forloop.counter == 1 %}   
+                <!-- and here comes the image -->   
+                <img src="{{ data.image.url }}" alt="popup">    
+             {% endif %}    
+        {% endfor %}
+              
 
-            <!-- Now this is the button which closes the popup-->	
-        <div class="panel-footer">	
-            <a id="close" class="btn-lg btn-primary">X</a>	
-        </div>	
+             <!-- Now this is the button which closes the popup-->  
+        <div class="panel-footer">  
+            <a id="close" class="btn-lg btn-primary">X</a>  
+        </div>  
 
-            <!-- and finally we close the POPUP FRAME-->	
-            <!-- everything on it will show up within the popup so you can add more things not just an image -->	
-    </div>
+             <!-- and finally we close the POPUP FRAME-->   
+            <!-- everything on it will show up within the popup so you can add more things not just an image -->    
+    </div>	
 
 {% endblock %}
 
