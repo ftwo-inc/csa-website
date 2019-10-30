@@ -259,7 +259,7 @@
         
         <!-- and here comes the image -->
         {% for data in popup_frame %}
-            {% if forloop.counter == 1 %}
+            {% if forloop.counter == 0 %}
                 <img src="{{ data.image.url }}" alt="popup">
             {% endif %}
         {% endfor %}
