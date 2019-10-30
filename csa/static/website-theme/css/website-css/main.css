@@ -1530,6 +1530,13 @@ label {
 	.media-object__media {
 		margin-top: 2rem
 	}
+	.nav-primary-items__ctas {
+   	   bottom: 0%; 
+    
+	}
+	.feature_img {
+   	   margin: 0 auto;
+	}
 }
 @media only screen and (min-width:45em) {
 	.media-object__media {
