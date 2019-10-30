@@ -1287,8 +1287,8 @@ body.env--dev:before {
 	border: 1px solid #282d39
 }
 .bg-light .btn:hover {
-	background-color: #282d39;
-	color: #fff
+	background-color: #282d39!important;
+	color: #fff!important;
 }
 .btn--cta {
 	padding: .8em 1.6em
