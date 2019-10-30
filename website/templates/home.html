@@ -191,14 +191,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
     <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
-{% endblock page_level_scripts %}
-<script>
+
+    <script>
 	     $(document).ready(function () {
 	    //select the POPUP FRAME and show it
 	    $("#popup").hide().fadeIn(1000);
 	    setTimeout(function() {
 		  $("#popup").fadeOut(1000);
-		}, 10000);
+		}, 15000);
 	    
 
 	    //close the POPUP if the button with id="close" is clicked
@@ -208,6 +208,9 @@
 	    });
 	});
 	</script>
+
+{% endblock page_level_scripts %}
+
 <style>
 .bg-light .btn:hover {
 	background-color: #282d39!important;
