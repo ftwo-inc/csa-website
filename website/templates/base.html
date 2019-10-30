@@ -258,7 +258,7 @@
     <div id="popup" class="popup panel panel-primary">
         
         {% for data in popup_frame %}
-            {% if forloop.counter == 0 %}
+            {% if forloop.counter == 1 %}
                 <!-- and here comes the image -->
                 <img src="{{ data.image.url }}" alt="popup">
             {% endif %}
