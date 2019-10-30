@@ -257,7 +257,9 @@
     <div id="popup" class="popup panel panel-primary">
         
         <!-- and here comes the image -->
-        <img src="{% static 'website-theme/images/img/Application_Security.png' %}" alt="popup">
+        {% for data in popup_frame %}
+            <img src="{{ data.image.url }}" alt="popup">
+        {% endfor %}
             
             <!-- Now this is the button which closes the popup-->
         <div class="panel-footer">

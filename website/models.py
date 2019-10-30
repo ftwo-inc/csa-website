@@ -144,3 +144,7 @@ class NewsAndUpdates(models.Model):
     image = models.ImageField()
     content = models.CharField(max_length=220)
     link = models.CharField(max_length=220)
+
+
+class PopupFrame(models.Model):
+    image = models.ImageField()

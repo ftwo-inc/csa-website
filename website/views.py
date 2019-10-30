@@ -12,10 +12,11 @@ class HomePageView(TemplateView):
     template_name = "home.html"
 
     def get_context_data(self, *args, **kwargs):
-        from website.models import JobPosting, Testimonials
+        from website.models import JobPosting, Testimonials, PopupFrame
         ctx = super(HomePageView, self).get_context_data(*args, **kwargs)
         ctx["job_postings"] = JobPosting.objects.all()
         ctx["testimonials"] = Testimonials.objects.all()
+        ctx["popup_frame"] = PopupFrame.objects.all()
         return ctx
 
 
