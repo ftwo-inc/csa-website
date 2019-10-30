@@ -259,7 +259,9 @@
         
         <!-- and here comes the image -->
         {% for data in popup_frame %}
-            <img src="{{ data.image.url }}" alt="popup">
+            {% if forloop.counter == 1 %}
+                <img src="{{ data.image.url }}" alt="popup">
+            {% endif %}
         {% endfor %}
             
             <!-- Now this is the button which closes the popup-->
