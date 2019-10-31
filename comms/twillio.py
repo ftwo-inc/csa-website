@@ -41,7 +41,7 @@ def send_message(to, body):
 
     try:
         from_ = check_secrets()['from_number']
-        tasks.send_message_task.delay(from_, to, body)
+        tasks.send_message_task(from_, to, body)
         return SMS.objects.create(
             to=to,
             message=body

@@ -40,8 +40,8 @@ class Franchise(models.Model):
 
             email_template = EmailTemplate.objects.filter(
                 slug="to:customer|product:franchise|slug:submit-franchise-to-customer").first()
-            # sms_template = SmsTemplate.objects.filter(
-            #     slug="to:customer|product:franchise|slug:submit-franchise-to-customer").first()
+            sms_template = SmsTemplate.objects.filter(
+                slug="to:customer|product:franchise|slug:submit-franchise-to-customer").first()
 
             template_keys = {
                 "email": self.email,
@@ -50,10 +50,10 @@ class Franchise(models.Model):
                 "fullname": self.fullname
             }
             # Send email
-            from comms.communication import send_email_template
+            from comms.communication import send_email_template, send_sms_template
             try:
                 send_email_template(self.email, template=email_template, **template_keys)
-                # send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
+                send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting franchise to customer.")
 
@@ -61,8 +61,8 @@ class Franchise(models.Model):
 
             email_template = EmailTemplate.objects.filter(
                 slug="to:admin|product:franchise|slug:submit-franchise-to-admin").first()
-            # sms_template = SmsTemplate.objects.filter(
-            #     slug="to:customer|product:franchise|slug:submit-franchise-to-admin").first()
+            sms_template = SmsTemplate.objects.filter(
+                slug="to:customer|product:franchise|slug:submit-franchise-to-admin").first()
 
             template_keys = {
                 "email": self.email,
@@ -71,10 +71,10 @@ class Franchise(models.Model):
                 "fullname": self.fullname
             }
             # Send email
-            from comms.communication import send_email_template
+            from comms.communication import send_email_template, send_sms_template
             try:
                 send_email_template('pawan@sqre1.com', template=email_template, **template_keys)
-                # send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
+                send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting franchise to admin.")
         else:
@@ -92,15 +92,15 @@ class Enroll(models.Model):
     updated_on = models.DateField(auto_now=True)
 
     def send_notifications(self, type=None):
-        from comms.models import EmailTemplate
+        from comms.models import EmailTemplate, SmsTemplate
         if type is None:
             return
         elif type == "enroll-submit-to-customer":
 
             email_template = EmailTemplate.objects.filter(
                 slug="to:customer|product:enroll|slug:submit-enroll-to-customer").first()
-            # sms_template = SmsTemplate.objects.filter(
-            #     slug="to:customer|product:enroll|slug:submit-enroll-to-customer").first()
+            sms_template = SmsTemplate.objects.filter(
+                slug="to:customer|product:enroll|slug:submit-enroll-to-customer").first()
 
             template_keys = {
                 "email": self.email,
@@ -109,10 +109,10 @@ class Enroll(models.Model):
                 "fullname": self.fullname
             }
             # Send email
-            from comms.communication import send_email_template
+            from comms.communication import send_email_template, send_sms_template
             try:
                 send_email_template(self.email, template=email_template, **template_keys)
-                # send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
+                send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting enroll to customer.")
 
@@ -120,8 +120,8 @@ class Enroll(models.Model):
 
             email_template = EmailTemplate.objects.filter(
                 slug="to:admin|product:enroll|slug:submit-enroll-to-admin").first()
-            # sms_template = SmsTemplate.objects.filter(
-            #     slug="to:customer|product:enroll|slug:submit-enroll-to-admin").first()
+            sms_template = SmsTemplate.objects.filter(
+                slug="to:customer|product:enroll|slug:submit-enroll-to-admin").first()
 
             template_keys = {
                 "email": self.email,
@@ -130,10 +130,10 @@ class Enroll(models.Model):
                 "fullname": self.fullname
             }
             # Send email
-            from comms.communication import send_email_template
+            from comms.communication import send_email_template, send_sms_template
             try:
                 send_email_template('pawan@sqre1.com', template=email_template, **template_keys)
-                # send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
+                send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting enroll to admin.")
         else:
