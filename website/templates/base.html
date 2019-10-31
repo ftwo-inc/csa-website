@@ -253,21 +253,22 @@
             </div>
         </div>
     </div>
+    {% if popup_frame %}
+        <div id="popup" class="popup panel panel-primary">
+            {% for data in popup_frame %}
+                <!-- and here comes the image -->
+                <img src="{{ data.image.url }}" alt="popup">
+            {% endfor %}
 
-    <div id="popup" class="popup panel panel-primary">
-        {% for data in popup_frame %}
-            <!-- and here comes the image -->
-            <img src="{{ data.image.url }}" alt="popup">
-        {% endfor %}
+            <!-- Now this is the button which closes the popup-->
+            <div class="panel-footer">
+                <a id="close" class="btn-lg btn-primary">X</a>
+            </div>
 
-        <!-- Now this is the button which closes the popup-->
-        <div class="panel-footer">
-            <a id="close" class="btn-lg btn-primary">X</a>
+            <!-- and finally we close the POPUP FRAME-->
+            <!-- everything on it will show up within the popup so you can add more things not just an image -->
         </div>
-
-        <!-- and finally we close the POPUP FRAME-->
-        <!-- everything on it will show up within the popup so you can add more things not just an image -->
-    </div>
+    {% endif %}
 
 
         <!--main js file start-->
