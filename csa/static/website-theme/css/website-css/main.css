@@ -1198,6 +1198,9 @@ body.env--dev:before {
 .bg-light {
 	color: #282d39
 }
+.bg-grey_about {
+    background-color: #303b53;
+}
 @media only screen and (min-width:57.5rem) {
 	.block--pricing {
 		background-color: #f4f4f4
@@ -1614,7 +1617,8 @@ label {
 	}
 	.block--single-feature:nth-of-type(odd) .media-object__media {
 		margin-right: 0;
-		margin-left: 10%
+		margin-left: 10%;
+		z-index: 1;
 	}
 }
 .nav-link {
@@ -3808,6 +3812,9 @@ label {
 	.tabs-block__title {
 		margin-bottom: 4em
 	}
+	.feature.number-item .self-center{
+		font-size: 1.375rem;
+	}
 }
 @media only screen and (min-width:65em) {
 	.tabs-block__title {
@@ -4128,4 +4135,7 @@ font-size: 28px;
 }
 .icon_quote{
 	margin: 10px;
+}
+.padtop {
+	padding-top: 10px;
 }
