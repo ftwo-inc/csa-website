@@ -255,9 +255,11 @@
     </div>
     {% if popup_frame %}
         <div id="popup" class="popup panel panel-primary">
+        	<a href="/enroll/">
             {% for data in popup_frame %}
                 <!-- and here comes the image -->
                 <img src="{{ data.image.url }}" alt="popup">
+            </a>
             {% endfor %}
 
             <!-- Now this is the button which closes the popup-->
