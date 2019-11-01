@@ -50,6 +50,7 @@
 				<div class="container">
 					<div class="features-list">
                         {% for job in job_postings %}
+                            {{ job.link }}, {{ job.logo.url }}, {{ job.title }}, {{ job.location }}
                             <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
                                 <a target="_blank" href="{{ job.link }}">
                                     <div class="feature">
