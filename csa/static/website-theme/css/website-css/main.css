@@ -4129,9 +4129,12 @@ font-size: 28px;
     text-align: center;
 }
 .industry_leader{
-	background: #e2e2e2;
-	padding: 40px 0px 40px;
-
+	background: #dd9b34;
+    padding: 40px 0px 40px;
+    color: #fff!important;
+}
+.industry_leader .text-black .font__20{
+	color: #fff;
 }
 .industry_leader .plyr__controls{
 	display: none;
