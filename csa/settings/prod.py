@@ -162,6 +162,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "media")
-MEDIA_URL = '/media/'
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# MEDIA_ROOT = os.path.join(PROJECT_ROOT, "media")
+# MEDIA_URL = '/media/'
+MEDIA_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_S3_HOST = 's3.ap-south-1.amazonaws.com'
+S3_USE_SIGV4 = True
