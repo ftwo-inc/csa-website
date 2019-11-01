@@ -34,9 +34,9 @@ a{
 .text-white{
 	color: white;
 }
-.text-light-black{
+/*.text-light-black{
 	color: #666;
-}
+}*/
 .text-red{
 	color: #f24f5a;
 }
@@ -4129,7 +4129,7 @@ font-size: 28px;
     text-align: center;
 }
 .industry_leader{
-	background: #f3f3f3;
+	background: #e2e2e2;
 	padding: 40px 0px 40px;
 
 }
