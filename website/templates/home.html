@@ -50,7 +50,6 @@
 				<div class="container">
 					<div class="features-list">
                         {% for job in job_postings %}
-                            {{ job.link }}, {{ job.logo.url }}, {{ job.title }}, {{ job.location }}
                             <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
                                 <a target="_blank" href="{{ job.link }}">
                                     <div class="feature">
@@ -63,28 +62,6 @@
                                 </a>
                             </div>
                         {% endfor %}
-{#                        <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">#}
-{#                            <a target="_blank" href="https://www.linkedin.com/jobs/view/it-security-analyst-ii-at-fis-global-1536131709/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdomain=in">#}
-{#                                <div class="feature">#}
-{#                                    <div class="feature__icon"><img src="/media/fis.png"></div>#}
-{#                                    <div class="feature__text">#}
-{#                                        <h6>IT Security Analyst II</h6>#}
-{#                                         <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> Gurgaon, IN</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </a>#}
-{#                        </div>#}
-{#                        <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">#}
-{#                            <a target="_blank" href="https://www.linkedin.com/jobs/view/information-security-engineer-gurgaon-at-make-my-trip-1526084341/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdomain=in">#}
-{#                                <div class="feature">#}
-{#                                    <div class="feature__icon"><img src="/media/makemytrip.png"></div>#}
-{#                                    <div class="feature__text">#}
-{#                                        <h6>Information Security Engineer</h6>#}
-{#                                         <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> Gurgaon, IN</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </a>#}
-{#                        </div>#}
 					</div>
 				</div>
 			</div>
