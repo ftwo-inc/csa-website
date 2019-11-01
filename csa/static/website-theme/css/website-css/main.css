@@ -4129,9 +4129,19 @@ font-size: 28px;
     text-align: center;
 }
 .industry_leader{
-	background: #dd9b34;
+	background: #de9900;
     padding: 40px 0px 40px;
     color: #fff!important;
+}
+
+.industry_leader.bg-circles {
+    background-image: url(/static/website-theme/images/img/bg-shapes/circles.svg);
+    background-position: bottom -16em right -15em;
+    background-size: 55em;
+}
+.industry_leader.bg-circles {
+    background-position: bottom -20em right 95%;
+    background-size: 75em;
 }
 .industry_leader .text-black .font__20{
 	color: #fff;
