@@ -804,7 +804,8 @@ a:hover, a:focus {
 		display: none;
 	}
 	.h-md-90vh{
-		height: 91vh;
+		/*height: 91vh;*/
+		height: unset;
 	}
 }
 
@@ -2373,6 +2374,9 @@ label {
 	.hero--graphic-portrait {
 		padding-bottom: 0
 	}
+	.hero--graphic-landscape {
+	    padding-bottom: 6vw;
+	}
 }
 @media only screen and (min-width:45em) and (max-width:64.99em) {
 	.hero--graphic-portrait .hero__cta .cta__action, .hero--graphic-portrait .hero__cta .cta__text {
@@ -3259,6 +3263,12 @@ label {
 		-ms-flex: 0 1 30%;
 		flex: 0 1 30%;
 		/*margin-right: 10%*/
+	}
+	.nav-primary__items {
+  		height: 50vh;
+  	}
+	.nav-primary-items__ctas {
+   		bottom: 10%;
 	}
 }
 @media only screen and (min-width:65em) {
@@ -4254,10 +4264,63 @@ font-size: 28px;
 }
 
 @media only screen and (max-width: 44.99em){
-.new_partner ul li {
-    width: 100%;
-    padding: 4% 4%;
-    margin-right: 0%;
-    margin-bottom: 8%;
+	.new_partner ul li {
+	    width: 100%;
+	    padding: 4% 4%;
+	    margin-right: 0%;
+	    margin-bottom: 8%;
+	}
 }
+@media only screen and (min-width: 45em){
+
+	.flex-md.about-mb.hero.hero--graphic{
+		display: unset;
+	}
+	.flex-md.about-mb.hero.hero--graphic .w-md-50.mt-sm-2rem{
+		padding: 50px 0px;
+	}
+	.flex-md.about-mb.hero.hero--graphic .about-p-r.w-md-half.text-38{
+		width: 100%;
+	}
+	.flex-md.about-mb.hero.hero--graphic .w-md-half.mt-sm-2rem{
+		width: 100%;
+    	padding: 10px 0px 50px;
+	}
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 28.33%;
+	}
+	.feature_img {
+	    text-align: center;
+	    display: block;
+	    padding: 30px;
+	    background: #ccc;
+	    width: 175px;
+	    height: 120px;
+	}
+	.enrollment-form .flex-md.hero.hero--graphic{
+		display: unset;
+	}
+	.enrollment-form .flex-md.hero.hero--graphic .pl-md-34 {
+	    /* padding-left: 34px; */
+	    padding: 30px 0px 60px;
+	}
+	.space-top-bottom.block--single-feature.franchise-cards .justify-left {
+	     justify-content: center!important; 
+	}
+	.flex-col-reverse {
+	    flex-direction: column-reverse;
+	}
+	.flex.flex-col-reverse.hero.hero--graphic .pl-md-34 {
+	    /* padding-left: 34px; */
+	    padding: 30px 0px 60px;
+	}
+	.nav-primary-items__ctas {
+	    position: relative;
+	    left: unset;
+	    bottom: 8%;
+	    width: 40%;
+	    padding: 60px 1.5em;
+	    margin: 0 auto;
+	}
 }
