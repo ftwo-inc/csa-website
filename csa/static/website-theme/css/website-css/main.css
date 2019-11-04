@@ -1214,7 +1214,7 @@ body.env--dev:before {
     background-color: #303b53;
 }
 .bg-grey-ind {
-	background-color: #de9900;
+	background-color: #420420;
 }
 @media only screen and (min-width:57.5rem) {
 	.block--pricing {
@@ -4150,7 +4150,7 @@ font-size: 28px;
     text-align: center;
 }
 .industry_leader{
-	background: #de9900;
+	background: #420420;
     padding: 40px 0px 40px;
     color: #fff!important;
 }
