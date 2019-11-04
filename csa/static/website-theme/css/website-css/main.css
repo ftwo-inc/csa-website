@@ -386,7 +386,7 @@ a:hover, a:focus {
 .view-more-video{
 	background: none;
     border: 1px solid #292d40;
-    padding: 14px;
+    padding: 15px 30px;
     color: white;
     border-radius: 999px;
     background-color: #292d40;
@@ -395,8 +395,9 @@ a:hover, a:focus {
 	transition: background-color .2s ease-out, color .2s ease-out;
 }
 .view-more-video:hover{
-	color: #292d40;
-	background-color: transparent;
+	color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
 }
 .flex{
 	display: flex;
@@ -1214,7 +1215,7 @@ body.env--dev:before {
     background-color: #303b53;
 }
 .bg-grey-ind {
-	background-color: #420420;
+	background-color: #008033;
 }
 @media only screen and (min-width:57.5rem) {
 	.block--pricing {
@@ -4150,7 +4151,7 @@ font-size: 28px;
     text-align: center;
 }
 .industry_leader{
-	background: #420420;
+	background: #008033;/*//#3d9c98*/
     padding: 40px 0px 40px;
     color: #fff!important;
 }
