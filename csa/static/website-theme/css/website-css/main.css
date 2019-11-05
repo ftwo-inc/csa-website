@@ -4364,7 +4364,7 @@ font-size: 28px;
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 	.h-md-90vh {
-   	 	height: 55vh;
+   	 	height: 45vh;
 	}
 	.features-list .feature-list-div {
 	    padding: 12px;
