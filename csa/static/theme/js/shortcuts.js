@@ -17,8 +17,9 @@ function show_notification(type, message){
     $.bootstrapGrowl(message, {
         ele: 'body',
         type: type,
-        offset: {from: 'bottom', amount: 40},
+        offset: {from: 'top', amount: 40},
         align: 'right',
+        position: 'fixed',
         width: 250,
         delay: 5000,
         allow_dismiss: true,

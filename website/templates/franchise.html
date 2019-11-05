@@ -314,31 +314,32 @@
                     }
                     else{
                         $("#franchise-error").text(response.message);
-		    	$("#full_name").val('');
-		    	$("#email").val('');
-		    	$("#mobile").val('');
-		    	$("#location").val('');
-		    	$("#comment").val('');
+                        $("#full_name").val('');
+                        $("#email").val('');
+                        $("#mobile").val('');
+                        $("#location").val('');
+                        $("#comment").val('');
                         //window.location = "/franchise/"
                     }
                     $("#franchise_submit").attr("disabled", "disabled");
-                    show_notification("success", "Franchise Form Submitted!");
+                    show_notification("success", "Thank you for submitting Franchise Form!");
                 },
                 "error": function () {
                     show_notification("danger", "Something goes wrong. Please contact to admin");
-                }};
-                if(!validate_login_form()) {
-                    $("#franchise_submit").removeAttr("disabled");
-                    $.post(settings)
+                }
+            };
+            if(!validate_login_form()) {
+                $("#franchise_submit").removeAttr("disabled");
+                $.post(settings)
+            }
+            else{
+                if ($("#full_name").val() && $("#email").val() && $("#mobile")){
+                    $("#email-error").removeAttr("hidden");
                 }
                 else{
-                    if ($("#full_name").val() && $("#email").val() && $("#mobile")){
-                        $("#email-error").removeAttr("hidden");
-                    }
-                    else{
-                        $("#email-error").attr("hidden", "hidden");
-                    }
+                    $("#email-error").attr("hidden", "hidden");
                 }
+            }
         }
     </script>
 
@@ -359,11 +360,11 @@
    <style type="text/css">
     	.value.sign::after {
                   content: "+";
-                  
+
                 }
 	   .value.perc::after {
                   content: "%";
-                  
+
                 }
     </style>
 {% endblock page_level_scripts %}
