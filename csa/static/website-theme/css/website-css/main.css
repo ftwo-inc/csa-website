@@ -4342,4 +4342,24 @@ font-size: 28px;
      height: 91vh; 
      height: unset; 
 }
+@media only screen and (max-width: 640px) and (min-width: 320px){
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%; 
+	}
+	.h-md-90vh {
+    	/* height: 91vh; */
+   	 	height: 100%;
+	}
+	.nav-primary__items {
+	    height: auto;
+	}
+	.nav-primary-items__ctas {
+	    position: relative;
+	    left: unset;
+	    bottom: 4%;
+	    width: 100%;
+	    padding: 60px 0.5em;
+	    margin: 0 auto;
+	}
 }
