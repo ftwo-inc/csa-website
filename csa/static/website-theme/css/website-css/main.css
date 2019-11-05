@@ -4342,14 +4342,33 @@ font-size: 28px;
      height: 91vh; 
      height: unset; 
 }
-@media only screen and (max-width: 640px) and (min-width: 320px){
+@media only screen and (max-width: 640px) and (min-width: 481px){
 	.features-list .feature-list-div {
 	    padding: 12px;
 	    width: 100%; 
 	}
 	.h-md-90vh {
-    	/* height: 91vh; */
-   	 	height: 100%;
+   	 	height: 65vh;
+	}
+	.nav-primary__items {
+	    height: auto;
+	}
+	.nav-primary-items__ctas {
+	    position: relative;
+	    left: unset;
+	    bottom: 4%;
+	    width: 100%;
+	    padding: 60px 0.5em;
+	    margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.h-md-90vh {
+   	 	height: 55vh;
+	}
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%; 
 	}
 	.nav-primary__items {
 	    height: auto;
