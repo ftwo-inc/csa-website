@@ -314,6 +314,11 @@
                     }
                     else{
                         $("#franchise-error").text(response.message);
+		    	$("#full_name").val('');
+		    	$("#email").val('');
+		    	$("#mobile").val('');
+		    	$("#location").val('');
+		    	$("#comment").val('');
                         //window.location = "/franchise/"
                     }
                     $("#franchise_submit").attr("disabled", "disabled");
