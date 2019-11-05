@@ -37,35 +37,138 @@
 					</div>
 				</div>
             </div>
-            <div class="bg-gray-bluish pb-0 space-top-bottom bg-light block--features animated fadeIn pt-0">
-				<div class="container">
-                    <div class="text-center">
-                        <p class="font__22 mb-1rem pb-15">Cyber Security Academy (CSA) is a brand of SkillCube. SkillCube established in 2012 is one of the pioneers in India focusing on Cyber Security Skill Development Solutions. The academy is a trusted and one-stop destination for all capacity building initiatives in the realm of Cyber Security.</p>
-                        <hr class="text-gray-300">
-                        <h3 class="pb-15">Cyber Security Jobs in Your Dream Companies</h3>
-                    </div>
+            <!-- <div class="bg_job" style="background-color: #9bb8f2;">
+	            <div class="bg-gray-bluish pb-0 space-top-bottom bg-light block--features animated fadeIn pt-0">
+					<div class="container">
+	                    <div class="text-center">
+	                    	<h3 class="pb-15">Cyber Security Jobs in Your Dream Companies</h3>
+	                        <p class="font__22 mb-1rem pb-15">Cyber Security Academy (CSA) is a brand of SkillCube. SkillCube established in 2012 is one of the pioneers in India focusing on Cyber Security Skill Development Solutions. The academy is a trusted and one-stop destination for all capacity building initiatives in the realm of Cyber Security.</p>
+	                      
+	                        
+	                    </div>
+					</div>
 				</div>
-			</div>
-            <div class="bg-gray-bluish animated fadeInUp padtop space-top-bottom block--features">
+	            <div class="bg-gray-bluish animated fadeInUp padtop space-top-bottom block--features">
+					<div class="container">
+						<div class="features-list">
+	                        {% for job in job_postings %}
+	                            <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer flex-container wrap">
+	                                <a target="_blank" href="{{ job.link }}">
+	                                    <div class="feature">
+	                                        <div class="feature__icon"><img src="{{ job.logo.url }}"></div>
+	                                        <div class="feature__text">
+	                                            <h6>{{ job.title }}</h6>
+	                                             <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> {{ job.location }}</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                            </div>
+	                        {% endfor %}
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="bg_job clearfix" style="background-color: #fff;">
 				<div class="container">
-					<div class="features-list">
-                        {% for job in job_postings %}
-                            <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer">
-                                <a target="_blank" href="{{ job.link }}">
-                                    <div class="feature">
-                                        <div class="feature__icon"><img src="{{ job.logo.url }}"></div>
-                                        <div class="feature__text">
-                                            <h6>{{ job.title }}</h6>
-                                             <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> {{ job.location }}</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        {% endfor %}
+	            <div class="space-top-bottom bg-light block--features animated fadeIn pt-0 col_width">
+					<div class="container">
+	                    <div class="text-left">
+	                    	<h2 class="pb-15">Cyber Security Jobs in Your Dream Companies</h2>
+	              
+	                        <p class="font__22 mb-1rem pb-15">Cyber Security Academy (CSA) is a brand of SkillCube. SkillCube established in 2012 is one of the pioneers in India focusing on Cyber Security Skill Development Solutions. The academy is a trusted and one-stop destination for all capacity building initiatives in the realm of Cyber Security.</p>
+	                     
+	                        
+	                    </div>
+					</div>
+				</div>
+	            <div class="animated fadeInUp padtop space-top-bottom block--features rig_width">
+					<div class="container">
+						<div class="new_feature">
+	                        {% for job in job_postings %}
+	                            <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer flex-container wrap">
+	                                <a target="_blank" href="{{ job.link }}">
+	                                    <div class="feature">
+	                                        <div class="feature__icon"><img src="{{ job.logo.url }}"></div>
+	                                        <div class="feature__text">
+	                                            <h6>{{ job.title }}</h6>
+	                                             <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> {{ job.location }}</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                            </div>
+	                        {% endfor %}
+						</div>
 					</div>
 				</div>
 			</div>
-            <div class="block bg-teal bg-light block--quotes">
+		</div>
+			<style type="text/css">
+				.col_width{
+					display: flex;
+				    width: 60%;
+				    float: left;
+				}
+				.rig_width{
+					display: flex;
+				    width: 40%;
+				    float: right;
+				}
+				.bg_job .new_feature .wrap {
+				    width: 100%;
+				    margin: 0 auto;
+				    margin-bottom: 20px;
+				}
+				.bg_job .flex-container  a{
+					width: 100%;
+					
+				}
+				.padtop {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.bg_job .new_feature .feature {
+    text-align: center;
+    padding: 15px;
+}
+.bg_job .space-top-bottom.col_width {
+    padding: 60px 0px 0px;
+}
+			.bg_job h2 {
+    color: #4265d4;
+}
+.bg_job .font__22 {
+    font-size: 26px;
+    color: #282d39;
+    text-align: justify;
+}
+			.bg_job .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+				    
+				    border-radius: 12px;
+}
+.bg_job .wrap    {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.bg_job .features-list .feature-list-div {
+    padding: 12px;
+    width: 33.33%;
+    margin-right: 2%;
+}
+
+			</style>
+            <div class="block bg-teal bg-light block--quotes clearfix" style="clear: both;">
                 <div class="csa-bedge d-sm-hidden">
                     <img src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" alt="image" class="h-full">
                 </div>
