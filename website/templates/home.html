@@ -249,29 +249,31 @@
 		</div>
 	</div>
 
+	{% if popup_frame %}
+    <div class="lightbox" id="text">
+	    <div class="box">
+	        <!-- your title -->
+	        <div class="content">
+		        <a href="/enroll/">
+	            {% for data in popup_frame %}
+	                <!-- and here comes the image -->
+	                <img src="{{ data.image.url }}" alt="popup">
+	            </a>
+	            {% endfor %}
+	            <div class="panel-footer">
+                	<a id="close" class="close btn-lg btn-primary">X</a>
+            	</div>
+	        </div>
+	    </div>
+	</div>
+{% endif %}
+
 {% endblock %}
 
 {% block page_level_scripts %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="../package/js/swiper.min.js"></script>
     <script src="{% static 'website-theme/js/website-js/home.js' %}"></script>
-
-     <script>
-	     $(document).ready(function () {
-	    //select the POPUP FRAME and show it
-	    $("#popup").hide().fadeIn(1000);
-	    setTimeout(function() {
-		  $("#popup").fadeOut(1000);
-		}, 15000);
-	    
-
-	    //close the POPUP if the button with id="close" is clicked
-	    $("#close").on("click", function (e) {
-		e.preventDefault();
-		$("#popup").fadeOut(1000);
-	    });
-	});
-	</script>
 
 {% endblock page_level_scripts %}
 
@@ -280,33 +282,4 @@
 	background-color: #282d39!important;
 	color: #fff!important;
 }
-#popup {
-	    display:none;
-	    position:absolute;
-	    margin:0 auto;
-	    top: 50%;
-	    left: 50%;
-	    transform: translate(-50%, -50%);
-	    box-shadow: 0px 0px 50px 2px #000;
-	    border-color: unset;
-	}		
-	#popup img{
-		position: relative;
-	}
-	.panel-footer {
-	    padding: 0px 0px;
-	    background-color: unset;
-	    border-top: 0px solid #ddd;
-	    border-bottom-right-radius: 3px;
-	    border-bottom-left-radius: 3px;
-	    position: absolute;
-	    top: -10px;
-	    right: -10px;
-	}
-	.panel-footer .btn-lg {
-	    padding: 6px 12px;
-	    font-size: 18px;
-	    line-height: 1.3333333;
-	    border-radius: 50%;
-	}
 </style>

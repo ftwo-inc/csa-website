@@ -4296,6 +4296,15 @@ label {
     padding: 2%;
     margin-bottom: 2%;
 }
+.enroll-input-box{
+	position: relative;
+}
+.bootstrap-growl{
+	left: 0!important;
+	width: 100%!important;
+	right: 0!important;
+}
+
 /*.new_partner ul li .icon_div .border_circle {
     border: 2px solid #972ecd;
     padding: 12px;

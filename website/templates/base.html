@@ -258,24 +258,21 @@
             </div>
         </div>
     </div>
-    {% if popup_frame %}
+    <!-- {% if popup_frame %}
         <div id="popup" class="popup panel panel-primary">
         	<a href="/enroll/">
             {% for data in popup_frame %}
-                <!-- and here comes the image -->
+                
                 <img src="{{ data.image.url }}" alt="popup">
             </a>
             {% endfor %}
 
-            <!-- Now this is the button which closes the popup-->
+            
             <div class="panel-footer">
                 <a id="close" class="btn-lg btn-primary">X</a>
             </div>
-
-            <!-- and finally we close the POPUP FRAME-->
-            <!-- everything on it will show up within the popup so you can add more things not just an image -->
         </div>
-    {% endif %}
+    {% endif %} -->
 
 
         <!--main js file start-->
@@ -304,7 +301,7 @@
 
 
        </script>
-		<script>
+		<!-- <script>
 	     $(document).ready(function () {
 	    //select the POPUP FRAME and show it
 	    $("#popup").hide().fadeIn(1000);
@@ -319,6 +316,32 @@
 		$("#popup").fadeOut(1000);
 	    });
 	});
+	</script> -->
+
+	<script type="text/javascript">
+		// Exit intent
+			function addEvent(obj, evt, fn) {
+			    if (obj.addEventListener) {
+			        obj.addEventListener(evt, fn, false);
+			    }
+			    else if (obj.attachEvent) {
+			        obj.attachEvent("on" + evt, fn);
+			    }
+			}
+
+			// Exit intent trigger
+			addEvent(document, 'mouseout', function(evt) {
+
+			    if (evt.toElement == null && evt.relatedTarget == null ) {
+			        $('.lightbox').slideDown();
+			    };
+
+			});
+
+			// Closing the Popup Box
+			$('a.close').click(function(){
+			    $('.lightbox').slideUp();
+			});
 	</script>
 	
 	<style>
@@ -385,6 +408,73 @@
 	    line-height: 1.3333333;
 	    border-radius: 50%;
 	}
+
+	.lightbox {
+    /** Hide the lightbox */
+    display: none;
+
+    /** Apply basic lightbox styling */
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color:#333333;
+    background-color: rgba(0, 0, 0, 0.42);
+    }
+
+.lightbox:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.lightbox .box {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    min-width: 600px;
+    margin: 10% auto;
+    /* padding: 20px; */
+    background-color: #FFF;
+    box-shadow: 0px 2px 2px 0px #404040;
+    }
+
+    .lightbox .title {
+        margin:0;
+        padding:0 0 10px 0px;
+        border-bottom:1px #ccc solid;
+        font-size:22px;
+        }
+
+    .lightbox .content {
+        display: block;
+	    font-size: 18px;
+	    line-height: 22px;
+	    position: relative;
+        }
+
+    .lightbox .close {
+        float:right;
+        display:block;
+        text-decoration:none;
+        font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:22px;
+        color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    filter: alpha(opacity=20);
+	    opacity: 1;
+        }
+
+.lightbox .open {
+    /** Show lightbox when mouse leaves the browser window */
+    display: block;
+    outline: none;
+}
+.lightbox .box img{
+	width: 100%;
+}
 	</style>
 	
         <!--main js file end-->

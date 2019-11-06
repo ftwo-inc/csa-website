@@ -15,15 +15,15 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 function show_notification(type, message){
     $.bootstrapGrowl(message, {
-        ele: 'body',
+        ele: '.enroll-input-box',
         type: type,
-        offset: {from: 'top', amount: 40},
-        align: 'right',
+        offset: {from: 'top', amount: 0},
+        align: 'left',
         position: 'fixed',
-        width: 250,
+        width: 450,
         delay: 5000,
         allow_dismiss: true,
-        stackup_spacing: 10
+        stackup_spacing: 0
       });
 }
 
