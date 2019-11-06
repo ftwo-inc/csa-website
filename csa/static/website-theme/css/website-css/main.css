@@ -4469,6 +4469,11 @@ label {
 	    padding: 60px 0.5em;
 	    margin: 0 auto;
 	}
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%; 
+	}
+
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 	.h-md-90vh {
@@ -4476,6 +4481,10 @@ label {
 	}
 	.features-list .feature-list-div {
 	    padding: 12px;
+	    width: 100%; 
+	}
+	.news_upda .features-list .feature-list-div{
+		 padding: 12px;
 	    width: 100%; 
 	}
 	.nav-primary__items {
