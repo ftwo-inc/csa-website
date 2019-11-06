@@ -4228,9 +4228,9 @@ label {
     background-position: bottom 0em right 30%;
     background-size: 2em;
 }
-.feature-list-div.cursor-pointer{
+.news_upda .feature-list-div.cursor-pointer{
 	padding: 0px 0px;
-    background: #f7f4f4;
+    background: #fff;
 }
 .industry_leader .feature__text.flex-md{
 	box-shadow: 0 4px 4px 0 rgb(204, 204, 204);
