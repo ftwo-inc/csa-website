@@ -2070,13 +2070,9 @@ label {
 		margin: 0 5%
 	}
 	.features-list .feature-list-div{
-		padding: 0px;
+		padding: 20px;
 		width: 33.33%;
-		box-shadow: 0 0px 10px 0 rgba(158, 158, 158, 0.56);
-    	margin-right: 15px;
-	}
-	.features-list .feature-list-div:hover{
-		box-shadow: 0 12px 25px 0 rgba(158, 158, 158, 0.56);
+		
 	}
 	.flex-col-4{
 		padding-top: 12px;
@@ -4136,6 +4132,7 @@ label {
     line-height: 24px;
     font-family: unset;
     text-align: center;
+    min-height: 90px;
 }
 .view_arti {
 	display: block;
@@ -4212,6 +4209,16 @@ label {
     background: #3d9c98;
     color: #fff;
 }
+.news_upda .features-list .feature-list-div{
+		padding: 0px;
+		width: 33.33%;
+		box-shadow: 0 0px 10px 0 rgba(158, 158, 158, 0.56);
+    	margin-right: 15px;
+	}
+.news_upda .features-list .feature-list-div:hover{
+		box-shadow: 0 12px 25px 0 rgba(158, 158, 158, 0.56);
+	}
+
 .testimo.bg-circles {
     background-image: url(/static/website-theme/images/img/bg-shapes/circles.svg);
     background-position: bottom -16em right -15em;
@@ -4235,6 +4242,32 @@ label {
 	display: block;
     width: 100%;
 }
+.courses_duration{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+}
+.courses_duration .duration{
+	display: block;
+    width: 25%;
+    padding: 20px;
+    background: #fff;
+    margin-right: 15px;
+    text-align: center;
+    color: #000!important;
+    border-radius: 4px;
+}
+.courses_duration .duration h6{
+    color: #232323;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+.courses_duration .duration p{
+	font-size: 16px;
+    font-weight: 600;
+    color: #282d39;
+}
+
 .new_partner ul{
 	padding: 0;
 	margin: 0;
