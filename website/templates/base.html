@@ -320,6 +320,7 @@
 
 	<script type="text/javascript">
 		// Exit intent
+			var no =0;
 			function addEvent(obj, evt, fn) {
 			    if (obj.addEventListener) {
 			        obj.addEventListener(evt, fn, false);
@@ -330,20 +331,26 @@
 			}
 
 			// Exit intent trigger
+			
 			addEvent(document, 'mouseout', function(evt) {
 
-			    if (evt.toElement == null && evt.relatedTarget == null ) {
-			        $('.lightbox').slideDown();
-			    };
+			   if(no==0)
+			   {
+			   		if (evt.toElement == null && evt.relatedTarget == null ) {
+			        	$('.lightbox').fadeIn();
+
+			    	};
+			   }
+			    
 
 			});
 
 			// Closing the Popup Box
 			$('a.close').click(function(){
-			    $('.lightbox').slideUp();
+			    $('.lightbox').fadeOut();
+			    no++;
 			});
 	</script>
-	
 	<style>
 	.btn--icon.effect .btn__text {
 		-webkit-transform: translateY(-50%);
