@@ -132,7 +132,7 @@ class Enroll(models.Model):
             # Send email
             from comms.communication import send_email_template, send_sms_template
             try:
-                send_email_template("enroll@skillcube.in', template=email_template, **template_keys)
+                send_email_template('enroll@skillcube.in', template=email_template, **template_keys)
                 send_sms_template('+91' + self.mobile, template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting enroll to admin.")
