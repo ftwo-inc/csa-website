@@ -4458,8 +4458,8 @@ label {
   		height: 50vh;
   	}
   	.h-md-90vh {
-	     height: 91vh; 
-	     height: unset; 
+	     height: 80vh; 
+	     
 		}
 	.col_width{
 		display: flex;
@@ -4506,6 +4506,23 @@ label {
 	}
 	.lightbox {
 	    display: none!important;
+	}
+	.bg_job .font__22 {
+	    font-size: 22px;
+	    text-align: center;
+	}
+	.bg_job h2 {
+	    color: #4265d4;
+	    text-align: center;
+	    font-size: 26px;
+	}
+	.courses_duration .duration {
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	}
+	.plyr_content h5 {
+	    min-height: 70px;
 	}
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
