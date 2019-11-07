@@ -4487,6 +4487,12 @@ label {
 	.industry_leader .pl-md-34.w-md-75 {
 	    padding: 15px;
 	}
+	.news_upda .features-list .feature-list-div {
+	    width: 46%;
+	    margin-right: 20px;
+	    margin-bottom: 20px;
+	    display: inline-flex;
+	}
 }
 
 @media only screen and (max-width: 640px) and (min-width: 481px){
