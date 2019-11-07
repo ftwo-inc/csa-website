@@ -88,7 +88,7 @@
 	                            <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer flex-container wrap">
 	                                <a target="_blank" href="{{ job.link }}">
 	                                    <div class="feature">
-	                                        <div class="feature__icon"><img src="{{ job.logo.url }}"></div>
+	                                        <div class="feature__icon"><img src="{{ job.logo.url }}" alt="job_postings"></div>
 	                                        <div class="feature__text">
 	                                            <h6>{{ job.title }}</h6>
 	                                             <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> {{ job.location }}</p>
@@ -104,7 +104,7 @@
 		</div>
             <div class="block bg-teal bg-light block--quotes clearfix" style="clear: both;">
                 <div class="csa-bedge d-sm-hidden">
-                    <img src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" alt="image" class="h-full">
+                    <img src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" alt="CSA-logo" class="h-full">
                 </div>
 				<div class="container">
 					<div class="quotes-block">
@@ -121,7 +121,7 @@
                                         {% for data in testimonials %}
                                             <li class="quotes-list__item transition-delay-sm-9">
                                                 <div class="quote">
-                                                    <div class="quote__avatar"><img class="avatar bg-white" src="{{ data.pic.url }}"></div>
+                                                    <div class="quote__avatar"><img class="avatar bg-white" src="{{ data.pic.url }}" alt="avatar"></div>
                                                     <div class="quote__text">
                                                         {{ data.content }}</div>
                                                     <div class="flex justify-between">
@@ -134,7 +134,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="self-center">
-                                                            <img class="h-2-half" src="{{ data.logo.url }}">
+                                                            <img class="h-2-half" src="{{ data.logo.url }}" alt="data-quotes">
                                                         </div>
                                                     </div>
                                                 </div>
