@@ -4458,7 +4458,7 @@ label {
   		height: 50vh;
   	}*/
   	.h-md-90vh {
-	     height: 80vh; 
+	     height: 85vh; 
 	     
 		}
 	.col_width{
@@ -4502,7 +4502,7 @@ label {
 	    width: 100%; 
 	}
 	.h-md-90vh {
-   	 	height: 65vh;
+   	 	height: 70vh;
 	}
 	.nav-primary__items {
 	    height: auto;
@@ -4540,11 +4540,17 @@ label {
 	.plyr_content h5 {
 	    min-height: 70px;
 	}
+	.courses_duration .duration {
+	    display: block;
+	    width: 100%;
+	    margin-right: 15px;
+	    margin-bottom: 15px;
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 
 	.h-md-90vh {
-   	 	height: 45vh;
+   	 	height: 60vh;
 	}
 	.features-list .feature-list-div {
 	    padding: 12px;
@@ -4576,5 +4582,11 @@ label {
 	    min-width: 100%;
 	    width: 100%;
 	   
+	}
+	.courses_duration .duration {
+	    display: block;
+	    width: 100%;
+	    margin-right: 15px;
+	    margin-bottom: 15px;
 	}
 }
