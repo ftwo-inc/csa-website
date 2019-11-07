@@ -4454,9 +4454,9 @@ label {
 	    padding: 60px 1.5em;
 	    margin: 0 auto;
 	}
-	.nav-primary__items {
+	/*.nav-primary__items {
   		height: 50vh;
-  	}
+  	}*/
   	.h-md-90vh {
 	     height: 80vh; 
 	     
@@ -4476,7 +4476,17 @@ label {
 		margin-right: 0;
     	margin-bottom: 20px;
 	}
-	
+	.courses_duration .duration {
+	    display: inline-grid;
+	    width: 30%;
+	    margin-right: 15px;
+	}
+	.plyr_content h5 {
+	    min-height: 60px;
+	}
+	.industry_leader .pl-md-34.w-md-75 {
+	    padding: 15px;
+	}
 }
 
 @media only screen and (max-width: 640px) and (min-width: 481px){
