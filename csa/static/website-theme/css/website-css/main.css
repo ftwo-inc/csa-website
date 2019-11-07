@@ -4504,6 +4504,9 @@ label {
 		margin-right: 0;
     	margin-bottom: 20px;
 	}
+	.lightbox {
+	    display: none!important;
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 
