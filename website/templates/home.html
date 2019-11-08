@@ -107,8 +107,8 @@
 		</div>
             <div class="block bg-teal bg-light block--quotes clearfix" style="clear: both;">
                 <div class="csa-bedge d-sm-hidden">
-                    <!-- <img src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" alt="CSA-logo" class="h-full"> -->
-                    <img data-src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" src="blank.gif" class="lazy h-full" alt="CSA-logo">
+                    <img src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" alt="CSA-logo" class="h-full">
+                    <!-- <img data-src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" src="blank.gif" class="lazy h-full" alt="CSA-logo"> -->
                 </div>
 				<div class="container">
 					<div class="quotes-block">
@@ -199,7 +199,8 @@
 		        <a href="/enroll/">
 	            {% for data in popup_frame %}
 	                <!-- and here comes the image -->
-	                <img src="{{ data.image.url }}" alt="popup">
+	                <!-- <img src="{{ data.image.url }}" alt="popup"> -->
+	                <img data-src="{{ data.image.url }}" src="blank.gif" class="lazy" alt="popup">
 	            </a>
 	            {% endfor %}
 	            <div class="panel-footer">
