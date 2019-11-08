@@ -4609,7 +4609,7 @@ label {
 	    width: 100%; 
 	}
 	.h-md-90vh {
-   	 	height: 70vh;
+   	 	height: 55vh;
 	}
 	.nav-primary__items {
 	    height: auto;
@@ -4663,7 +4663,7 @@ label {
 @media only screen and (max-width: 480px) and (min-width: 320px){
 
 	.h-md-90vh {
-   	 	height: 60vh;
+   	 	height: 45vh;
 	}
 	.features-list .feature-list-div {
 	    padding: 12px;
@@ -4704,5 +4704,8 @@ label {
 	}
 	.nav-primary__items.bg_dark{
 		height: unset;
+	}
+	.lightbox {
+	    display: none!important;
 	}
 }
