@@ -4525,9 +4525,11 @@ label {
 	    margin-bottom: 20px;
 	    display: inline-flex;
 	}
+	
+}
+@media only screen and (max-width: 641px) and (min-width: 768px){
 	.h-md-90vh {
-	     height: 75vh; 
-	     
+	   	 	height: 54vh;
 	}
 }
 
