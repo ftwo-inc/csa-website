@@ -88,7 +88,10 @@
 	                            <div class="feature-list-div shadow-on-hover border-radius-corn cursor-pointer flex-container wrap">
 	                                <a target="_blank" href="{{ job.link }}">
 	                                    <div class="feature">
-	                                        <div class="feature__icon"><img src="{{ job.logo.url }}" alt="job_postings"></div>
+	                                        <div class="feature__icon">
+	                                        	<!-- <img src="{{ job.logo.url }}" alt="job_postings"> -->
+	                                        	<img data-src="{{ job.logo.url }}" src="blank.gif" class="lazy" alt="job_postings">
+	                                        </div>
 	                                        <div class="feature__text">
 	                                            <h6>{{ job.title }}</h6>
 	                                             <p class="text-light-black text-16 pb-4"><i class="fa fa-map-marker"></i> {{ job.location }}</p>
@@ -105,6 +108,7 @@
             <div class="block bg-teal bg-light block--quotes clearfix" style="clear: both;">
                 <div class="csa-bedge d-sm-hidden">
                     <img src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" alt="CSA-logo" class="h-full">
+                    <!-- <img data-src="{% static 'website-theme/images/img/CSA-logo_6.png' %}" src="blank.gif" class="lazy h-full" alt="CSA-logo"> -->
                 </div>
 				<div class="container">
 					<div class="quotes-block">
@@ -121,7 +125,10 @@
                                         {% for data in testimonials %}
                                             <li class="quotes-list__item transition-delay-sm-9">
                                                 <div class="quote">
-                                                    <div class="quote__avatar"><img class="avatar bg-white" src="{{ data.pic.url }}" alt="avatar"></div>
+                                                    <div class="quote__avatar">
+                                                    	<!-- <img class="avatar bg-white" src="{{ data.pic.url }}" alt="avatar"> -->
+                                                    	<img data-src="{{ data.pic.url }}" src="blank.gif" class="lazy avatar bg-white" alt="avatar">
+                                                    </div>
                                                     <div class="quote__text">
                                                         {{ data.content }}</div>
                                                     <div class="flex justify-between">
@@ -134,7 +141,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="self-center">
-                                                            <img class="h-2-half" src="{{ data.logo.url }}" alt="data-quotes">
+                                                            <!-- <img class="h-2-half" src="{{ data.logo.url }}" alt="data-quotes"> -->
+                                                            <img data-src="{{ data.logo.url }}" src="blank.gif" class="lazy h-2-half" alt="data-quotes">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -191,7 +199,8 @@
 		        <a href="/enroll/">
 	            {% for data in popup_frame %}
 	                <!-- and here comes the image -->
-	                <img src="{{ data.image.url }}" alt="popup">
+	                <!-- <img src="{{ data.image.url }}" alt="popup"> -->
+	                <img data-src="{{ data.image.url }}" src="blank.gif" class="lazy" alt="popup">
 	            </a>
 	            {% endfor %}
 	            <div class="panel-footer">
