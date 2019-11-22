@@ -1230,14 +1230,45 @@ img.border-radius-14 {
     border: 1px solid #323232;
 }
 .h1.title {
-    color: #282d39;
-    font-size: 60px;
+    color: #252525;
+    font-size: 2.500em;
+    text-rendering: optimizeSpeed;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin: 26px 0;
+    text-transform: uppercase;
     text-align: center;
 }
 .content.all{
 	max-width: 100%;
 	width: 100%;
 }
+.content.all h3{
+	font-size: 28px;
+    margin: 0;
+}
+.content.all h4{
+	font-size: 22px;
+    margin: 0;
+}
+.content.all p{
+	font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+    text-align: justify;
+}
+.content.all ul{
+	padding: 0;
+	margin: 0 0 30px;
+}
+.content.all ul li{}
+.content.all a{}
+.hero__cta.max {
+    max-width: 100%;
+}
+
+
 
 @media only screen and (min-width:57.5rem) {
 	.block--pricing {
