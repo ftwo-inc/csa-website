@@ -1215,7 +1215,7 @@ body.env--dev:before {
     background-color: #303b53;
 }
 .bg-grey-ind {
-	background-color: #3d9c98;
+	background-color: #737088;
 }
 
 .bg-light.block pb-0.block--single-feature{
@@ -4207,7 +4207,7 @@ label {
     color: #fff;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
+    /*border: 2px solid #fff;*/
     background: transparent;
     border-radius: 50%;
     padding: 10px;
@@ -4232,7 +4232,7 @@ label {
 }
 
 .testimo{
-    background: #3d9c98;
+    background: #737088;
     color: #fff;
 }
 .news_upda .features-list .feature-list-div{
