@@ -82,10 +82,15 @@ def send_email_template(to, template=None, subject=None, template_body=None, fro
         if from_email is None:
             from_email = get_secret('postmark_from_email')
 
+        if isinstance(to, str):
+            to = [to]
+        elif not isinstance(to, str) and not isinstance(to, list):
+            return False
+
         send_email(
             template_subject,
             message,
-            [to],
+            to,
             [],
             from_email
         )
