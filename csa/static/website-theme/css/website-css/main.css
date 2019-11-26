@@ -4407,8 +4407,11 @@ label {
 					
 				}
 				.padtop {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 30px;
+}
+.pb-15.pt-15 {
+    padding-top: 15px;
 }
 .bg_job .new_feature .feature {
     text-align: center;
