@@ -4283,7 +4283,6 @@ label {
 	}
 
 .testimo.bg-circles {
-    background-image: url(/static/website-theme/images/img/bg-shapes/circles.svg);
     background-position: bottom -16em right -15em;
     background-size: 55em;
 }
@@ -4312,10 +4311,10 @@ label {
 }
 .courses_duration .duration{
 	display: block;
-    width: 25%;
-    padding: 20px;
+    width: 18%;
+    padding: 8px;
     background: #fff;
-    margin-right: 15px;
+    margin-right: 10px;
     text-align: center;
     color: #000!important;
     border-radius: 4px;
@@ -4323,7 +4322,7 @@ label {
 .courses_duration .duration h6{
     color: #232323;
     margin-bottom: 6px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .courses_duration .duration p{
 	font-size: 16px;
