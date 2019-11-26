@@ -1249,20 +1249,22 @@ img.border-radius-14 {
     margin: 0;
 }
 .content.all h4{
-	font-size: 22px;
+	font-size: 1em;
     margin: 0;
 }
 .content.all p{
-	font-size: 20px;
-    margin-bottom: 20px;
-    line-height: 28px;
+	font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 24px;
     text-align: justify;
 }
 .content.all ul{
 	padding: 0;
 	margin: 0 0 30px;
 }
-.content.all ul li{}
+.content.all ul li{
+	font-size: 16px;
+}
 .content.all a{}
 .hero__cta.max {
     max-width: 100%;
@@ -2134,6 +2136,10 @@ label {
 	}
 	.pt-2 {
 		padding-top: 2rem;
+	}
+	.pt-2.padd {
+	    padding-top: 0rem;
+	    padding: 2rem 0;
 	}
 	.features-list__item:first-child {
 		margin-left: 0
