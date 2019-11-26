@@ -61,8 +61,8 @@ class Franchise(models.Model):
 
             email_template = EmailTemplate.objects.filter(
                 slug="to:admin|product:franchise|slug:submit-franchise-to-admin").first()
-            sms_template = SmsTemplate.objects.filter(
-                slug="to:customer|product:franchise|slug:submit-franchise-to-admin").first()
+            # sms_template = SmsTemplate.objects.filter(
+            #     slug="to:customer|product:franchise|slug:submit-franchise-to-admin").first()
 
             template_keys = {
                 "email": self.email,
@@ -74,7 +74,7 @@ class Franchise(models.Model):
             from comms.communication import send_email_template, send_sms_template
             try:
                 send_email_template(['saurabh@skillcube.in', 'abhishek@skillcube.in'], template=email_template, **template_keys)
-                send_sms_template('+91' + '9654912585', template=sms_template, **template_keys)
+                # send_sms_template('+91' + '9654912585', template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting franchise to admin.")
         else:
@@ -120,8 +120,8 @@ class Enroll(models.Model):
 
             email_template = EmailTemplate.objects.filter(
                 slug="to:admin|product:enroll|slug:submit-enroll-to-admin").first()
-            sms_template = SmsTemplate.objects.filter(
-                slug="to:customer|product:enroll|slug:submit-enroll-to-admin").first()
+            # sms_template = SmsTemplate.objects.filter(
+            #     slug="to:customer|product:enroll|slug:submit-enroll-to-admin").first()
 
             template_keys = {
                 "email": self.email,
@@ -133,7 +133,7 @@ class Enroll(models.Model):
             from comms.communication import send_email_template, send_sms_template
             try:
                 send_email_template(['enroll@skillcube.in', 'chitranshi@skillcube.in'], template=email_template, **template_keys)
-                send_sms_template('+91' + '9654912585', template=sms_template, **template_keys)
+                # send_sms_template('+91' + '9654912585', template=sms_template, **template_keys)
             except Exception as e:
                 logging.error("An error occurred while submitting enroll to admin.")
         else:
