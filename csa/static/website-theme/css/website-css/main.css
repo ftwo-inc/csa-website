@@ -2124,10 +2124,9 @@ label {
 		max-width: 28.5em;
 		margin: 0 5%
 	}
-	.features-list .feature-list-div{
-		padding: 20px;
-		width: 33.33%;
-		
+	.features-list .feature-list-div {
+	    padding: 20px 12px;
+	    width: 33.33%;
 	}
 	.flex-col-4{
 		padding-top: 12px;
@@ -4699,6 +4698,10 @@ label {
 	    margin-right: 0%;
 	    margin-bottom: 4%;
 	}
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	}
 }
 
 @media only screen and (max-width: 640px) and (min-width: 481px){
@@ -4764,6 +4767,10 @@ label {
 	    margin-right: 0%;
 	    margin-bottom: 4%;
 	}
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 
@@ -4818,5 +4825,9 @@ label {
 	}
 	.lightbox {
 	    display: none!important;
+	}
+	.features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
 	}
 }
