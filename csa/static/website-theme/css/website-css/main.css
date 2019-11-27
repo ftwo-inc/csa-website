@@ -4283,7 +4283,6 @@ label {
 	}
 
 .testimo.bg-circles {
-    background-image: url(/static/website-theme/images/img/bg-shapes/circles.svg);
     background-position: bottom -16em right -15em;
     background-size: 55em;
 }
@@ -4312,10 +4311,10 @@ label {
 }
 .courses_duration .duration{
 	display: block;
-    width: 25%;
-    padding: 20px;
+    width: 18%;
+    padding: 8px;
     background: #fff;
-    margin-right: 15px;
+    margin-right: 10px;
     text-align: center;
     color: #000!important;
     border-radius: 4px;
@@ -4323,7 +4322,7 @@ label {
 .courses_duration .duration h6{
     color: #232323;
     margin-bottom: 6px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .courses_duration .duration p{
 	font-size: 16px;
@@ -4694,6 +4693,12 @@ label {
 	    padding: 0 1.5em;
 	    margin: 25px auto;
 	}
+	.bg_job .features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	    margin-right: 0%;
+	    margin-bottom: 4%;
+	}
 }
 
 @media only screen and (max-width: 640px) and (min-width: 481px){
@@ -4753,6 +4758,12 @@ label {
 	.nav-primary-items__ctas {
     	padding: 25px 1.5em;
 	}
+	.bg_job .features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	    margin-right: 0%;
+	    margin-bottom: 4%;
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 
@@ -4761,7 +4772,13 @@ label {
 	}
 	.features-list .feature-list-div {
 	    padding: 12px;
-	    width: 100%; 
+	     
+	}
+	.bg_job .features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	    margin-right: 0%;
+	    margin-bottom: 4%;
 	}
 	.nav-primary__items {
 	    height: auto;
