@@ -4693,6 +4693,12 @@ label {
 	    padding: 0 1.5em;
 	    margin: 25px auto;
 	}
+	.bg_job .features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	    margin-right: 0%;
+	    margin-bottom: 4%;
+	}
 }
 
 @media only screen and (max-width: 640px) and (min-width: 481px){
@@ -4752,6 +4758,12 @@ label {
 	.nav-primary-items__ctas {
     	padding: 25px 1.5em;
 	}
+	.bg_job .features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	    margin-right: 0%;
+	    margin-bottom: 4%;
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
 
@@ -4760,7 +4772,13 @@ label {
 	}
 	.features-list .feature-list-div {
 	    padding: 12px;
-	    width: 100%; 
+	     
+	}
+	.bg_job .features-list .feature-list-div {
+	    padding: 12px;
+	    width: 100%;
+	    margin-right: 0%;
+	    margin-bottom: 4%;
 	}
 	.nav-primary__items {
 	    height: auto;
