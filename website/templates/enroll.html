@@ -121,31 +121,44 @@
             let full_name =  $("#full_name");
             let location_el =  $("#location");
             let comment_el =  $("#comment");
-            if(!email_el.val()){
+            $("#email-error").attr("hidden", "hidden");
+            full_name.css({"border-color": ""});
+            email_el.css({"border-color": ""});
+            mobile_el.css({"border-color": ""});
+            location_el.css({"border-color": ""});
+            comment_el.css({"border-color": ""});
+            if(!full_name.val()){
+                has_error = true;
+                full_name.css({"border-color": "red"});
+                full_name.animateCss("shake");
+            }
+            else if(!email_el.val()){
                 // no value
                 has_error = true;
+                email_el.css({"border-color": "red"});
                 email_el.animateCss("shake");
             }
             else if(!email_regex.test(email_el.val())){
                 // regex fail
                 has_error = true;
                 email_el.animateCss("shake");
-            }
-            else if(!full_name.val()){
-                has_error = true;
-                full_name.val("").animateCss("shake");
+                email_el.css({"border-color": "red"});
+                $("#email-error").removeAttr("hidden");
             }
             else if(!mobile_el.val()){
                 has_error = true;
-                mobile_el.val("").animateCss("shake");
+                mobile_el.css({"border-color": "red"});
+                mobile_el.animateCss("shake");
             }
             else if(!location_el.val()){
                 has_error = true;
-                mobile_el.val("").animateCss("shake");
+                location_el.css({"border-color": "red"});
+                location_el.animateCss("shake");
             }
             else if(!comment_el.val()){
                 has_error = true;
-                mobile_el.val("").animateCss("shake");
+                comment_el.css({"border-color": "red"});
+                comment_el.val("").animateCss("shake");
             }
             return has_error
         }
@@ -242,7 +255,7 @@
             }
             else{
                 if ($("#full_name").val() && $("#email").val() && $("#mobile")){
-                    $("#email-error").removeAttr("hidden");
+                    // $("#email-error").removeAttr("hidden");
                 }
                 else{
                     $("#email-error").attr("hidden", "hidden");
