@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="w-md-50 pl-md-34">
-                               <div class="enroll-input-box mt-2rem">
+                               <div class="enroll-input-box mt-2rem" id="franchise-form">
                                     <div class="pb-2">
                                         <label>Full name</label>
                                         <input type="text" name="name" placeholder="Full Name" id="full_name" required><br>
@@ -58,12 +58,18 @@
                                         <label>Location </label>
                                         <input type="text" name="location" placeholder="Location" id="location"><br>
                                     </div>
-                                      <div class="pb-2">
+                                    <div class="pb-2">
                                         <label>Comment  </label>
                                         <input type="text" name="comment" placeholder="Comment" id="comment"><br>
                                     </div>
                                     <button class="franchise-submit-btn" id="franchise_submit" onclick="franchise();">Submit</button>
-                                </div>
+                               </div>
+                               <div class="enroll-submit-box mt-2rem" id="thank_you_form" hidden>
+                                   <div class="pb-2" style="text-align: center;">
+                                        <i class="far fa-grin-hearts fa-5x" style="color: #FCE46F;text-align: center;"></i>
+                                        <h2 style="color: #007604;text-align: center;">Thank you for your interest in Franchise!</h2>
+                                   </div>
+                               </div>
                             </div>
 						</div>
 					</div>
@@ -387,7 +393,9 @@
                         //window.location = "/franchise/"
                     }
                     $("#franchise_submit").attr("disabled", "disabled");
-                    show_notification("success", "Thank you for your interest in franchise!");
+                    // show_notification("success", "Thank you for your interest in franchise!");
+                    $("#franchise-form").attr("hidden", "hidden");
+                    $("#thank_you_form").removeAttr("hidden");
                 },
                 "error": function () {
                     show_notification("danger", "Something goes wrong. Please contact to admin");

@@ -494,6 +494,12 @@ a:hover, a:focus {
     border-radius: .625rem;
     margin-top: 1rem !important;
 }
+.enroll-submit-box{
+	background: white;
+    padding: 40% 40px;
+    border-radius: .625rem;
+    margin-top: 1rem !important;
+}
 .enroll-input-box div label{
 	font-weight: 600;
 	font-size: 1.125em;
