@@ -25,6 +25,7 @@ class Testimonials(models.Model):
 class Franchise(models.Model):
     fullname = models.CharField(max_length=220)
     email = models.EmailField(max_length=220)
+    country_code = models.CharField(max_length=220, default='+91')
     mobile = models.CharField(max_length=220)
     location = models.CharField(max_length=220)
     comment = models.CharField(max_length=440)
@@ -85,6 +86,7 @@ class Enroll(models.Model):
     fullname = models.CharField(max_length=220)
     email = models.EmailField(max_length=220)
     mobile = models.CharField(max_length=220)
+    country_code = models.CharField(max_length=220, default='+91')
     location = models.CharField(max_length=220)
     comment = models.CharField(max_length=440)
 

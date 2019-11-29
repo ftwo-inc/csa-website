@@ -29,12 +29,17 @@ class EnrollView(TemplateView):
         ctx["popup_frame"] = PopupFrame.objects.all()
         return ctx
 
+    def get_country_codes(self):
+        from website.country_code import country_code_data
+        return country_code_data
+
     def post(self, request, *args, **kwargs):
         from website.models import Enroll
         enroll = Enroll.objects.create(
             fullname=self.request.POST.get("fullname"),
             email=self.request.POST.get("email"),
             mobile=self.request.POST.get("mobile"),
+            country_code=self.request.POST.get("country_code") if self.request.POST.get("country_code") else '+91',
             location=self.request.POST.get("location"),
             comment=self.request.POST.get("comment")
         )
@@ -73,6 +78,7 @@ class FranchiseView(TemplateView):
             fullname=self.request.POST.get("fullname"),
             email=self.request.POST.get("email"),
             mobile=self.request.POST.get("mobile"),
+            country_code=self.request.POST.get("country_code") if self.request.POST.get("country_code") else '+91',
             location=self.request.POST.get("location"),
             comment=self.request.POST.get("comment")
         )
@@ -82,6 +88,10 @@ class FranchiseView(TemplateView):
         except Exception as e:
             logging.error(e)
         return JsonResponse({"status": True, "message": ""})
+
+    def get_country_codes(self):
+        from website.country_code import country_code_data
+        return country_code_data
 
 
 class ApplicationSecurityView(TemplateView):

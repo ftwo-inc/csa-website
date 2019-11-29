@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="w-md-50 pl-md-34">
-                                <div class="enroll-input-box mt-2rem">
+                                <div class="enroll-input-box mt-2rem" id="enroll-form">
                                     <div class="pb-15">
                                         <label>Full name</label>
                                         <input type="text" name="name" placeholder="Full Name" id="full_name" required><br>
@@ -46,8 +46,12 @@
                                     <div>
                                         <label>Mobile no.</label>
                                         <div class="flex">
-                                            <span class="country-code">+91</span>
-                                            <input type="number" name="mobile" onKeyPress="if(this.value.length===10) return false;" placeholder="Mobile Number *" id="mobile" required>
+                                            <select name="country_code" class="country-code" required>
+                                                {% for cc in view.get_country_codes %}
+                                                    <option value="{{ cc.code }}" {% if cc.code == '+91' %}selected{% endif %}>{{ cc.code }}</option>
+                                                {% endfor %}
+                                            </select>
+                                            <input type="number" name="mobile" onKeyPress="if(this.value.length===10) return false;" min="0" placeholder="Mobile Number *" id="mobile" required>
                                         </div>
                                     </div>
                                     <div class="pb-15">
@@ -59,6 +63,12 @@
                                         <input type="text" name="comment" placeholder="Comment" id="comment"><br>
                                     </div>
                                     <button class="enroll-submit-btn" id="enroll_submit" onclick="enroll();">Submit</button>
+                                </div>
+                                <div class="enroll-submit-box mt-2rem" id="thank_you_form" hidden>
+                                     <div class="pb-2" style="text-align: center;">
+                                         <i class="far fa-grin-hearts fa-5x" style="color: #FCE46F;text-align: center;"></i>
+                                         <h2 style="color: #007604;text-align: center;">Thank you for your interest in Enroll!</h2>
+                                     </div>
                                 </div>
                             </div>
 						</div>
@@ -243,7 +253,10 @@
                         //window.location = "/enroll/"
                     }
                     $("#enroll_submit").attr("disabled", "disabled");
-                    show_notification("success", "Thank you for submitting your details!");
+
+                    // show_notification("success", "Thank you for submitting your details!");
+                    $("#enroll-form").attr("hidden", "hidden");
+                    $("#thank_you_form").removeAttr("hidden");
                 },
                 "error": function () {
                     show_notification("danger", "Something goes wrong. Please contact to admin");
