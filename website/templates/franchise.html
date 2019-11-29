@@ -50,7 +50,11 @@
                                     <div>
                                         <label>Mobile no.</label>
                                         <div class="flex">
-                                            <span class="country-code">+91</span>
+                                            <select name="country_code" class="country-code" required>
+                                                {% for cc in view.get_country_codes %}
+                                                    <option value="{{ cc.code }}" {% if cc.code == '+91' %}selected{% endif %}>{{ cc.code }}</option>
+                                                {% endfor %}
+                                            </select>
                                             <input type="number" name="mobile" onKeyPress="if(this.value.length===10) return false;" min="0" placeholder="Mobile Number *" id="mobile" required>
                                         </div>
                                     </div>
