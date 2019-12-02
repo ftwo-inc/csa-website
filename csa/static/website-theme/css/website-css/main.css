@@ -4317,23 +4317,27 @@ label {
 }
 .courses_duration .duration{
 	display: block;
-    width: 18%;
+    width: 22%;
     padding: 8px;
-    background: #fff;
-    margin-right: 10px;
+    /* background: #fff; */
+    margin-right: 30px;
     text-align: center;
-    color: #000!important;
+    color: #fff;
     border-radius: 4px;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+   
 }
+
 .courses_duration .duration h6{
-    color: #232323;
+    color: #fff;
     margin-bottom: 6px;
     font-size: 18px;
 }
 .courses_duration .duration p{
 	font-size: 16px;
     font-weight: 600;
-    color: #282d39;
+    color: #fff;
 }
 
 .new_partner ul{
