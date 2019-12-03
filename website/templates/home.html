@@ -191,15 +191,12 @@
 		</div>
 	</div>
 
-	{% if popup_frame %}
+	<!-- {% if popup_frame %}
     <div class="lightbox" id="text">
 	    <div class="box">
-	        <!-- your title -->
 	        <div class="content">
 		        <a href="/enroll/">
 	            {% for data in popup_frame %}
-	                <!-- and here comes the image -->
-	                <!-- <img src="{{ data.image.url }}" alt="popup"> -->
 	                <img data-src="{{ data.image.url }}" src="blank.gif" class="lazy" alt="popup">
 	            </a>
 	            {% endfor %}
@@ -209,7 +206,7 @@
 	        </div>
 	    </div>
 	</div>
-{% endif %}
+{% endif %} -->
 
 {% endblock %}
 
