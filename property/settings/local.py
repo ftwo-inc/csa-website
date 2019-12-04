@@ -43,6 +43,8 @@ BASE_URL = "http://localhost:8000"
 
 LOGIN_URL = "/control/dash/login/"
 
+GOOGLE_RECAPTCHA_SECRET_KEY = '6Le3_cUUAAAAANd4umYVmvhQLyE02QDT6hrXewJS_'
+
 # Application definition
 
 INSTALLED_APPS = [

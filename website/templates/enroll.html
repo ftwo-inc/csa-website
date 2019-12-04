@@ -62,6 +62,8 @@
                                         <label>Comment  </label>
                                         <input type="text" name="comment" placeholder="Comment" id="comment"><br>
                                     </div>
+                                    <span style="color: red;" id="captcha_msg"></span>
+                                    <div class="g-recaptcha" data-sitekey="6Le3_cUUAAAAANJ3CfkdGYWWdFv9KiSVxorr6Fpw" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                                     <button class="enroll-submit-btn" id="enroll_submit" onclick="enroll();">Submit</button>
                                 </div>
                                 <div class="enroll-submit-box mt-2rem" id="thank_you_form" hidden>
@@ -184,6 +186,14 @@
                 "comment": $("#comment").val(),
                 "csrfmiddlewaretoken": "{{ csrf_token }}"
             };
+             var response = grecaptcha.getResponse();
+                if(response.length == 0) 
+                { 
+                //reCaptcha not verified
+                 $('#captcha_msg').text('please verify you are humann!');
+                 setTimeout(function(){ $("#captcha_msg").text(''); }, 2000);
+                 return false;
+                }
             let settings = {
                 url: '/enroll/',
                 data: body,
@@ -276,4 +286,5 @@
             }
         }
     </script>
+
 {% endblock page_level_scripts %}

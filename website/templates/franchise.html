@@ -66,6 +66,8 @@
                                         <label>Comment  </label>
                                         <input type="text" name="comment" placeholder="Comment" id="comment"><br>
                                     </div>
+                                    <span style="color: red;" id="captcha_msg"></span>
+                                    <div class="g-recaptcha" data-sitekey="6Le3_cUUAAAAANJ3CfkdGYWWdFv9KiSVxorr6Fpw" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                                     <button class="franchise-submit-btn" id="franchise_submit" onclick="franchise();">Submit</button>
                                </div>
                                <div class="enroll-submit-box mt-2rem" id="thank_you_form" hidden>
@@ -319,6 +321,7 @@
 
         function franchise() {
             // loading on franchise button
+            
 
             const body = {
                 "fullname": $("#full_name").val(),
@@ -328,6 +331,14 @@
                 "comment": $("#comment").val(),
                 "csrfmiddlewaretoken": "{{ csrf_token }}"
             };
+            var response = grecaptcha.getResponse();
+            if(response.length == 0) 
+            { 
+            //reCaptcha not verified
+             $('#captcha_msg').text('please verify you are humann!');
+             setTimeout(function(){ $("#captcha_msg").text(''); }, 2000);
+             return false;
+            }
             let settings = {
                 url: '/franchise/',
                 data: body,
@@ -433,7 +444,6 @@
            $("html, body").animate({scrollTop: 0}, 1000);
         });
     </script>
-
    <style type="text/css">
     	.value.sign::after {
                   content: "+";
