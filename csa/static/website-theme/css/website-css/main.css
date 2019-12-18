@@ -2365,6 +2365,10 @@ label {
 .about-mb{
 	margin-bottom: 88px;
 }
+
+.about-mb.soa {
+    margin-bottom: 50px;
+} 
 .hero--graphic-landscape img {
 	width: 82.98vw
 }
